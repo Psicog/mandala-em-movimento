@@ -661,7 +661,7 @@ app.get('/', (c) => {
         </p>
         <p>
           Usando os contos de <strong>"Mulheres que Correm com os Lobos"</strong> (Clarissa Pinkola Estés), 
-          integramos três abordagens poderosas em cada encontro:
+          integramos três fundamentos em cada encontro:
         </p>
         <div class="sobre-badges">
           <div class="sobre-badge">
@@ -681,7 +681,7 @@ app.get('/', (c) => {
           <div class="sobre-badge">
             <div class="sobre-badge-icon">💚</div>
             <div>
-              <div class="sobre-badge-title">Contoterapia Humanista (Carl Rogers)</div>
+              <div class="sobre-badge-title">Contoterapia Humanista</div>
               <div class="sobre-badge-text">Escuta empática e espaço de segurança para que cada mulher encontre suas próprias respostas.</div>
             </div>
           </div>
