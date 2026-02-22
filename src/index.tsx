@@ -10,7 +10,7 @@ app.get('/', (c) => {
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jornada Mandala em Movimento | 12 Encontros para Mulheres 40+</title>
   <meta name="description" content="Jornada terapêutica para mulheres 40+, 50+, 60+ e 70+. Integra Focalização, Jung e ACP. Vivência gratuita 25/03. Jornada começa 01/04. Inscrições abertas." />
-  <meta name="keywords" content="Mandala em Movimento, Jornada terapêutica mulheres, Mulheres 40+, Focalização, Psicologia Junguiana, Abordagem Centrada na Pessoa, Mulheres que Correm com os Lobos" />
+  <meta name="keywords" content="Mandala em Movimento, Jornada terapêutica mulheres, Mulheres 40+, Focalização, Psicologia Junguiana, Contoterapia Humanista, Mulheres que Correm com os Lobos" />
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
@@ -681,7 +681,7 @@ app.get('/', (c) => {
           <div class="sobre-badge">
             <div class="sobre-badge-icon">💚</div>
             <div>
-              <div class="sobre-badge-title">Abordagem Centrada na Pessoa (Carl Rogers)</div>
+              <div class="sobre-badge-title">Contoterapia Humanista (Carl Rogers)</div>
               <div class="sobre-badge-text">Escuta empática e espaço de segurança para que cada mulher encontre suas próprias respostas.</div>
             </div>
           </div>
