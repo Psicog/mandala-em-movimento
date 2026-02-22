@@ -9,8 +9,11 @@ app.get('/', (c) => {
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jornada Mandala em Movimento | 12 Encontros para Mulheres 40+</title>
-  <meta name="description" content="Jornada terapêutica para mulheres 40+, 50+, 60+ e 70+. Integra Focalização, Jung e ACP. Vivência gratuita 26/03. Jornada começa 01/04. Inscrições abertas." />
+  <meta name="description" content="Jornada terapêutica para mulheres 40+, 50+, 60+ e 70+. Integra Focalização, Jung e ACP. Vivência gratuita 26/03. Jornada começa 02/04. Inscrições abertas." />
   <meta name="keywords" content="Mandala em Movimento, Jornada terapêutica mulheres, Mulheres 40+, Focalização, Psicologia Junguiana, Abordagem Centrada na Pessoa, Mulheres que Correm com os Lobos" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet" />
@@ -40,8 +43,8 @@ app.get('/', (c) => {
     html { scroll-behavior: smooth; }
     body {
       font-family: 'Montserrat', sans-serif;
-      background: var(--preto);
-      color: var(--creme);
+      background: #2C1A1E !important;
+      color: #FAF3EE !important;
       overflow-x: hidden;
     }
     h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
@@ -620,7 +623,7 @@ app.get('/', (c) => {
   <div class="hero-particles" id="particles"></div>
 
   <div class="hero-content fade-in">
-    <div class="hero-badge">✦ Próxima turma começa: Segunda 01/04 ✦</div>
+    <div class="hero-badge">✦ Próxima turma começa: Quarta 02/04 ✦</div>
     <h1 class="hero-title">
       Jornada <span>Mandala</span><br>em Movimento
     </h1>
@@ -934,9 +937,9 @@ app.get('/', (c) => {
       <!-- Bloco Jornada -->
       <div class="datas-card datas-card-jornada">
         <div class="datas-card-title">🌀 Jornada Completa</div>
-        <div class="datas-item"><span class="datas-item-icon">📅</span><span class="datas-item-text">Começa: <strong>Segunda, 01/04/2025</strong></span></div>
-        <div class="datas-item"><span class="datas-item-icon">📅</span><span class="datas-item-text">Finaliza: <strong>Segunda, 17/06/2025</strong></span></div>
-        <div class="datas-item"><span class="datas-item-icon">🕖</span><span class="datas-item-text"><strong>19h30–21h</strong> · toda segunda-feira</span></div>
+        <div class="datas-item"><span class="datas-item-icon">📅</span><span class="datas-item-text">Começa: <strong>Quarta, 02/04/2025</strong></span></div>
+        <div class="datas-item"><span class="datas-item-icon">📅</span><span class="datas-item-text">Finaliza: <strong>Quarta, 18/06/2025</strong></span></div>
+        <div class="datas-item"><span class="datas-item-icon">🕖</span><span class="datas-item-text"><strong>19h30–21h</strong> · toda quarta-feira</span></div>
         <div class="datas-item"><span class="datas-item-icon">⏱️</span><span class="datas-item-text">12 encontros semanais</span></div>
         <div class="datas-item"><span class="datas-item-icon">👥</span><span class="datas-item-text">Máximo <strong>10 mulheres</strong></span></div>
         <div class="datas-desc">4 ciclos · 12 contos · 12 transformações</div>
@@ -960,13 +963,13 @@ app.get('/', (c) => {
       <div class="tl-vis-line"></div>
       <div class="tl-vis-item">
         <div class="tl-vis-dot"></div>
-        <div class="tl-vis-date">01/04</div>
+        <div class="tl-vis-date">02/04</div>
         <div class="tl-vis-label">Início</div>
       </div>
       <div class="tl-vis-line"></div>
       <div class="tl-vis-item">
         <div class="tl-vis-dot" style="background:var(--verde)"></div>
-        <div class="tl-vis-date">08/04</div>
+        <div class="tl-vis-date">09/04</div>
         <div class="tl-vis-label">Semana 2</div>
       </div>
       <div class="tl-vis-line"></div>
@@ -978,7 +981,7 @@ app.get('/', (c) => {
       <div class="tl-vis-line"></div>
       <div class="tl-vis-item">
         <div class="tl-vis-dot" style="background:var(--ouro);width:22px;height:22px;margin-top:-3px"></div>
-        <div class="tl-vis-date">17/06</div>
+        <div class="tl-vis-date">18/06</div>
         <div class="tl-vis-label">✨ Integração</div>
       </div>
     </div>
@@ -1057,9 +1060,9 @@ app.get('/', (c) => {
   <div class="container">
     <div class="cta-final-content fade-in">
       <h2 class="cta-title">Está pronta para voltar?</h2>
-      <p class="cta-sub">A Vivência começa Quarta 26/03 · A Jornada começa Segunda 01/04</p>
+      <p class="cta-sub">A Vivência começa Quarta 26/03 · A Jornada começa Quarta 02/04</p>
       <div class="cta-info">
-        <div class="cta-info-item"><i class="fas fa-calendar"></i> Encontros toda segunda, 19h30–21h</div>
+        <div class="cta-info-item"><i class="fas fa-calendar"></i> Encontros toda quarta, 19h30–21h</div>
         <div class="cta-info-item"><i class="fas fa-users"></i> Grupos de 6–10 mulheres</div>
         <div class="cta-info-item"><i class="fas fa-heart"></i> 12 semanas de transformação</div>
         <div class="cta-info-item"><i class="fas fa-clock"></i> Vagas limitadas</div>
@@ -1102,7 +1105,7 @@ app.get('/', (c) => {
         <p class="footer-desc">
           Jornada terapêutica para mulheres 40+.<br>
           Integrando Focalização, Jung e ACP.<br>
-          Encontros toda segunda-feira, 19h30–21h.
+          Encontros toda quarta-feira, 19h30–21h.
         </p>
         <div class="footer-social" style="margin-top:16px">
           <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
@@ -1115,8 +1118,8 @@ app.get('/', (c) => {
         <div class="footer-col-title">Datas</div>
         <ul>
           <li>Vivência: Qua 26/03</li>
-          <li>Jornada: Seg 01/04</li>
-          <li>Finaliza: Seg 17/06</li>
+          <li>Jornada: Qua 02/04</li>
+          <li>Finaliza: Qua 18/06</li>
           <li>Horário: 19h30–21h</li>
         </ul>
       </div>
@@ -1267,18 +1270,18 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 // Helper: Timeline dos 12 contos
 function generateTimeline(): string {
   const contos = [
-    { n: '01', name: 'LA LOBA', desc: 'Ressurreição dos ossos', tema: 'Onde sinto a vida retornando?', data: 'Seg 01/04', ciclo: 1, icon: '💀', special: '' },
-    { n: '02', name: 'O BARBA-AZUL', desc: 'Reconhecer perigo', tema: 'Seu corpo avisa quando algo não é seguro?', data: 'Seg 08/04', ciclo: 1, icon: '🗝️', special: '' },
-    { n: '03', name: 'VASALISA', desc: 'A boneca interior', tema: 'Você confia na sua intuição?', data: 'Seg 15/04', ciclo: 1, icon: '🪆', special: '' },
-    { n: '04', name: 'MANAWEE', desc: 'Nomear o feminino', tema: 'Você sabe quem você é?', data: 'Seg 22/04', ciclo: 2, icon: '🐕', special: '' },
-    { n: '05', name: 'MULHER-ESQUELETO', desc: 'A dança com a morte', tema: 'O que precisa morrer para renascer?', data: 'Seg 29/04', ciclo: 2, icon: '🦴', special: '' },
-    { n: '06', name: 'PATINHO FEIO', desc: 'Encontrar o clã', tema: 'Onde é o seu lugar de pertencimento?', data: 'Seg 06/05', ciclo: 2, icon: '🦢', special: '' },
-    { n: '07', name: 'PELE DE FOCA', desc: 'Recuperar a alma', tema: 'Onde você perdeu contato consigo mesma?', data: 'Seg 13/05', ciclo: 3, icon: '🦭', special: '' },
-    { n: '08', name: 'LA LLORONA', desc: 'Luto e perda', tema: 'O que você ainda precisa chorar?', data: 'Seg 20/05', ciclo: 3, icon: '😢', special: '' },
-    { n: '09', name: 'DEUSAS SUJAS', desc: 'Abraçar o instinto', tema: 'Qual parte selvagem você reprimiu?', data: 'Seg 27/05', ciclo: 3, icon: '🔥', special: '' },
-    { n: '10', name: 'URSO DA MEIA-LUA', desc: 'Raiva sagrada', tema: 'Sua raiva te protege ou te prende?', data: 'Seg 03/06', ciclo: 4, icon: '🐻', special: '' },
-    { n: '11', name: 'MULHER CABELOS DE OURO', desc: 'Honrar cicatrizes', tema: 'O que suas cicatrizes ensinaram?', data: 'Seg 10/06', ciclo: 4, icon: '✨', special: '' },
-    { n: '12', name: 'DONZELA SEM MÃOS', desc: 'Integração final', tema: 'Quem sou agora?', data: 'Seg 17/06', ciclo: 4, icon: '🌟', special: 'Ritual de Fechamento' },
+    { n: '01', name: 'LA LOBA', desc: 'Ressurreição dos ossos', tema: 'Onde sinto a vida retornando?', data: 'Qua 02/04', ciclo: 1, icon: '💀', special: '' },
+    { n: '02', name: 'O BARBA-AZUL', desc: 'Reconhecer perigo', tema: 'Seu corpo avisa quando algo não é seguro?', data: 'Qua 09/04', ciclo: 1, icon: '🗝️', special: '' },
+    { n: '03', name: 'VASALISA', desc: 'A boneca interior', tema: 'Você confia na sua intuição?', data: 'Qua 16/04', ciclo: 1, icon: '🪆', special: '' },
+    { n: '04', name: 'MANAWEE', desc: 'Nomear o feminino', tema: 'Você sabe quem você é?', data: 'Qua 23/04', ciclo: 2, icon: '🐕', special: '' },
+    { n: '05', name: 'MULHER-ESQUELETO', desc: 'A dança com a morte', tema: 'O que precisa morrer para renascer?', data: 'Qua 30/04', ciclo: 2, icon: '🦴', special: '' },
+    { n: '06', name: 'PATINHO FEIO', desc: 'Encontrar o clã', tema: 'Onde é o seu lugar de pertencimento?', data: 'Qua 07/05', ciclo: 2, icon: '🦢', special: '' },
+    { n: '07', name: 'PELE DE FOCA', desc: 'Recuperar a alma', tema: 'Onde você perdeu contato consigo mesma?', data: 'Qua 14/05', ciclo: 3, icon: '🦭', special: '' },
+    { n: '08', name: 'LA LLORONA', desc: 'Luto e perda', tema: 'O que você ainda precisa chorar?', data: 'Qua 21/05', ciclo: 3, icon: '😢', special: '' },
+    { n: '09', name: 'DEUSAS SUJAS', desc: 'Abraçar o instinto', tema: 'Qual parte selvagem você reprimiu?', data: 'Qua 28/05', ciclo: 3, icon: '🔥', special: '' },
+    { n: '10', name: 'URSO DA MEIA-LUA', desc: 'Raiva sagrada', tema: 'Sua raiva te protege ou te prende?', data: 'Qua 04/06', ciclo: 4, icon: '🐻', special: '' },
+    { n: '11', name: 'MULHER CABELOS DE OURO', desc: 'Honrar cicatrizes', tema: 'O que suas cicatrizes ensinaram?', data: 'Qua 11/06', ciclo: 4, icon: '✨', special: '' },
+    { n: '12', name: 'DONZELA SEM MÃOS', desc: 'Integração final', tema: 'Quem sou agora?', data: 'Qua 18/06', ciclo: 4, icon: '🌟', special: 'Ritual de Fechamento' },
   ]
   const cicloColors: Record<number, string> = { 1: 'var(--vermelho)', 2: 'var(--verde)', 3: 'var(--prata)', 4: 'var(--ouro)' }
   return contos.map((c, i) => `
@@ -1324,7 +1327,7 @@ function generateContosGrid(): string {
 function generateFAQ(): string {
   const items = [
     { q: 'Qual é a faixa etária? Posso participar?', a: 'Sim! A jornada é para <strong>mulheres a partir de 40 anos</strong>. Temos especial atenção para 50+, 60+ e 70+. A selvagem interior não envelhece.' },
-    { q: 'Qual é o horário? Há flexibilidade?', a: 'Toda <strong>segunda-feira, 19h30–21h</strong> (1h30 de duração). Horário fixo. Flexibilidade limitada.' },
+    { q: 'Qual é o horário? Há flexibilidade?', a: 'Toda <strong>quarta-feira, 19h30–21h</strong> (1h30 de duração). Horário fixo. Flexibilidade limitada.' },
     { q: 'Posso faltar alguns encontros?', a: 'Sim, mas recomendamos <strong>80%+ de presença</strong>. A jornada é em espiral crescente. Cada encontro aprofunda. Faltas frequentes prejudicam a experiência.' },
     { q: 'Preciso ter lido "Mulheres que Correm com os Lobos"?', a: '<strong>Não.</strong> Vou ler os trechos com você e guiar toda a jornada. O livro é inspiração, não pré-requisito.' },
     { q: 'Qual é o investimento? Há plano de pagamento?', a: 'Valor a ser definido. <strong>À vista · 2x sem juros · 3x sem juros · 4x com juros</strong>. Plano flexível disponível. Conversamos sobre outras opções.' },
