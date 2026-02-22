@@ -9,7 +9,7 @@ app.get('/', (c) => {
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jornada Mandala em Movimento | 12 Encontros para Mulheres 40+</title>
-  <meta name="description" content="Jornada terapêutica para mulheres 40+, 50+, 60+ e 70+. Integra Focalização, Jung e ACP. Vivência gratuita 26/03. Jornada começa 02/04. Inscrições abertas." />
+  <meta name="description" content="Jornada terapêutica para mulheres 40+, 50+, 60+ e 70+. Integra Focalização, Jung e ACP. Vivência gratuita 25/03. Jornada começa 01/04. Inscrições abertas." />
   <meta name="keywords" content="Mandala em Movimento, Jornada terapêutica mulheres, Mulheres 40+, Focalização, Psicologia Junguiana, Abordagem Centrada na Pessoa, Mulheres que Correm com os Lobos" />
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
@@ -623,7 +623,7 @@ app.get('/', (c) => {
   <div class="hero-particles" id="particles"></div>
 
   <div class="hero-content fade-in">
-    <div class="hero-badge">✦ Próxima turma começa: Quarta 02/04 ✦</div>
+    <div class="hero-badge">✦ Próxima turma começa: Quarta 01/04 ✦</div>
     <h1 class="hero-title">
       Jornada <span>Mandala</span><br>em Movimento
     </h1>
@@ -637,7 +637,7 @@ app.get('/', (c) => {
         <i class="fas fa-star" style="margin-right:8px"></i>INSCREVER-SE NA JORNADA
       </a>
       <a href="#datas" class="btn btn-secondary" style="font-size:1rem;padding:16px 30px">
-        <i class="fas fa-calendar" style="margin-right:8px"></i>VIVÊNCIA GRATUITA – 26/03
+        <i class="fas fa-calendar" style="margin-right:8px"></i>VIVÊNCIA GRATUITA – 25/03
       </a>
       <a href="#sobre" class="btn btn-outline" style="font-size:0.9rem;padding:14px 24px">
         Saber Mais <i class="fas fa-arrow-down" style="margin-left:8px"></i>
@@ -920,7 +920,7 @@ app.get('/', (c) => {
       <!-- Bloco Vivência -->
       <div class="datas-card datas-card-vivencia">
         <div class="datas-card-title">🌱 Vivência Gratuita</div>
-        <div class="datas-item"><span class="datas-item-icon">📅</span><span class="datas-item-text"><strong>Quarta, 26 de Março de 2025</strong></span></div>
+        <div class="datas-item"><span class="datas-item-icon">📅</span><span class="datas-item-text"><strong>Quarta, 25 de Março de 2026</strong></span></div>
         <div class="datas-item"><span class="datas-item-icon">🕖</span><span class="datas-item-text">19h30</span></div>
         <div class="datas-item"><span class="datas-item-icon">⏱️</span><span class="datas-item-text">90 minutos</span></div>
         <div class="datas-item"><span class="datas-item-icon">👥</span><span class="datas-item-text">Máximo <strong>10 mulheres</strong></span></div>
@@ -937,8 +937,8 @@ app.get('/', (c) => {
       <!-- Bloco Jornada -->
       <div class="datas-card datas-card-jornada">
         <div class="datas-card-title">🌀 Jornada Completa</div>
-        <div class="datas-item"><span class="datas-item-icon">📅</span><span class="datas-item-text">Começa: <strong>Quarta, 02/04/2025</strong></span></div>
-        <div class="datas-item"><span class="datas-item-icon">📅</span><span class="datas-item-text">Finaliza: <strong>Quarta, 18/06/2025</strong></span></div>
+        <div class="datas-item"><span class="datas-item-icon">📅</span><span class="datas-item-text">Começa: <strong>Quarta, 01/04/2026</strong></span></div>
+        <div class="datas-item"><span class="datas-item-icon">📅</span><span class="datas-item-text">Finaliza: <strong>Quarta, 17/06/2026</strong></span></div>
         <div class="datas-item"><span class="datas-item-icon">🕖</span><span class="datas-item-text"><strong>19h30–21h</strong> · toda quarta-feira</span></div>
         <div class="datas-item"><span class="datas-item-icon">⏱️</span><span class="datas-item-text">12 encontros semanais</span></div>
         <div class="datas-item"><span class="datas-item-icon">👥</span><span class="datas-item-text">Máximo <strong>10 mulheres</strong></span></div>
@@ -957,19 +957,19 @@ app.get('/', (c) => {
     <div class="timeline-visual fade-in">
       <div class="tl-vis-item">
         <div class="tl-vis-dot" style="background:var(--vermelho)"></div>
-        <div class="tl-vis-date">26/03</div>
+        <div class="tl-vis-date">25/03</div>
         <div class="tl-vis-label">Vivência</div>
       </div>
       <div class="tl-vis-line"></div>
       <div class="tl-vis-item">
         <div class="tl-vis-dot"></div>
-        <div class="tl-vis-date">02/04</div>
+        <div class="tl-vis-date">01/04</div>
         <div class="tl-vis-label">Início</div>
       </div>
       <div class="tl-vis-line"></div>
       <div class="tl-vis-item">
         <div class="tl-vis-dot" style="background:var(--verde)"></div>
-        <div class="tl-vis-date">09/04</div>
+        <div class="tl-vis-date">08/04</div>
         <div class="tl-vis-label">Semana 2</div>
       </div>
       <div class="tl-vis-line"></div>
@@ -981,7 +981,7 @@ app.get('/', (c) => {
       <div class="tl-vis-line"></div>
       <div class="tl-vis-item">
         <div class="tl-vis-dot" style="background:var(--ouro);width:22px;height:22px;margin-top:-3px"></div>
-        <div class="tl-vis-date">18/06</div>
+        <div class="tl-vis-date">17/06</div>
         <div class="tl-vis-label">✨ Integração</div>
       </div>
     </div>
@@ -1060,7 +1060,7 @@ app.get('/', (c) => {
   <div class="container">
     <div class="cta-final-content fade-in">
       <h2 class="cta-title">Está pronta para voltar?</h2>
-      <p class="cta-sub">A Vivência começa Quarta 26/03 · A Jornada começa Quarta 02/04</p>
+      <p class="cta-sub">A Vivência começa Quarta 25/03 · A Jornada começa Quarta 01/04</p>
       <div class="cta-info">
         <div class="cta-info-item"><i class="fas fa-calendar"></i> Encontros toda quarta, 19h30–21h</div>
         <div class="cta-info-item"><i class="fas fa-users"></i> Grupos de 6–10 mulheres</div>
@@ -1117,9 +1117,9 @@ app.get('/', (c) => {
       <div class="footer-col">
         <div class="footer-col-title">Datas</div>
         <ul>
-          <li>Vivência: Qua 26/03</li>
-          <li>Jornada: Qua 02/04</li>
-          <li>Finaliza: Qua 18/06</li>
+          <li>Vivência: Qua 25/03</li>
+          <li>Jornada: Qua 01/04</li>
+          <li>Finaliza: Qua 17/06</li>
           <li>Horário: 19h30–21h</li>
         </ul>
       </div>
@@ -1142,7 +1142,7 @@ app.get('/', (c) => {
       </div>
     </div>
     <div class="footer-bar">
-      <div class="footer-copy">© 2025 Jornada Mandala em Movimento. Todos os direitos reservados.</div>
+      <div class="footer-copy">© 2026 Jornada Mandala em Movimento. Todos os direitos reservados.</div>
       <div class="footer-links">
         <a href="#">Privacidade</a>
         <a href="#">Termos de Uso</a>
@@ -1270,18 +1270,18 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 // Helper: Timeline dos 12 contos
 function generateTimeline(): string {
   const contos = [
-    { n: '01', name: 'LA LOBA', desc: 'Ressurreição dos ossos', tema: 'Onde sinto a vida retornando?', data: 'Qua 02/04', ciclo: 1, icon: '💀', special: '' },
-    { n: '02', name: 'O BARBA-AZUL', desc: 'Reconhecer perigo', tema: 'Seu corpo avisa quando algo não é seguro?', data: 'Qua 09/04', ciclo: 1, icon: '🗝️', special: '' },
-    { n: '03', name: 'VASALISA', desc: 'A boneca interior', tema: 'Você confia na sua intuição?', data: 'Qua 16/04', ciclo: 1, icon: '🪆', special: '' },
-    { n: '04', name: 'MANAWEE', desc: 'Nomear o feminino', tema: 'Você sabe quem você é?', data: 'Qua 23/04', ciclo: 2, icon: '🐕', special: '' },
-    { n: '05', name: 'MULHER-ESQUELETO', desc: 'A dança com a morte', tema: 'O que precisa morrer para renascer?', data: 'Qua 30/04', ciclo: 2, icon: '🦴', special: '' },
-    { n: '06', name: 'PATINHO FEIO', desc: 'Encontrar o clã', tema: 'Onde é o seu lugar de pertencimento?', data: 'Qua 07/05', ciclo: 2, icon: '🦢', special: '' },
-    { n: '07', name: 'PELE DE FOCA', desc: 'Recuperar a alma', tema: 'Onde você perdeu contato consigo mesma?', data: 'Qua 14/05', ciclo: 3, icon: '🦭', special: '' },
-    { n: '08', name: 'LA LLORONA', desc: 'Luto e perda', tema: 'O que você ainda precisa chorar?', data: 'Qua 21/05', ciclo: 3, icon: '😢', special: '' },
-    { n: '09', name: 'DEUSAS SUJAS', desc: 'Abraçar o instinto', tema: 'Qual parte selvagem você reprimiu?', data: 'Qua 28/05', ciclo: 3, icon: '🔥', special: '' },
-    { n: '10', name: 'URSO DA MEIA-LUA', desc: 'Raiva sagrada', tema: 'Sua raiva te protege ou te prende?', data: 'Qua 04/06', ciclo: 4, icon: '🐻', special: '' },
-    { n: '11', name: 'MULHER CABELOS DE OURO', desc: 'Honrar cicatrizes', tema: 'O que suas cicatrizes ensinaram?', data: 'Qua 11/06', ciclo: 4, icon: '✨', special: '' },
-    { n: '12', name: 'DONZELA SEM MÃOS', desc: 'Integração final', tema: 'Quem sou agora?', data: 'Qua 18/06', ciclo: 4, icon: '🌟', special: 'Ritual de Fechamento' },
+    { n: '01', name: 'LA LOBA', desc: 'Ressurreição dos ossos', tema: 'Onde sinto a vida retornando?', data: 'Qua 01/04', ciclo: 1, icon: '💀', special: '' },
+    { n: '02', name: 'O BARBA-AZUL', desc: 'Reconhecer perigo', tema: 'Seu corpo avisa quando algo não é seguro?', data: 'Qua 08/04', ciclo: 1, icon: '🗝️', special: '' },
+    { n: '03', name: 'VASALISA', desc: 'A boneca interior', tema: 'Você confia na sua intuição?', data: 'Qua 15/04', ciclo: 1, icon: '🪆', special: '' },
+    { n: '04', name: 'MANAWEE', desc: 'Nomear o feminino', tema: 'Você sabe quem você é?', data: 'Qua 22/04', ciclo: 2, icon: '🐕', special: '' },
+    { n: '05', name: 'MULHER-ESQUELETO', desc: 'A dança com a morte', tema: 'O que precisa morrer para renascer?', data: 'Qua 29/04', ciclo: 2, icon: '🦴', special: '' },
+    { n: '06', name: 'PATINHO FEIO', desc: 'Encontrar o clã', tema: 'Onde é o seu lugar de pertencimento?', data: 'Qua 06/05', ciclo: 2, icon: '🦢', special: '' },
+    { n: '07', name: 'PELE DE FOCA', desc: 'Recuperar a alma', tema: 'Onde você perdeu contato consigo mesma?', data: 'Qua 13/05', ciclo: 3, icon: '🦭', special: '' },
+    { n: '08', name: 'LA LLORONA', desc: 'Luto e perda', tema: 'O que você ainda precisa chorar?', data: 'Qua 20/05', ciclo: 3, icon: '😢', special: '' },
+    { n: '09', name: 'DEUSAS SUJAS', desc: 'Abraçar o instinto', tema: 'Qual parte selvagem você reprimiu?', data: 'Qua 27/05', ciclo: 3, icon: '🔥', special: '' },
+    { n: '10', name: 'URSO DA MEIA-LUA', desc: 'Raiva sagrada', tema: 'Sua raiva te protege ou te prende?', data: 'Qua 03/06', ciclo: 4, icon: '🐻', special: '' },
+    { n: '11', name: 'MULHER CABELOS DE OURO', desc: 'Honrar cicatrizes', tema: 'O que suas cicatrizes ensinaram?', data: 'Qua 10/06', ciclo: 4, icon: '✨', special: '' },
+    { n: '12', name: 'DONZELA SEM MÃOS', desc: 'Integração final', tema: 'Quem sou agora?', data: 'Qua 17/06', ciclo: 4, icon: '🌟', special: 'Ritual de Fechamento' },
   ]
   const cicloColors: Record<number, string> = { 1: 'var(--vermelho)', 2: 'var(--verde)', 3: 'var(--prata)', 4: 'var(--ouro)' }
   return contos.map((c, i) => `
