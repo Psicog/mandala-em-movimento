@@ -923,7 +923,7 @@ app.get('/', (c) => {
         <div class="datas-item"><span class="datas-item-icon">📅</span><span class="datas-item-text"><strong>Quarta, 25 de Março de 2026</strong></span></div>
         <div class="datas-item"><span class="datas-item-icon">🕖</span><span class="datas-item-text">19h30</span></div>
         <div class="datas-item"><span class="datas-item-icon">⏱️</span><span class="datas-item-text">90 minutos</span></div>
-        <div class="datas-item"><span class="datas-item-icon">👥</span><span class="datas-item-text">Máximo <strong>10 mulheres</strong></span></div>
+        <div class="datas-item"><span class="datas-item-icon">👥</span><span class="datas-item-text"><strong>Número limitado de participantes</strong></span></div>
         <div class="datas-desc">
           Experimente o método completo em um encontro único.
           Escuta corporal, leitura de conto, simbolização e integração.
@@ -941,7 +941,7 @@ app.get('/', (c) => {
         <div class="datas-item"><span class="datas-item-icon">📅</span><span class="datas-item-text">Finaliza: <strong>Quarta, 17/06/2026</strong></span></div>
         <div class="datas-item"><span class="datas-item-icon">🕖</span><span class="datas-item-text"><strong>19h30–21h</strong> · toda quarta-feira</span></div>
         <div class="datas-item"><span class="datas-item-icon">⏱️</span><span class="datas-item-text">12 encontros semanais</span></div>
-        <div class="datas-item"><span class="datas-item-icon">👥</span><span class="datas-item-text">Máximo <strong>10 mulheres</strong></span></div>
+        <div class="datas-item"><span class="datas-item-icon">👥</span><span class="datas-item-text"><strong>Número limitado de participantes</strong></span></div>
         <div class="datas-desc">4 ciclos · 12 contos · 12 transformações</div>
         <div class="datas-investimento">
           <div class="datas-invest-label">Investimento</div>
@@ -1063,7 +1063,7 @@ app.get('/', (c) => {
       <p class="cta-sub">A Vivência começa Quarta 25/03 · A Jornada começa Quarta 01/04</p>
       <div class="cta-info">
         <div class="cta-info-item"><i class="fas fa-calendar"></i> Encontros toda quarta, 19h30–21h</div>
-        <div class="cta-info-item"><i class="fas fa-users"></i> Grupos de 6–10 mulheres</div>
+        <div class="cta-info-item"><i class="fas fa-users"></i> Número limitado de participantes</div>
         <div class="cta-info-item"><i class="fas fa-heart"></i> 12 semanas de transformação</div>
         <div class="cta-info-item"><i class="fas fa-clock"></i> Vagas limitadas</div>
       </div>
