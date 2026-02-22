@@ -929,7 +929,7 @@ app.get('/', (c) => {
           Escuta corporal, leitura de conto, simbolização e integração.
           <strong>Sem compromisso com a jornada.</strong>
         </div>
-        <div class="datas-conto">✦ La Loba – Ressurreição dos ossos</div>
+        <div class="datas-conto">✦ O Barba-Azul – Reconhecer perigo</div>
         <a href="#cta-final" class="btn btn-secondary" style="width:100%;text-align:center;display:block">
           INSCREVER-SE NA VIVÊNCIA
         </a>
