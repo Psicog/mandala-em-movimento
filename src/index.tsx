@@ -675,78 +675,292 @@ app.get('/', (c) => {
       <polygon points="250,208 258,216 250,224 242,216" transform="rotate(330 250 250)"/>
     </g>
 
-    <!-- ===== 12 CONTOS — anel externo (r=210) ===== -->
-    <!-- Conto 01: La Loba — osso (0°) -->
+    <!-- ===== 12 CONTOS — anel externo (r=210) — ícones SVG realistas ===== -->
+
+    <!-- Conto 01: La Loba — LOBO (0°) -->
     <g transform="rotate(0 250 250)" filter="url(#mgGlow)">
-      <circle cx="250" cy="42" r="26" fill="#2C1A1E" stroke="#C9956A" stroke-width="2" opacity="0.95"/>
-      <circle cx="250" cy="42" r="23" fill="none" stroke="#C9956A" stroke-width="0.5" opacity="0.5"/>
-      <text x="250" y="49" text-anchor="middle" font-size="22" fill="#C9956A" opacity="1">🦴</text>
+      <circle cx="250" cy="42" r="26" fill="#1A0E12" stroke="#C9956A" stroke-width="1.8" opacity="0.97"/>
+      <circle cx="250" cy="42" r="23" fill="none" stroke="#C9956A" stroke-width="0.5" opacity="0.4"/>
+      <!-- cabeça do lobo - focinho, orelhas, olhos -->
+      <g transform="translate(238,30)" stroke="#C9956A" stroke-width="1.1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <!-- Orelhas pontudas -->
+        <polygon points="3,0 0,8 6,6" fill="#C9956A" opacity="0.7"/>
+        <polygon points="21,0 18,6 24,8" fill="#C9956A" opacity="0.7"/>
+        <!-- Cabeça oval -->
+        <ellipse cx="12" cy="13" rx="9" ry="8" fill="#2C1A1E" stroke="#C9956A" stroke-width="1.2"/>
+        <!-- Focinho -->
+        <ellipse cx="12" cy="17" rx="4" ry="2.5" fill="#1A0E12" stroke="#C9956A" stroke-width="0.9"/>
+        <!-- Nariz -->
+        <ellipse cx="12" cy="15.5" rx="2" ry="1.2" fill="#C9956A" opacity="0.9"/>
+        <!-- Olhos - dois pontos brilhantes -->
+        <circle cx="8.5" cy="11" r="1.5" fill="#E0B899" opacity="0.95"/>
+        <circle cx="15.5" cy="11" r="1.5" fill="#E0B899" opacity="0.95"/>
+        <circle cx="8.5" cy="11" r="0.5" fill="#1A0E12"/>
+        <circle cx="15.5" cy="11" r="0.5" fill="#1A0E12"/>
+        <!-- Boca aberta com presas -->
+        <path d="M9,18.5 Q12,21 15,18.5" stroke="#C9956A" stroke-width="0.8" fill="none"/>
+        <line x1="11" y1="18.5" x2="10.5" y2="21" stroke="#E0B899" stroke-width="0.8"/>
+        <line x1="13" y1="18.5" x2="13.5" y2="21" stroke="#E0B899" stroke-width="0.8"/>
+      </g>
     </g>
-    <!-- Conto 02: Barba-Azul — chave (30°) -->
+
+    <!-- Conto 02: Barba-Azul — CHAVE ORNAMENTAL (30°) -->
     <g transform="rotate(30 250 250)" filter="url(#mgGlow)">
-      <circle cx="250" cy="42" r="26" fill="#2C1A1E" stroke="#E0B899" stroke-width="2" opacity="0.95"/>
-      <circle cx="250" cy="42" r="23" fill="none" stroke="#E0B899" stroke-width="0.5" opacity="0.5"/>
-      <text x="250" y="49" text-anchor="middle" font-size="22" fill="#E0B899" opacity="1">🗝️</text>
+      <circle cx="250" cy="42" r="26" fill="#1A0E12" stroke="#E0B899" stroke-width="1.8" opacity="0.97"/>
+      <circle cx="250" cy="42" r="23" fill="none" stroke="#E0B899" stroke-width="0.5" opacity="0.4"/>
+      <g transform="translate(239,28)" stroke="#E0B899" stroke-width="1.4" fill="none" stroke-linecap="round">
+        <!-- Anel da chave -->
+        <circle cx="12" cy="7" r="6" stroke="#E0B899" stroke-width="1.6" fill="none"/>
+        <circle cx="12" cy="7" r="3" stroke="#C9956A" stroke-width="1" fill="none"/>
+        <!-- Haste da chave -->
+        <line x1="12" y1="13" x2="12" y2="26" stroke="#E0B899" stroke-width="1.6"/>
+        <!-- Dentes da chave -->
+        <line x1="12" y1="18" x2="16" y2="18" stroke="#E0B899" stroke-width="1.4"/>
+        <line x1="12" y1="21.5" x2="15" y2="21.5" stroke="#E0B899" stroke-width="1.4"/>
+        <line x1="12" y1="24.5" x2="16" y2="24.5" stroke="#E0B899" stroke-width="1.4"/>
+        <!-- Ornamento topo -->
+        <circle cx="12" cy="7" r="1.5" fill="#E0B899" opacity="0.8"/>
+      </g>
     </g>
-    <!-- Conto 03: Vasalisa — boneca (60°) -->
+
+    <!-- Conto 03: Vasalisa — BONECA/MATRIOSKA (60°) -->
     <g transform="rotate(60 250 250)" filter="url(#mgGlow)">
-      <circle cx="250" cy="42" r="26" fill="#2C1A1E" stroke="#C9956A" stroke-width="2" opacity="0.95"/>
-      <circle cx="250" cy="42" r="23" fill="none" stroke="#C9956A" stroke-width="0.5" opacity="0.5"/>
-      <text x="250" y="49" text-anchor="middle" font-size="22" fill="#C9956A" opacity="1">🪆</text>
+      <circle cx="250" cy="42" r="26" fill="#1A0E12" stroke="#C9956A" stroke-width="1.8" opacity="0.97"/>
+      <circle cx="250" cy="42" r="23" fill="none" stroke="#C9956A" stroke-width="0.5" opacity="0.4"/>
+      <g transform="translate(239,28)" stroke="#C9956A" stroke-width="1.1" fill="none" stroke-linecap="round">
+        <!-- Cabeça redonda -->
+        <circle cx="12" cy="7" r="5.5" fill="#2C1A1E" stroke="#C9956A" stroke-width="1.3"/>
+        <!-- Rosto - olhos e boca suave -->
+        <circle cx="10" cy="6.5" r="1" fill="#E0B899" opacity="0.9"/>
+        <circle cx="14" cy="6.5" r="1" fill="#E0B899" opacity="0.9"/>
+        <path d="M10,9.5 Q12,11 14,9.5" stroke="#C9956A" stroke-width="0.9" fill="none"/>
+        <!-- Corpo em forma de barril -->
+        <path d="M6,13 Q5,17 5,21 Q5,25 12,26 Q19,25 19,21 Q19,17 18,13 Q15,11 12,12 Q9,11 6,13 Z" fill="#2C1A1E" stroke="#C9956A" stroke-width="1.3"/>
+        <!-- Detalhe no corpo - flor central -->
+        <circle cx="12" cy="19" r="2.5" fill="none" stroke="#E0B899" stroke-width="0.8"/>
+        <circle cx="12" cy="19" r="1" fill="#E0B899" opacity="0.7"/>
+        <!-- Lenço na cabeça -->
+        <path d="M6.5,5 Q12,2 17.5,5" stroke="#E0B899" stroke-width="1" fill="none"/>
+      </g>
     </g>
-    <!-- Conto 04: Manawee — cão (90°) -->
+
+    <!-- Conto 04: Manawee — CÃO/LOBO FIEL (90°) -->
     <g transform="rotate(90 250 250)" filter="url(#mgGlow)">
-      <circle cx="250" cy="42" r="26" fill="#2C1A1E" stroke="#E0B899" stroke-width="2" opacity="0.95"/>
-      <circle cx="250" cy="42" r="23" fill="none" stroke="#E0B899" stroke-width="0.5" opacity="0.5"/>
-      <text x="250" y="49" text-anchor="middle" font-size="22" fill="#E0B899" opacity="1">🐕</text>
+      <circle cx="250" cy="42" r="26" fill="#1A0E12" stroke="#E0B899" stroke-width="1.8" opacity="0.97"/>
+      <circle cx="250" cy="42" r="23" fill="none" stroke="#E0B899" stroke-width="0.5" opacity="0.4"/>
+      <g transform="translate(238,29)" stroke="#E0B899" stroke-width="1.1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <!-- Corpo do cão sentado -->
+        <ellipse cx="12" cy="20" rx="7" ry="5.5" fill="#2C1A1E" stroke="#E0B899" stroke-width="1.2"/>
+        <!-- Cabeça -->
+        <circle cx="12" cy="11" r="6" fill="#2C1A1E" stroke="#E0B899" stroke-width="1.2"/>
+        <!-- Orelhas caídas -->
+        <path d="M6,8 Q4,11 6,14" stroke="#E0B899" stroke-width="1.1" fill="#2C1A1E"/>
+        <path d="M18,8 Q20,11 18,14" stroke="#E0B899" stroke-width="1.1" fill="#2C1A1E"/>
+        <!-- Olhos -->
+        <circle cx="9.5" cy="10.5" r="1.5" fill="#C9956A" opacity="0.9"/>
+        <circle cx="14.5" cy="10.5" r="1.5" fill="#C9956A" opacity="0.9"/>
+        <circle cx="9.5" cy="10.5" r="0.5" fill="#1A0E12"/>
+        <circle cx="14.5" cy="10.5" r="0.5" fill="#1A0E12"/>
+        <!-- Nariz -->
+        <ellipse cx="12" cy="14" rx="2" ry="1.3" fill="#E0B899" opacity="0.8"/>
+        <!-- Rabo curvado -->
+        <path d="M19,17 Q25,14 23,10" stroke="#E0B899" stroke-width="1.1" fill="none"/>
+        <!-- Patas dianteiras -->
+        <line x1="8" y1="24" x2="7" y2="27" stroke="#E0B899" stroke-width="1.1"/>
+        <line x1="16" y1="24" x2="17" y2="27" stroke="#E0B899" stroke-width="1.1"/>
+      </g>
     </g>
-    <!-- Conto 05: Mulher-Esqueleto — crânio (120°) -->
+
+    <!-- Conto 05: Mulher-Esqueleto — CRÂNIO ORNAMENTAL (120°) -->
     <g transform="rotate(120 250 250)" filter="url(#mgGlow)">
-      <circle cx="250" cy="42" r="26" fill="#2C1A1E" stroke="#C9956A" stroke-width="2" opacity="0.95"/>
-      <circle cx="250" cy="42" r="23" fill="none" stroke="#C9956A" stroke-width="0.5" opacity="0.5"/>
-      <text x="250" y="49" text-anchor="middle" font-size="22" fill="#C9956A" opacity="1">💀</text>
+      <circle cx="250" cy="42" r="26" fill="#1A0E12" stroke="#C9956A" stroke-width="1.8" opacity="0.97"/>
+      <circle cx="250" cy="42" r="23" fill="none" stroke="#C9956A" stroke-width="0.5" opacity="0.4"/>
+      <g transform="translate(239,28)" stroke="#C9956A" stroke-width="1.1" fill="none" stroke-linecap="round">
+        <!-- Crânio - forma -->
+        <path d="M12,3 Q5,3 5,11 Q5,16 8,18 L8,22 Q8,24 12,24 Q16,24 16,22 L16,18 Q19,16 19,11 Q19,3 12,3 Z" fill="#2C1A1E" stroke="#C9956A" stroke-width="1.4"/>
+        <!-- Maxilar - dentes -->
+        <line x1="9" y1="22" x2="9" y2="24" stroke="#E0B899" stroke-width="1"/>
+        <line x1="12" y1="22" x2="12" y2="25" stroke="#E0B899" stroke-width="1"/>
+        <line x1="15" y1="22" x2="15" y2="24" stroke="#E0B899" stroke-width="1"/>
+        <!-- Olhos - vazios ovais -->
+        <ellipse cx="9" cy="11" rx="2.5" ry="2.8" fill="#C9956A" opacity="0.5"/>
+        <ellipse cx="15" cy="11" rx="2.5" ry="2.8" fill="#C9956A" opacity="0.5"/>
+        <ellipse cx="9" cy="11" rx="1.5" ry="1.8" fill="#1A0E12"/>
+        <ellipse cx="15" cy="11" rx="1.5" ry="1.8" fill="#1A0E12"/>
+        <!-- Nariz - formato osso -->
+        <path d="M11,15 L10,17 L14,17 L13,15 Z" fill="#C9956A" opacity="0.6"/>
+        <!-- Fissura craniana -->
+        <path d="M12,3 Q11,7 12,11" stroke="#C9956A" stroke-width="0.6" opacity="0.5"/>
+      </g>
     </g>
-    <!-- Conto 06: Patinho Feio — cisne (150°) -->
+
+    <!-- Conto 06: Patinho Feio — CISNE ELEGANTE (150°) -->
     <g transform="rotate(150 250 250)" filter="url(#mgGlow)">
-      <circle cx="250" cy="42" r="26" fill="#2C1A1E" stroke="#E0B899" stroke-width="2" opacity="0.95"/>
-      <circle cx="250" cy="42" r="23" fill="none" stroke="#E0B899" stroke-width="0.5" opacity="0.5"/>
-      <text x="250" y="49" text-anchor="middle" font-size="22" fill="#E0B899" opacity="1">🦢</text>
+      <circle cx="250" cy="42" r="26" fill="#1A0E12" stroke="#E0B899" stroke-width="1.8" opacity="0.97"/>
+      <circle cx="250" cy="42" r="23" fill="none" stroke="#E0B899" stroke-width="0.5" opacity="0.4"/>
+      <g transform="translate(238,29)" stroke="#E0B899" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <!-- Corpo do cisne -->
+        <path d="M4,20 Q4,26 12,26 Q20,26 22,22 Q24,18 20,16 Q16,14 12,16 Q8,18 4,20 Z" fill="#2C1A1E" stroke="#E0B899" stroke-width="1.3"/>
+        <!-- Asa -->
+        <path d="M8,16 Q10,11 14,13 Q16,14 14,16" fill="#2C1A1E" stroke="#C9956A" stroke-width="1"/>
+        <!-- Pescoço curvo e elegante -->
+        <path d="M12,16 Q8,12 9,7 Q10,3 13,3 Q16,3 15,7 Q14,10 12,13" stroke="#E0B899" stroke-width="1.5" fill="none"/>
+        <!-- Cabeça pequena -->
+        <circle cx="13" cy="4" r="3" fill="#2C1A1E" stroke="#E0B899" stroke-width="1.2"/>
+        <!-- Bico -->
+        <path d="M13,4.5 L17,5" stroke="#C9956A" stroke-width="1.2"/>
+        <!-- Olho -->
+        <circle cx="14.5" cy="3.5" r="1" fill="#E0B899" opacity="0.9"/>
+        <circle cx="14.5" cy="3.5" r="0.4" fill="#1A0E12"/>
+        <!-- Reflexo na água -->
+        <path d="M5,24 Q10,22 15,24" stroke="#C9956A" stroke-width="0.7" opacity="0.5"/>
+      </g>
     </g>
-    <!-- Conto 07: Pele de Foca — foca (180°) -->
+
+    <!-- Conto 07: Pele de Foca — FOCA/SELKIE (180°) -->
     <g transform="rotate(180 250 250)" filter="url(#mgGlow)">
-      <circle cx="250" cy="42" r="26" fill="#2C1A1E" stroke="#C9956A" stroke-width="2" opacity="0.95"/>
-      <circle cx="250" cy="42" r="23" fill="none" stroke="#C9956A" stroke-width="0.5" opacity="0.5"/>
-      <text x="250" y="49" text-anchor="middle" font-size="22" fill="#C9956A" opacity="1">🦭</text>
+      <circle cx="250" cy="42" r="26" fill="#1A0E12" stroke="#C9956A" stroke-width="1.8" opacity="0.97"/>
+      <circle cx="250" cy="42" r="23" fill="none" stroke="#C9956A" stroke-width="0.5" opacity="0.4"/>
+      <g transform="translate(238,28)" stroke="#C9956A" stroke-width="1.1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <!-- Corpo da foca em repouso -->
+        <path d="M4,18 Q4,24 12,25 Q20,24 20,18 Q20,12 16,10 Q12,9 8,10 Q4,12 4,18 Z" fill="#2C1A1E" stroke="#C9956A" stroke-width="1.3"/>
+        <!-- Cauda bifurcada -->
+        <path d="M16,22 Q20,26 22,28" stroke="#C9956A" stroke-width="1.2" fill="none"/>
+        <path d="M16,22 Q19,27 17,30" stroke="#C9956A" stroke-width="1.2" fill="none"/>
+        <!-- Cabeça levantada -->
+        <ellipse cx="9" cy="9" rx="5.5" ry="5" fill="#2C1A1E" stroke="#C9956A" stroke-width="1.3"/>
+        <!-- Olhos grandes e redondos (expressivos) -->
+        <circle cx="7" cy="8" r="2" fill="#E0B899" opacity="0.9"/>
+        <circle cx="12" cy="7.5" r="2" fill="#E0B899" opacity="0.9"/>
+        <circle cx="7" cy="8" r="0.8" fill="#1A0E12"/>
+        <circle cx="12" cy="7.5" r="0.8" fill="#1A0E12"/>
+        <!-- Bigodes -->
+        <line x1="5" y1="12" x2="0" y2="11" stroke="#E0B899" stroke-width="0.7"/>
+        <line x1="5" y1="13" x2="0" y2="14" stroke="#E0B899" stroke-width="0.7"/>
+        <line x1="13" y1="11" x2="18" y2="10" stroke="#E0B899" stroke-width="0.7"/>
+        <!-- Nadadeiras -->
+        <path d="M5,18 Q2,20 3,23" stroke="#C9956A" stroke-width="1.1" fill="none"/>
+      </g>
     </g>
-    <!-- Conto 08: La Llorona — lágrima (210°) -->
+
+    <!-- Conto 08: La Llorona — MULHER CHORANDO/ONDA (210°) -->
     <g transform="rotate(210 250 250)" filter="url(#mgGlow)">
-      <circle cx="250" cy="42" r="26" fill="#2C1A1E" stroke="#E0B899" stroke-width="2" opacity="0.95"/>
-      <circle cx="250" cy="42" r="23" fill="none" stroke="#E0B899" stroke-width="0.5" opacity="0.5"/>
-      <text x="250" y="49" text-anchor="middle" font-size="22" fill="#E0B899" opacity="1">🌊</text>
+      <circle cx="250" cy="42" r="26" fill="#1A0E12" stroke="#E0B899" stroke-width="1.8" opacity="0.97"/>
+      <circle cx="250" cy="42" r="23" fill="none" stroke="#E0B899" stroke-width="0.5" opacity="0.4"/>
+      <g transform="translate(238,28)" stroke="#E0B899" stroke-width="1.1" fill="none" stroke-linecap="round">
+        <!-- Rosto feminino de perfil -->
+        <path d="M14,3 Q18,3 19,8 Q19,13 15,14 Q12,14 11,11 Q10,8 12,5 Q13,3 14,3 Z" fill="#2C1A1E" stroke="#E0B899" stroke-width="1.2"/>
+        <!-- Cabelo fluindo (véu do pranto) -->
+        <path d="M11,4 Q6,6 5,12 Q4,18 7,22 Q9,26 12,27" stroke="#C9956A" stroke-width="1.3" fill="none"/>
+        <path d="M12,4 Q8,8 7,14 Q6,20 9,25" stroke="#C9956A" stroke-width="0.9" fill="none" opacity="0.6"/>
+        <!-- Olho com lágrima -->
+        <circle cx="15.5" cy="8" r="1.2" fill="#E0B899" opacity="0.9"/>
+        <path d="M15.5,9.2 Q15,12 14,14" stroke="#C9956A" stroke-width="1" fill="none"/>
+        <!-- Onda de água no fundo -->
+        <path d="M3,24 Q7,21 11,24 Q15,27 19,24" stroke="#E0B899" stroke-width="1.2" fill="none"/>
+        <path d="M3,27 Q8,24 12,27" stroke="#E0B899" stroke-width="0.8" opacity="0.5" fill="none"/>
+      </g>
     </g>
-    <!-- Conto 09: Deusas Sujas — chama (240°) -->
+
+    <!-- Conto 09: Deusas Sujas — CHAMA TRÍPLICE (240°) -->
     <g transform="rotate(240 250 250)" filter="url(#mgGlow)">
-      <circle cx="250" cy="42" r="26" fill="#2C1A1E" stroke="#C9956A" stroke-width="2" opacity="0.95"/>
-      <circle cx="250" cy="42" r="23" fill="none" stroke="#C9956A" stroke-width="0.5" opacity="0.5"/>
-      <text x="250" y="49" text-anchor="middle" font-size="22" fill="#C9956A" opacity="1">🔥</text>
+      <circle cx="250" cy="42" r="26" fill="#1A0E12" stroke="#C9956A" stroke-width="1.8" opacity="0.97"/>
+      <circle cx="250" cy="42" r="23" fill="none" stroke="#C9956A" stroke-width="0.5" opacity="0.4"/>
+      <g transform="translate(239,27)" stroke="#C9956A" stroke-width="1.2" fill="none" stroke-linecap="round">
+        <!-- Chama central grande -->
+        <path d="M12,28 Q7,24 8,18 Q9,13 12,10 Q12,15 14,13 Q16,11 15,7 Q18,10 18,16 Q19,22 17,26 Q15,29 12,28 Z" fill="#2C1A1E" stroke="#C9956A" stroke-width="1.4"/>
+        <!-- Chama esquerda menor -->
+        <path d="M7,27 Q4,23 5,18 Q6,14 8,12 Q8,16 10,14 Q11,20 9,25 Q8,27 7,27 Z" fill="#2C1A1E" stroke="#E0B899" stroke-width="1" opacity="0.8"/>
+        <!-- Chama direita menor -->
+        <path d="M17,27 Q20,23 19,18 Q18,14 16,12 Q16,16 14,14 Q13,20 15,25 Q16,27 17,27 Z" fill="#2C1A1E" stroke="#E0B899" stroke-width="1" opacity="0.8"/>
+        <!-- Brilho central -->
+        <ellipse cx="12" cy="20" rx="2" ry="3" fill="#E0B899" opacity="0.4"/>
+        <!-- Base / brasas -->
+        <path d="M6,28 Q12,26 18,28" stroke="#C9956A" stroke-width="1" opacity="0.7"/>
+      </g>
     </g>
-    <!-- Conto 10: Urso da Meia-Lua — urso (270°) -->
+
+    <!-- Conto 10: Urso da Meia-Lua — URSO COM LUA (270°) -->
     <g transform="rotate(270 250 250)" filter="url(#mgGlow)">
-      <circle cx="250" cy="42" r="26" fill="#2C1A1E" stroke="#E0B899" stroke-width="2" opacity="0.95"/>
-      <circle cx="250" cy="42" r="23" fill="none" stroke="#E0B899" stroke-width="0.5" opacity="0.5"/>
-      <text x="250" y="49" text-anchor="middle" font-size="22" fill="#E0B899" opacity="1">🐻</text>
+      <circle cx="250" cy="42" r="26" fill="#1A0E12" stroke="#E0B899" stroke-width="1.8" opacity="0.97"/>
+      <circle cx="250" cy="42" r="23" fill="none" stroke="#E0B899" stroke-width="0.5" opacity="0.4"/>
+      <g transform="translate(238,28)" stroke="#E0B899" stroke-width="1.1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <!-- Lua crescente atrás -->
+        <path d="M19,6 Q22,10 20,15 Q18,19 14,19 Q17,17 18,13 Q19,9 19,6 Z" fill="#C9956A" opacity="0.3" stroke="#C9956A" stroke-width="0.8"/>
+        <!-- Corpo do urso sentado -->
+        <ellipse cx="11" cy="21" rx="7.5" ry="6" fill="#2C1A1E" stroke="#E0B899" stroke-width="1.3"/>
+        <!-- Cabeça do urso -->
+        <circle cx="11" cy="11" r="6.5" fill="#2C1A1E" stroke="#E0B899" stroke-width="1.3"/>
+        <!-- Orelhas arredondadas -->
+        <circle cx="6" cy="6" r="2.5" fill="#2C1A1E" stroke="#E0B899" stroke-width="1.1"/>
+        <circle cx="16" cy="6" r="2.5" fill="#2C1A1E" stroke="#E0B899" stroke-width="1.1"/>
+        <!-- Focinho -->
+        <ellipse cx="11" cy="14" rx="3.5" ry="2.5" fill="#1A0E12" stroke="#C9956A" stroke-width="1"/>
+        <ellipse cx="11" cy="13" rx="1.5" ry="1" fill="#E0B899" opacity="0.8"/>
+        <!-- Olhos pequenos e brilhantes -->
+        <circle cx="8" cy="10" r="1.5" fill="#E0B899" opacity="0.9"/>
+        <circle cx="14" cy="10" r="1.5" fill="#E0B899" opacity="0.9"/>
+        <circle cx="8" cy="10" r="0.5" fill="#1A0E12"/>
+        <circle cx="14" cy="10" r="0.5" fill="#1A0E12"/>
+        <!-- Patas -->
+        <path d="M4,24 Q2,27 5,28" stroke="#E0B899" stroke-width="1"/>
+        <path d="M18,24 Q20,27 17,28" stroke="#E0B899" stroke-width="1"/>
+      </g>
     </g>
-    <!-- Conto 11: Mulher Cabelos de Ouro — estrela (300°) -->
+
+    <!-- Conto 11: Mulher Cabelos de Ouro — COROA DE ESTRELAS (300°) -->
     <g transform="rotate(300 250 250)" filter="url(#mgGlow)">
-      <circle cx="250" cy="42" r="26" fill="#2C1A1E" stroke="#C9956A" stroke-width="2" opacity="0.95"/>
-      <circle cx="250" cy="42" r="23" fill="none" stroke="#C9956A" stroke-width="0.5" opacity="0.5"/>
-      <text x="250" y="49" text-anchor="middle" font-size="22" fill="#C9956A" opacity="1">✨</text>
+      <circle cx="250" cy="42" r="26" fill="#1A0E12" stroke="#C9956A" stroke-width="1.8" opacity="0.97"/>
+      <circle cx="250" cy="42" r="23" fill="none" stroke="#C9956A" stroke-width="0.5" opacity="0.4"/>
+      <g transform="translate(239,28)" stroke="#C9956A" stroke-width="1.1" fill="none" stroke-linecap="round">
+        <!-- Rosto feminino -->
+        <ellipse cx="12" cy="14" rx="6.5" ry="8" fill="#2C1A1E" stroke="#C9956A" stroke-width="1.3"/>
+        <!-- Olhos expressivos -->
+        <ellipse cx="9" cy="13" rx="1.8" ry="1.2" fill="#E0B899" opacity="0.9"/>
+        <ellipse cx="15" cy="13" rx="1.8" ry="1.2" fill="#E0B899" opacity="0.9"/>
+        <circle cx="9" cy="13" r="0.6" fill="#1A0E12"/>
+        <circle cx="15" cy="13" r="0.6" fill="#1A0E12"/>
+        <!-- Boca suave -->
+        <path d="M9.5,18 Q12,20 14.5,18" stroke="#C9956A" stroke-width="1" fill="none"/>
+        <!-- Cabelos fluindo em ouro -->
+        <path d="M5.5,7 Q2,10 3,17 Q4,22 6,25" stroke="#E0B899" stroke-width="1.4" fill="none"/>
+        <path d="M18.5,7 Q22,10 21,17 Q20,22 18,25" stroke="#E0B899" stroke-width="1.4" fill="none"/>
+        <!-- Coroa de 5 estrelas -->
+        <polygon points="12,2 12.8,4.5 15.5,4.5 13.3,6 14.1,8.5 12,7 9.9,8.5 10.7,6 8.5,4.5 11.2,4.5" fill="#C9956A" opacity="0.9" stroke="none"/>
+        <circle cx="6" cy="5" r="1.2" fill="#E0B899" opacity="0.8"/>
+        <circle cx="18" cy="5" r="1.2" fill="#E0B899" opacity="0.8"/>
+        <circle cx="3" cy="9" r="0.9" fill="#C9956A" opacity="0.6"/>
+        <circle cx="21" cy="9" r="0.9" fill="#C9956A" opacity="0.6"/>
+      </g>
     </g>
-    <!-- Conto 12: Donzela sem Mãos — lua (330°) -->
+
+    <!-- Conto 12: Donzela sem Mãos — LUA + MÃOS AUSENTES (330°) -->
     <g transform="rotate(330 250 250)" filter="url(#mgGlow)">
-      <circle cx="250" cy="42" r="26" fill="#2C1A1E" stroke="#E0B899" stroke-width="2" opacity="0.95"/>
-      <circle cx="250" cy="42" r="23" fill="none" stroke="#E0B899" stroke-width="0.5" opacity="0.5"/>
-      <text x="250" y="49" text-anchor="middle" font-size="22" fill="#E0B899" opacity="1">🌙</text>
+      <circle cx="250" cy="42" r="26" fill="#1A0E12" stroke="#E0B899" stroke-width="1.8" opacity="0.97"/>
+      <circle cx="250" cy="42" r="23" fill="none" stroke="#E0B899" stroke-width="0.5" opacity="0.4"/>
+      <g transform="translate(238,27)" stroke="#E0B899" stroke-width="1.1" fill="none" stroke-linecap="round">
+        <!-- Lua cheia ao fundo -->
+        <circle cx="12" cy="11" r="8.5" fill="#2C1A1E" stroke="#C9956A" stroke-width="0.8" opacity="0.5"/>
+        <circle cx="12" cy="11" r="8.5" fill="none" stroke="#E0B899" stroke-width="1.2"/>
+        <!-- Silhueta da donzela dentro da lua -->
+        <!-- Cabeça -->
+        <circle cx="12" cy="7" r="3" fill="#2C1A1E" stroke="#E0B899" stroke-width="1"/>
+        <!-- Corpo -->
+        <path d="M9,10 Q8,14 8,18 Q10,20 12,20 Q14,20 16,18 Q16,14 15,10" fill="#2C1A1E" stroke="#E0B899" stroke-width="1"/>
+        <!-- Braços cortados - terminam sem mãos -->
+        <path d="M8,12 Q5,12 4,14" stroke="#E0B899" stroke-width="1.1" fill="none"/>
+        <path d="M16,12 Q19,12 20,14" stroke="#E0B899" stroke-width="1.1" fill="none"/>
+        <!-- Marcas nos pulsos (ausência) -->
+        <line x1="4.5" y1="13.5" x2="3" y2="15" stroke="#C9956A" stroke-width="1" opacity="0.7"/>
+        <line x1="19.5" y1="13.5" x2="21" y2="15" stroke="#C9956A" stroke-width="1" opacity="0.7"/>
+        <!-- Estrelas ao redor -->
+        <circle cx="4" cy="6" r="1" fill="#E0B899" opacity="0.7"/>
+        <circle cx="20" cy="5" r="1" fill="#E0B899" opacity="0.7"/>
+        <circle cx="3" cy="17" r="0.7" fill="#C9956A" opacity="0.6"/>
+        <circle cx="21" cy="17" r="0.7" fill="#C9956A" opacity="0.6"/>
+        <!-- Vestido / manto em baixo -->
+        <path d="M8,18 Q9,24 12,26 Q15,24 16,18" fill="#2C1A1E" stroke="#E0B899" stroke-width="1" opacity="0.8"/>
+      </g>
     </g>
 
     <!-- Pontinhos decorativos entre os símbolos (anel externo) -->
