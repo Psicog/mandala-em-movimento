@@ -267,7 +267,8 @@ app.get('/', (c) => {
       padding: 4px 36px; transform: rotate(45deg); letter-spacing: 1px;
     }
     .faixa-num { font-family: 'Playfair Display', serif; font-size: 3.5rem; font-weight: 900; color: var(--rose-gold); line-height: 1; }
-    .faixa-icon { font-size: 2rem; margin: 12px 0; }
+    .faixa-icon { font-size: 2rem; margin: 12px 0; display: flex; align-items: center; justify-content: center; }
+    .faixa-icon svg { width: 48px; height: 48px; }
     .faixa-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px; color: var(--cinza); }
     .faixa-desc { font-size: 0.88rem; color: rgba(245,230,218,0.8); line-height: 1.6; }
     .faixa-msg {
@@ -1371,7 +1372,45 @@ app.get('/', (c) => {
     <div class="faixa-grid fade-in">
       <div class="faixa-card faixa-card-1">
         <div class="faixa-num">40–49</div>
-        <div class="faixa-icon">🌸</div>
+        <div class="faixa-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Casulo pendurado num galho -->
+            <line x1="24" y1="2" x2="24" y2="8" stroke="#C9956A" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="18" y1="3" x2="30" y2="3" stroke="#C9956A" stroke-width="1.3" stroke-linecap="round"/>
+            <!-- Fio do casulo -->
+            <line x1="24" y1="8" x2="24" y2="12" stroke="#E0B899" stroke-width="1" stroke-linecap="round" stroke-dasharray="1.5,1.5"/>
+            <!-- Casulo aberto - metade inferior ainda fechada -->
+            <path d="M19 28 Q17 22 19 16 Q24 13 29 16 Q31 22 29 28 Q24 32 19 28 Z" fill="rgba(107,31,50,0.35)" stroke="#9B3A50" stroke-width="1.4"/>
+            <!-- Fissura central do casulo se abrindo -->
+            <path d="M24 13 Q23 18 24 24 Q24 28 24 32" stroke="#E0B899" stroke-width="0.9" stroke-dasharray="2,1.5" opacity="0.8" stroke-linecap="round"/>
+            <!-- Asa esquerda emergindo -->
+            <path d="M24 20 Q18 15 12 17 Q8 20 10 25 Q13 29 20 26 Q23 24 24 22" fill="rgba(201,149,106,0.25)" stroke="#C9956A" stroke-width="1.4" stroke-linejoin="round"/>
+            <!-- Nervura asa esquerda -->
+            <path d="M24 21 Q18 18 13 20" stroke="#E0B899" stroke-width="0.8" opacity="0.6" stroke-linecap="round"/>
+            <path d="M22 23 Q17 22 13 24" stroke="#E0B899" stroke-width="0.6" opacity="0.4" stroke-linecap="round"/>
+            <!-- Asa direita emergindo -->
+            <path d="M24 20 Q30 15 36 17 Q40 20 38 25 Q35 29 28 26 Q25 24 24 22" fill="rgba(201,149,106,0.18)" stroke="#C9956A" stroke-width="1.4" stroke-linejoin="round"/>
+            <!-- Nervura asa direita -->
+            <path d="M24 21 Q30 18 35 20" stroke="#E0B899" stroke-width="0.8" opacity="0.6" stroke-linecap="round"/>
+            <path d="M26 23 Q31 22 35 24" stroke="#E0B899" stroke-width="0.6" opacity="0.4" stroke-linecap="round"/>
+            <!-- Corpo da borboleta emergindo -->
+            <ellipse cx="24" cy="23" rx="2" ry="5" fill="#7B2D3E" stroke="#C9956A" stroke-width="1"/>
+            <!-- Cabeca -->
+            <circle cx="24" cy="17" r="2" fill="#7B2D3E" stroke="#C9956A" stroke-width="1"/>
+            <!-- Antenas saindo -->
+            <path d="M23 15 Q20 11 19 9" stroke="#C9956A" stroke-width="0.9" stroke-linecap="round"/>
+            <circle cx="19" cy="9" r="1" fill="#E0B899" opacity="0.85"/>
+            <path d="M25 15 Q28 11 29 9" stroke="#C9956A" stroke-width="0.9" stroke-linecap="round"/>
+            <circle cx="29" cy="9" r="1" fill="#E0B899" opacity="0.85"/>
+            <!-- Particulas de luz ao redor - transformacao -->
+            <circle cx="10" cy="14" r="1" fill="#E0B899" opacity="0.5"/>
+            <circle cx="38" cy="14" r="1" fill="#E0B899" opacity="0.5"/>
+            <circle cx="8" cy="28" r="0.8" fill="#C9956A" opacity="0.4"/>
+            <circle cx="40" cy="28" r="0.8" fill="#C9956A" opacity="0.4"/>
+            <circle cx="14" cy="34" r="0.7" fill="#E0B899" opacity="0.35"/>
+            <circle cx="34" cy="34" r="0.7" fill="#E0B899" opacity="0.35"/>
+          </svg>
+        </div>
         <div class="faixa-label">Transição de Vida</div>
         <div class="faixa-desc">Reconhecendo limites. Ressignificando carreira. Preparando-se para transições maiores.</div>
       </div>
