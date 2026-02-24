@@ -215,14 +215,38 @@ app.get('/', (c) => {
       border: 1px solid rgba(201,149,106,0.3); border-radius: 16px; padding: 32px;
       margin-top: 50px;
     }
-    .espiral-title { color: var(--rose-gold); font-size: 1.3rem; font-weight: 700; margin-bottom: 20px; text-align: center; }
-    .espiral-steps { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-    .espiral-step {
-      background: rgba(201,149,106,0.05); border-radius: 10px; padding: 14px 16px;
-      border-left: 3px solid var(--rose-gold);
+    .espiral-title {
+      color: var(--rose-gold); font-size: 1.3rem; font-weight: 700; margin-bottom: 24px;
+      text-align: center; display: flex; align-items: center; justify-content: center; gap: 12px;
     }
-    .espiral-step-label { color: var(--rose-gold); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
-    .espiral-step-text { color: var(--cinza); font-size: 0.85rem; margin-top: 4px; }
+    .espiral-title-icon {
+      width: 36px; height: 36px; background: rgba(201,149,106,0.15);
+      border: 1px solid rgba(201,149,106,0.4); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .espiral-title-icon svg { width: 20px; height: 20px; }
+    .espiral-steps { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .espiral-step {
+      background: rgba(201,149,106,0.05); border-radius: 14px; padding: 18px 16px;
+      border: 1px solid rgba(201,149,106,0.15);
+      transition: border-color 0.3s, background 0.3s, transform 0.3s;
+      display: flex; flex-direction: column; gap: 10px;
+    }
+    .espiral-step:hover { border-color: rgba(201,149,106,0.5); background: rgba(201,149,106,0.1); transform: translateY(-3px); }
+    .espiral-step-header { display: flex; align-items: center; gap: 10px; }
+    .espiral-step-icon {
+      width: 40px; height: 40px; flex-shrink: 0;
+      border-radius: 12px; display: flex; align-items: center; justify-content: center;
+      border: 1px solid rgba(201,149,106,0.3);
+    }
+    .espiral-step-icon svg { width: 22px; height: 22px; }
+    .espiral-step-icon-1 { background: rgba(155,58,80,0.2); border-color: rgba(155,58,80,0.5); }
+    .espiral-step-icon-2 { background: rgba(201,149,106,0.15); border-color: rgba(201,149,106,0.4); }
+    .espiral-step-icon-3 { background: rgba(92,122,90,0.2); border-color: rgba(92,122,90,0.5); }
+    .espiral-step-icon-4 { background: rgba(224,184,153,0.15); border-color: rgba(224,184,153,0.4); }
+    .espiral-step-num { font-size: 0.65rem; font-weight: 800; color: rgba(201,149,106,0.5); letter-spacing: 1px; }
+    .espiral-step-label { color: var(--rose-gold); font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; line-height: 1.2; }
+    .espiral-step-text { color: var(--cinza); font-size: 0.87rem; margin-top: 0; font-style: italic; line-height: 1.5; padding-left: 2px; }
 
     /* ===== SEÇÃO 3: FAIXA ETÁRIA ===== */
     #faixa { background: #3D2730; position: relative; overflow: hidden; }
@@ -1160,24 +1184,136 @@ app.get('/', (c) => {
 
         </div>
         <div class="espiral-box fade-in" style="margin-top:30px">
-          <div class="espiral-title">🌀 A Estrutura de Cada Encontro</div>
+
+          <div class="espiral-title">
+            <div class="espiral-title-icon">
+              <!-- Mandala espiral mini -->
+              <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="10" cy="10" r="9" stroke="#C9956A" stroke-width="1" fill="none"/>
+                <circle cx="10" cy="10" r="6" stroke="#7B2D3E" stroke-width="0.8" fill="none"/>
+                <circle cx="10" cy="10" r="3" stroke="#C9956A" stroke-width="0.8" fill="none"/>
+                <circle cx="10" cy="10" r="1.2" fill="#C9956A" opacity="0.9"/>
+                <line x1="10" y1="1" x2="10" y2="19" stroke="#C9956A" stroke-width="0.5" opacity="0.4"/>
+                <line x1="1" y1="10" x2="19" y2="10" stroke="#C9956A" stroke-width="0.5" opacity="0.4"/>
+                <line x1="3.4" y1="3.4" x2="16.6" y2="16.6" stroke="#C9956A" stroke-width="0.5" opacity="0.4"/>
+                <line x1="16.6" y1="3.4" x2="3.4" y2="16.6" stroke="#C9956A" stroke-width="0.5" opacity="0.4"/>
+              </svg>
+            </div>
+            A Estrutura de Cada Encontro
+          </div>
+
           <div class="espiral-steps">
+
+            <!-- Passo 1: Corpo -->
             <div class="espiral-step">
-              <div class="espiral-step-label">🫀 Corpo</div>
-              <div class="espiral-step-text">O que você sente?</div>
+              <div class="espiral-step-header">
+                <div class="espiral-step-icon espiral-step-icon-1">
+                  <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Silhueta feminina simplificada com pulsacao no peito -->
+                    <ellipse cx="11" cy="5" rx="3" ry="3" stroke="#9B3A50" stroke-width="1.3" fill="none"/>
+                    <path d="M8 8 Q7 11 7 14 Q7 17 8 19" stroke="#9B3A50" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+                    <path d="M14 8 Q15 11 15 14 Q15 17 14 19" stroke="#9B3A50" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+                    <path d="M8 8 Q11 10 14 8" stroke="#9B3A50" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+                    <path d="M8 19 Q11 21 14 19" stroke="#9B3A50" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+                    <!-- Pulsacao / onda do coracao no peito -->
+                    <path d="M7 13 L8.5 13 L9.5 10.5 L11 14.5 L12.5 11.5 L13.5 13 L15 13" stroke="#E0B899" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="espiral-step-num">PASSO 01</div>
+                  <div class="espiral-step-label">Corpo</div>
+                </div>
+              </div>
+              <div class="espiral-step-text">"O que você sente?"</div>
             </div>
+
+            <!-- Passo 2: Simbolo -->
             <div class="espiral-step">
-              <div class="espiral-step-label">🔮 Símbolo</div>
-              <div class="espiral-step-text">O que isso representa?</div>
+              <div class="espiral-step-header">
+                <div class="espiral-step-icon espiral-step-icon-2">
+                  <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Cristal / prisma - simbolo de refração do sentido -->
+                    <polygon points="11,2 19,8 17,19 5,19 3,8" stroke="#C9956A" stroke-width="1.3" fill="rgba(201,149,106,0.1)" stroke-linejoin="round"/>
+                    <!-- Raio interno de luz (refração) -->
+                    <line x1="11" y1="2" x2="11" y2="10" stroke="#E0B899" stroke-width="0.9" opacity="0.7"/>
+                    <line x1="11" y1="10" x2="6" y2="19" stroke="#C9956A" stroke-width="0.8" opacity="0.5"/>
+                    <line x1="11" y1="10" x2="16" y2="19" stroke="#C9956A" stroke-width="0.8" opacity="0.5"/>
+                    <!-- Ponto central brilhante -->
+                    <circle cx="11" cy="10" r="1.8" fill="#7B2D3E" stroke="#C9956A" stroke-width="0.8"/>
+                    <circle cx="11" cy="10" r="0.7" fill="#E0B899" opacity="0.95"/>
+                    <!-- Brilhos externos -->
+                    <line x1="11" y1="0" x2="11" y2="1.5" stroke="#E0B899" stroke-width="0.9" opacity="0.6"/>
+                    <line x1="19.5" y1="7.5" x2="20.5" y2="7" stroke="#E0B899" stroke-width="0.9" opacity="0.4"/>
+                    <line x1="2.5" y1="7.5" x2="1.5" y2="7" stroke="#E0B899" stroke-width="0.9" opacity="0.4"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="espiral-step-num">PASSO 02</div>
+                  <div class="espiral-step-label">Símbolo</div>
+                </div>
+              </div>
+              <div class="espiral-step-text">"O que isso representa?"</div>
             </div>
+
+            <!-- Passo 3: Integracao -->
             <div class="espiral-step">
-              <div class="espiral-step-label">🌱 Integração</div>
-              <div class="espiral-step-text">Que mudança levo?</div>
+              <div class="espiral-step-header">
+                <div class="espiral-step-icon espiral-step-icon-3">
+                  <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Semente germinando - integracao/transformacao -->
+                    <!-- Terra / base -->
+                    <path d="M3 17 Q11 15 19 17" stroke="#5C7A5A" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+                    <!-- Haste principal -->
+                    <path d="M11 17 Q11 12 11 8" stroke="#5C7A5A" stroke-width="1.3" stroke-linecap="round"/>
+                    <!-- Folha esquerda brotando -->
+                    <path d="M11 12 Q7 10 6 12 Q8 14 11 13" fill="#5C7A5A" opacity="0.7" stroke="none"/>
+                    <!-- Folha direita brotando -->
+                    <path d="M11 10 Q15 8 16 10 Q14 12 11 11" fill="#5C7A5A" opacity="0.55" stroke="none"/>
+                    <!-- Broto no topo -->
+                    <circle cx="11" cy="7" r="2" fill="#5C7A5A" opacity="0.4" stroke="#5C7A5A" stroke-width="0.8"/>
+                    <circle cx="11" cy="6" r="1.2" fill="#C9956A" opacity="0.7"/>
+                    <!-- Raizes sugeridas -->
+                    <path d="M11 17 Q9 19 8 20" stroke="#5C7A5A" stroke-width="0.8" opacity="0.5" stroke-linecap="round"/>
+                    <path d="M11 17 Q13 19 14 20" stroke="#5C7A5A" stroke-width="0.8" opacity="0.5" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="espiral-step-num">PASSO 03</div>
+                  <div class="espiral-step-label">Integração</div>
+                </div>
+              </div>
+              <div class="espiral-step-text">"Que mudança levo?"</div>
             </div>
+
+            <!-- Passo 4: Consciencia -->
             <div class="espiral-step">
-              <div class="espiral-step-label">✨ Consciência</div>
-              <div class="espiral-step-text">Quem estou me tornando?</div>
+              <div class="espiral-step-header">
+                <div class="espiral-step-icon espiral-step-icon-4">
+                  <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Estrela de 8 pontas = consciencia expandida -->
+                    <polygon points="11,1 12.5,8.5 19,7 13.5,12 19,17 12.5,15.5 11,22 9.5,15.5 3,17 8.5,12 3,7 9.5,8.5" fill="rgba(224,184,153,0.15)" stroke="#E0B899" stroke-width="1.1" stroke-linejoin="round"/>
+                    <!-- Circulo interno luminoso -->
+                    <circle cx="11" cy="11" r="3.5" fill="#7B2D3E" stroke="#C9956A" stroke-width="1"/>
+                    <circle cx="11" cy="11" r="1.8" fill="#C9956A" opacity="0.7"/>
+                    <circle cx="11" cy="11" r="0.8" fill="#E0B899" opacity="1"/>
+                    <!-- Raios curtos entre as pontas -->
+                    <line x1="11" y1="5.5" x2="11" y2="7" stroke="#E0B899" stroke-width="0.7" opacity="0.5"/>
+                    <line x1="15" y1="7" x2="14" y2="8" stroke="#E0B899" stroke-width="0.7" opacity="0.4"/>
+                    <line x1="16.5" y1="11" x2="15" y2="11" stroke="#E0B899" stroke-width="0.7" opacity="0.5"/>
+                    <line x1="15" y1="15" x2="14" y2="14" stroke="#E0B899" stroke-width="0.7" opacity="0.4"/>
+                    <line x1="7" y1="7" x2="8" y2="8" stroke="#E0B899" stroke-width="0.7" opacity="0.4"/>
+                    <line x1="5.5" y1="11" x2="7" y2="11" stroke="#E0B899" stroke-width="0.7" opacity="0.5"/>
+                    <line x1="7" y1="15" x2="8" y2="14" stroke="#E0B899" stroke-width="0.7" opacity="0.4"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="espiral-step-num">PASSO 04</div>
+                  <div class="espiral-step-label">Consciência</div>
+                </div>
+              </div>
+              <div class="espiral-step-text">"Quem estou me tornando?"</div>
             </div>
+
           </div>
         </div>
       </div>
