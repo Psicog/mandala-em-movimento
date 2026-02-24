@@ -183,17 +183,31 @@ app.get('/', (c) => {
     .sobre-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
     .sobre-text p { color: rgba(245,230,218,0.9); font-size: 1.05rem; line-height: 1.9; margin-bottom: 20px; }
     .sobre-text p strong { color: var(--rose-gold); }
-    .sobre-badges { display: flex; flex-direction: column; gap: 16px; margin-top: 30px; }
+    .sobre-badges { display: flex; flex-direction: column; gap: 20px; margin-top: 30px; }
     .sobre-badge {
-      display: flex; align-items: flex-start; gap: 16px;
+      display: flex; align-items: flex-start; gap: 20px;
       background: rgba(201,149,106,0.06); border: 1px solid rgba(201,149,106,0.2);
-      border-radius: 12px; padding: 16px 20px;
-      transition: border-color 0.3s, background 0.3s;
+      border-radius: 16px; padding: 20px 24px;
+      transition: border-color 0.3s, background 0.3s, transform 0.3s, box-shadow 0.3s;
+      position: relative; overflow: hidden;
     }
-    .sobre-badge:hover { border-color: var(--rose-gold); background: rgba(201,149,106,0.1); }
-    .sobre-badge-icon { font-size: 1.8rem; flex-shrink: 0; margin-top: 2px; }
-    .sobre-badge-title { color: var(--rose-gold); font-weight: 700; font-size: 0.95rem; margin-bottom: 4px; }
-    .sobre-badge-text { color: var(--cinza); font-size: 0.85rem; line-height: 1.5; }
+    .sobre-badge::before {
+      content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px;
+      background: linear-gradient(180deg, var(--rose-gold), var(--borde));
+      border-radius: 16px 0 0 16px;
+    }
+    .sobre-badge:hover { border-color: var(--rose-gold); background: rgba(201,149,106,0.12); transform: translateX(4px); box-shadow: 0 6px 30px rgba(201,149,106,0.15); }
+    .sobre-badge-icon {
+      flex-shrink: 0; width: 60px; height: 60px;
+      background: rgba(201,149,106,0.1); border: 1px solid rgba(201,149,106,0.3);
+      border-radius: 16px; display: flex; align-items: center; justify-content: center;
+      transition: background 0.3s, transform 0.3s;
+    }
+    .sobre-badge:hover .sobre-badge-icon { background: rgba(201,149,106,0.2); transform: scale(1.08); }
+    .sobre-badge-icon svg { width: 32px; height: 32px; }
+    .sobre-badge-subtitle { color: var(--ouro-claro); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 4px; opacity: 0.85; }
+    .sobre-badge-title { color: var(--rose-gold); font-weight: 700; font-size: 1rem; margin-bottom: 6px; }
+    .sobre-badge-text { color: var(--cinza); font-size: 0.87rem; line-height: 1.6; }
     .sobre-visual { position: relative; display: flex; align-items: center; justify-content: center; min-height: 400px; }
     .sobre-mandala { width: 100%; max-width: 380px; animation: rotateSlow 40s linear infinite; opacity: 0.9; }
     .espiral-box {
@@ -1058,27 +1072,92 @@ app.get('/', (c) => {
           integramos três fundamentos em cada encontro:
         </p>
         <div class="sobre-badges">
+
+          <!-- Fundamento 1: Focalizacao -->
           <div class="sobre-badge">
-            <div class="sobre-badge-icon">🫀</div>
+            <div class="sobre-badge-icon">
+              <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Silhueta corpo feminino -->
+                <ellipse cx="16" cy="6.5" rx="4" ry="4" stroke="#C9956A" stroke-width="1.5" fill="none"/>
+                <path d="M12 11 Q10 14 10 18 Q10 22 12 25" stroke="#C9956A" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+                <path d="M20 11 Q22 14 22 18 Q22 22 20 25" stroke="#C9956A" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+                <path d="M12 11 Q16 13 20 11" stroke="#C9956A" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+                <path d="M12 25 Q14 27 16 27 Q18 27 20 25" stroke="#C9956A" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+                <!-- Ondas felt-sense irradiando do peito -->
+                <path d="M7 17 Q5 15 7 13" stroke="#E0B899" stroke-width="1.1" fill="none" stroke-linecap="round" opacity="0.8"/>
+                <path d="M5 18 Q2 15 5 12" stroke="#E0B899" stroke-width="0.8" fill="none" stroke-linecap="round" opacity="0.45"/>
+                <path d="M25 17 Q27 15 25 13" stroke="#E0B899" stroke-width="1.1" fill="none" stroke-linecap="round" opacity="0.8"/>
+                <path d="M27 18 Q30 15 27 12" stroke="#E0B899" stroke-width="0.8" fill="none" stroke-linecap="round" opacity="0.45"/>
+                <!-- Ponto de sensacao no centro - felt sense -->
+                <circle cx="16" cy="17" r="2.5" fill="#7B2D3E" stroke="#C9956A" stroke-width="1"/>
+                <circle cx="16" cy="17" r="1.1" fill="#E0B899" opacity="0.95"/>
+              </svg>
+            </div>
             <div>
-              <div class="sobre-badge-title">Focalização (Eugene Gendlin)</div>
-              <div class="sobre-badge-text">Escuta corporal profunda – aprender a escutar os sinais do seu corpo como sabedoria interior.</div>
+              <div class="sobre-badge-subtitle">1&#186; Fundamento</div>
+              <div class="sobre-badge-title">Focalização · Eugene Gendlin</div>
+              <div class="sobre-badge-text">Escuta corporal profunda — aprender a escutar os sinais do seu corpo como sabedoria interior.</div>
             </div>
           </div>
+
+          <!-- Fundamento 2: Psicologia Analitica -->
           <div class="sobre-badge">
-            <div class="sobre-badge-icon">🌀</div>
+            <div class="sobre-badge-icon">
+              <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Espiral junguiana -->
+                <path d="M16 16 Q16 11 21 11 Q26 11 26 16 Q26 22 20 23 Q13 24 11 18 Q8 11 14 8 Q21 5 27 11" stroke="#C9956A" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                <!-- Raios do inconsciente - tracejados -->
+                <line x1="16" y1="16" x2="6" y2="7" stroke="#C9956A" stroke-width="0.7" opacity="0.3" stroke-dasharray="2,2"/>
+                <line x1="16" y1="16" x2="27" y2="7" stroke="#C9956A" stroke-width="0.7" opacity="0.3" stroke-dasharray="2,2"/>
+                <line x1="16" y1="16" x2="16" y2="4" stroke="#C9956A" stroke-width="0.7" opacity="0.3" stroke-dasharray="2,2"/>
+                <!-- Simbolo anima - circulo pequeno -->
+                <circle cx="9" cy="25" r="3" stroke="#E0B899" stroke-width="1.1" fill="none" opacity="0.75"/>
+                <circle cx="9" cy="25" r="1.2" fill="#C9956A" opacity="0.85"/>
+                <!-- Estrela 4 pontas = arquetipo -->
+                <path d="M23 23 L24.5 26 L23 29 L21.5 26 Z" fill="#C9956A" opacity="0.8"/>
+                <path d="M20 26 L23 24.5 L26 26 L23 27.5 Z" fill="#C9956A" opacity="0.55"/>
+                <!-- Centro luminoso -->
+                <circle cx="16" cy="16" r="2.5" fill="#7B2D3E" stroke="#C9956A" stroke-width="1.2"/>
+                <circle cx="16" cy="16" r="1" fill="#E0B899" opacity="0.95"/>
+              </svg>
+            </div>
             <div>
-              <div class="sobre-badge-title">Psicologia Analítica (Carl Jung)</div>
+              <div class="sobre-badge-subtitle">2&#186; Fundamento</div>
+              <div class="sobre-badge-title">Psicologia Analítica · Carl Jung</div>
               <div class="sobre-badge-text">Trabalho com símbolos, arquétipos e o inconsciente coletivo para transformação profunda.</div>
             </div>
           </div>
+
+          <!-- Fundamento 3: Contoterapia Humanista -->
           <div class="sobre-badge">
-            <div class="sobre-badge-icon">💚</div>
+            <div class="sobre-badge-icon">
+              <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Livro aberto -->
+                <path d="M4 9 Q4 7 6 7 L16 9 L16 25 L6 23 Q4 23 4 21 Z" fill="rgba(201,149,106,0.13)" stroke="#C9956A" stroke-width="1.4" stroke-linejoin="round"/>
+                <path d="M28 9 Q28 7 26 7 L16 9 L16 25 L26 23 Q28 23 28 21 Z" fill="rgba(201,149,106,0.07)" stroke="#C9956A" stroke-width="1.4" stroke-linejoin="round"/>
+                <!-- Lombada -->
+                <line x1="16" y1="9" x2="16" y2="25" stroke="#E0B899" stroke-width="1.3" opacity="0.85"/>
+                <!-- Linhas de texto pagina esquerda -->
+                <line x1="7" y1="13" x2="14" y2="13.5" stroke="#C9956A" stroke-width="0.8" opacity="0.5"/>
+                <line x1="7" y1="15.5" x2="14" y2="16" stroke="#C9956A" stroke-width="0.8" opacity="0.5"/>
+                <line x1="7" y1="18" x2="12" y2="18.3" stroke="#C9956A" stroke-width="0.8" opacity="0.5"/>
+                <!-- Broto nascendo do livro = historia que vira vida -->
+                <line x1="16" y1="9" x2="16" y2="4" stroke="#C9956A" stroke-width="1.3" stroke-linecap="round"/>
+                <path d="M16 6 Q12 4 11 6 Q13 8 16 7" fill="#C9956A" opacity="0.65"/>
+                <path d="M16 5 Q20 3 21 5 Q19 7 16 6" fill="#E0B899" opacity="0.6"/>
+                <!-- Coracao pagina direita = humanismo -->
+                <path d="M19 15 Q19 13 21 13 Q23 13 23 15 Q23 17 21 19 Q19 17 19 15 Z" fill="#C9956A" opacity="0.6"/>
+                <!-- Estrela pequena -->
+                <circle cx="23" cy="20" r="1.2" fill="#E0B899" opacity="0.7"/>
+              </svg>
+            </div>
             <div>
+              <div class="sobre-badge-subtitle">3&#186; Fundamento</div>
               <div class="sobre-badge-title">Contoterapia Humanista</div>
               <div class="sobre-badge-text">Escuta empática e espaço de segurança para que cada mulher encontre suas próprias respostas.</div>
             </div>
           </div>
+
         </div>
         <div class="espiral-box fade-in" style="margin-top:30px">
           <div class="espiral-title">🌀 A Estrutura de Cada Encontro</div>
