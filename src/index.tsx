@@ -1418,41 +1418,35 @@ app.get('/', (c) => {
         <div class="faixa-num">50–59</div>
         <div class="faixa-icon">
           <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Raizes saindo dos pes - enraizamento -->
-            <path d="M20 44 Q18 47 15 48" stroke="#5C7A5A" stroke-width="1.1" stroke-linecap="round" opacity="0.7"/>
-            <path d="M20 44 Q19 47 20 48" stroke="#5C7A5A" stroke-width="1.1" stroke-linecap="round" opacity="0.5"/>
-            <path d="M28 44 Q30 47 33 48" stroke="#5C7A5A" stroke-width="1.1" stroke-linecap="round" opacity="0.7"/>
-            <path d="M28 44 Q29 47 28 48" stroke="#5C7A5A" stroke-width="1.1" stroke-linecap="round" opacity="0.5"/>
-            <!-- Pernas firmes -->
-            <line x1="20" y1="34" x2="20" y2="44" stroke="#C9956A" stroke-width="1.5" stroke-linecap="round"/>
-            <line x1="28" y1="34" x2="28" y2="44" stroke="#C9956A" stroke-width="1.5" stroke-linecap="round"/>
-            <!-- Corpo central - tronco forte -->
-            <path d="M17 22 Q15 28 16 34 Q20 36 24 36 Q28 36 32 34 Q33 28 31 22 Q28 20 24 20 Q20 20 17 22 Z" fill="rgba(201,149,106,0.15)" stroke="#C9956A" stroke-width="1.4"/>
-            <!-- Cabeca -->
-            <circle cx="24" cy="14" r="5.5" fill="rgba(107,31,50,0.3)" stroke="#C9956A" stroke-width="1.4"/>
-            <!-- Cabelos fluindo para os lados - presenca -->
-            <path d="M18.5 11 Q14 9 12 12 Q11 16 14 18" stroke="#E0B899" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.8"/>
-            <path d="M29.5 11 Q34 9 36 12 Q37 16 34 18" stroke="#E0B899" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.8"/>
-            <!-- Braco esquerdo aberto - receptividade -->
-            <path d="M17 24 Q12 22 9 24 Q8 27 10 28" stroke="#C9956A" stroke-width="1.4" fill="none" stroke-linecap="round"/>
-            <!-- Braco direito aberto - receptividade -->
-            <path d="M31 24 Q36 22 39 24 Q40 27 38 28" stroke="#C9956A" stroke-width="1.4" fill="none" stroke-linecap="round"/>
-            <!-- Maos abertas com luz emanando -->
-            <circle cx="10" cy="28" r="1.5" fill="#E0B899" opacity="0.8"/>
-            <circle cx="38" cy="28" r="1.5" fill="#E0B899" opacity="0.8"/>
-            <!-- Centro de poder - plexo solar irradiando -->
-            <circle cx="24" cy="27" r="3.5" fill="rgba(201,149,106,0.2)" stroke="#C9956A" stroke-width="1"/>
-            <circle cx="24" cy="27" r="1.8" fill="#C9956A" opacity="0.7"/>
-            <circle cx="24" cy="27" r="0.8" fill="#E0B899" opacity="1"/>
-            <!-- Raios de energia irradiando do centro -->
-            <line x1="24" y1="22" x2="24" y2="20" stroke="#E0B899" stroke-width="0.9" opacity="0.6"/>
-            <line x1="28.5" y1="23.5" x2="30" y2="22" stroke="#E0B899" stroke-width="0.9" opacity="0.5"/>
-            <line x1="19.5" y1="23.5" x2="18" y2="22" stroke="#E0B899" stroke-width="0.9" opacity="0.5"/>
-            <line x1="29" y1="27" x2="31" y2="27" stroke="#E0B899" stroke-width="0.9" opacity="0.5"/>
-            <line x1="19" y1="27" x2="17" y2="27" stroke="#E0B899" stroke-width="0.9" opacity="0.5"/>
-            <!-- Aura externa - campo de presenca -->
-            <circle cx="24" cy="24" r="18" stroke="#C9956A" stroke-width="0.7" stroke-dasharray="3,4" opacity="0.3"/>
-            <circle cx="24" cy="24" r="22" stroke="#E0B899" stroke-width="0.5" stroke-dasharray="2,5" opacity="0.18"/>
+            <!-- Coroa de louros / mandala aberta - simbolo de poder maduro -->
+            <!-- Arco superior esquerdo -->
+            <path d="M10 28 Q8 18 14 11 Q18 7 24 6" stroke="#C9956A" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <!-- Arco superior direito -->
+            <path d="M38 28 Q40 18 34 11 Q30 7 24 6" stroke="#C9956A" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <!-- Ponta do arco esquerdo - folha -->
+            <path d="M10 28 Q7 31 8 35 Q10 32 13 31 Q11 29 10 28 Z" fill="#C9956A" opacity="0.7"/>
+            <!-- Ponta do arco direito - folha -->
+            <path d="M38 28 Q41 31 40 35 Q38 32 35 31 Q37 29 38 28 Z" fill="#C9956A" opacity="0.7"/>
+            <!-- Folhas internas no arco esquerdo -->
+            <path d="M13 18 Q10 16 11 13 Q14 15 13 18 Z" fill="#E0B899" opacity="0.6"/>
+            <path d="M11 24 Q8 23 9 20 Q12 22 11 24 Z" fill="#E0B899" opacity="0.5"/>
+            <!-- Folhas internas no arco direito -->
+            <path d="M35 18 Q38 16 37 13 Q34 15 35 18 Z" fill="#E0B899" opacity="0.6"/>
+            <path d="M37 24 Q40 23 39 20 Q36 22 37 24 Z" fill="#E0B899" opacity="0.5"/>
+            <!-- Linha horizontal base da coroa -->
+            <path d="M10 28 Q24 32 38 28" stroke="#C9956A" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+            <!-- Joia central - pedra preciosa -->
+            <polygon points="24,8 27,13 24,16 21,13" fill="rgba(201,149,106,0.2)" stroke="#C9956A" stroke-width="1.2"/>
+            <polygon points="24,10 26,13 24,15 22,13" fill="#7B2D3E" stroke="#E0B899" stroke-width="0.7"/>
+            <circle cx="24" cy="13" r="1.2" fill="#E0B899" opacity="0.95"/>
+            <!-- Tres pontos de luz na base - tríade -->
+            <circle cx="17" cy="29" r="1.5" fill="#C9956A" opacity="0.8"/>
+            <circle cx="24" cy="31" r="1.8" fill="#C9956A" opacity="0.9"/>
+            <circle cx="31" cy="29" r="1.5" fill="#C9956A" opacity="0.8"/>
+            <!-- Brilhos minimos -->
+            <line x1="24" y1="3" x2="24" y2="5" stroke="#E0B899" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+            <line x1="14" y1="6" x2="15.5" y2="7.5" stroke="#E0B899" stroke-width="0.9" stroke-linecap="round" opacity="0.4"/>
+            <line x1="34" y1="6" x2="32.5" y2="7.5" stroke="#E0B899" stroke-width="0.9" stroke-linecap="round" opacity="0.4"/>
           </svg>
         </div>
         <div class="faixa-label">Presença Plena</div>
