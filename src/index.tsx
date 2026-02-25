@@ -186,7 +186,10 @@ app.get('/', (c) => {
 
     /* ===== SEÇÃO 2: SOBRE ===== */
     #sobre { background: linear-gradient(180deg, var(--bg-base) 0%, var(--bg-alt) 100%); position: relative; overflow: hidden; }
-    .sobre-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .sobre-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+    .sobre-headline-wrap { text-align: center; margin-bottom: 50px; }
+    .sobre-headline-wrap .section-headline { margin-bottom: 12px; }
+    .sobre-headline-wrap .section-subline { margin-bottom: 0; }
     .sobre-text p { color: #3A2820; font-size: 1.05rem; line-height: 1.9; margin-bottom: 20px; }
     .sobre-text p strong { color: var(--bordô); }
     .sobre-badges { display: flex; flex-direction: column; gap: 20px; margin-top: 30px; }
@@ -1091,7 +1094,10 @@ app.get('/', (c) => {
 <!-- ===== SEÇÃO 2: SOBRE A JORNADA ===== -->
 <section id="sobre">
   <div class="container">
-    <h2 class="section-headline fade-in">O que é Mandala em Movimento?</h2>
+    <div class="sobre-headline-wrap fade-in">
+      <h2 class="section-headline">O que é Mandala em Movimento?</h2>
+      <p class="section-subline">Uma jornada terapêutica de 12 encontros para mulheres 40+ em transição e transformação</p>
+    </div>
     <div class="sobre-grid">
       <div class="sobre-text fade-in">
         <p>
