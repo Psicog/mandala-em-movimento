@@ -519,21 +519,22 @@ app.get('/', (c) => {
     .popup-overlay.show { opacity: 1; pointer-events: all; }
     .popup-box {
       background: linear-gradient(135deg, #F2E8DF, #EDE0D5);
-      border: 2px solid rgba(201,149,106,0.5); border-radius: 20px; padding: 40px;
+      border: 2px solid rgba(201,149,106,0.5); border-radius: 20px; padding: 40px 40px 32px;
       max-width: 460px; width: 100%; position: relative;
       display: flex; flex-direction: column; align-items: center; text-align: center;
-      transform: scale(0.9); transition: transform 0.4s;
+      transform: scale(0.9); transition: transform 0.4s; box-sizing: border-box;
     }
     .popup-overlay.show .popup-box { transform: scale(1); }
     .popup-close { position: absolute; top: 14px; right: 18px; background: none; border: none; color: var(--cinza); font-size: 1.5rem; cursor: pointer; transition: color 0.2s; }
     .popup-close:hover { color: var(--ouro); }
     .popup-icon {
+      width: 110px; height: 110px;
+      margin: 0 auto 20px auto;
       display: block;
-      width: 100px; height: 100px;
-      margin: 0 auto 20px;
+      flex-shrink: 0;
     }
     .popup-icon svg {
-      width: 100px; height: 100px;
+      width: 110px; height: 110px;
       animation: rotateSlow 40s linear infinite;
       display: block;
     }
@@ -1912,8 +1913,8 @@ app.get('/', (c) => {
 <div class="popup-overlay" id="popup">
   <div class="popup-box">
     <button class="popup-close" onclick="closePopup()">✕</button>
-    <div class="popup-icon" style="display:flex;justify-content:center;align-items:center;width:100%;margin:0 auto 20px;">
-      <svg style="display:block;margin:0 auto;" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+    <div class="popup-icon">
+      <svg width="110" height="110" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <radialGradient id="popupMgCenter" cx="50%" cy="50%" r="50%">
             <stop offset="0%" stop-color="#C9956A" stop-opacity="0.4"/>
