@@ -527,7 +527,7 @@ app.get('/', (c) => {
     .popup-close { position: absolute; top: 14px; right: 18px; background: none; border: none; color: var(--cinza); font-size: 1.5rem; cursor: pointer; transition: color 0.2s; }
     .popup-close:hover { color: var(--ouro); }
     .popup-icon { display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
-    .popup-icon svg { width: 72px; height: 72px; }
+    .popup-icon svg { width: 100px; height: 100px; animation: rotateSlow 40s linear infinite; }
     .popup-title { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--bordô); margin-bottom: 8px; }
     .popup-text { color: #6A5045; font-size: 0.9rem; line-height: 1.6; margin-bottom: 24px; }
     .popup-form { display: flex; flex-direction: column; gap: 12px; }
@@ -1904,50 +1904,84 @@ app.get('/', (c) => {
   <div class="popup-box">
     <button class="popup-close" onclick="closePopup()">✕</button>
     <div class="popup-icon">
-      <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <!-- Lua cheia ao fundo -->
-        <circle cx="52" cy="14" r="10" fill="rgba(224,184,153,0.18)" stroke="#E0B899" stroke-width="1.2" opacity="0.7"/>
-        <circle cx="52" cy="14" r="7" fill="rgba(224,184,153,0.12)" stroke="#E0B899" stroke-width="0.8" opacity="0.5"/>
-        <!-- Estrelas -->
-        <circle cx="20" cy="8" r="1.2" fill="#E0B899" opacity="0.6"/>
-        <circle cx="30" cy="5" r="0.9" fill="#E0B899" opacity="0.5"/>
-        <circle cx="62" cy="28" r="1" fill="#E0B899" opacity="0.55"/>
-        <circle cx="10" cy="20" r="0.8" fill="#C9956A" opacity="0.5"/>
-        <circle cx="65" cy="10" r="0.7" fill="#E0B899" opacity="0.4"/>
-        <!-- Corpo da loba - postura de uivo (sentada, cabeca erguida) -->
-        <!-- Corpo / torso -->
-        <ellipse cx="32" cy="52" rx="13" ry="11" fill="rgba(107,31,50,0.15)" stroke="#C9956A" stroke-width="1.4"/>
-        <!-- Pescoco erguido uivando -->
-        <path d="M28 42 Q26 34 28 26 Q30 20 34 18 Q38 16 40 20 Q42 25 40 30 Q38 35 36 42" stroke="#C9956A" stroke-width="1.5" fill="rgba(107,31,50,0.1)" stroke-linecap="round" stroke-linejoin="round"/>
-        <!-- Cabeca inclinada para cima (uivo) -->
-        <ellipse cx="34" cy="16" rx="7" ry="5.5" fill="rgba(107,31,50,0.15)" stroke="#C9956A" stroke-width="1.4" transform="rotate(-20 34 16)"/>
-        <!-- Orelha esquerda -->
-        <path d="M27 12 Q25 6 29 8 Q30 10 29 12" fill="rgba(201,149,106,0.25)" stroke="#C9956A" stroke-width="1.2" stroke-linejoin="round"/>
-        <!-- Orelha direita -->
-        <path d="M33 10 Q33 4 37 6 Q37 9 35 11" fill="rgba(201,149,106,0.3)" stroke="#C9956A" stroke-width="1.2" stroke-linejoin="round"/>
-        <path d="M34 10 Q34 6 36 7 Q36 9 35 10" fill="#C9956A" opacity="0.3"/>
-        <!-- Focinho apontado para cima -->
-        <path d="M30 18 Q32 14 36 13 Q40 12 41 16" stroke="#C9956A" stroke-width="1.2" fill="none" stroke-linecap="round"/>
-        <ellipse cx="38" cy="14" rx="2.2" ry="1.5" fill="#C9956A" opacity="0.8" transform="rotate(-20 38 14)"/>
-        <!-- Olho semicerrado (concentrado no uivo) -->
-        <path d="M29 17 Q31 15.5 33 17" stroke="#E0B899" stroke-width="1.2" fill="none" stroke-linecap="round"/>
-        <circle cx="31" cy="17" r="1" fill="#7B2D3E" opacity="0.7"/>
-        <!-- Pelo do pescoco / juba -->
-        <path d="M28 26 Q24 28 23 32 Q24 36 28 38" stroke="#C9956A" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.55"/>
-        <path d="M36 24 Q40 26 41 30 Q40 35 37 38" stroke="#C9956A" stroke-width="0.9" fill="none" stroke-linecap="round" opacity="0.45"/>
-        <!-- Patas dianteiras -->
-        <path d="M24 52 Q21 58 20 63" stroke="#C9956A" stroke-width="1.4" stroke-linecap="round"/>
-        <path d="M26 53 Q24 59 23 64" stroke="#C9956A" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
-        <path d="M40 52 Q43 58 44 63" stroke="#C9956A" stroke-width="1.4" stroke-linecap="round"/>
-        <path d="M38 53 Q40 59 41 64" stroke="#C9956A" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
-        <!-- Garras -->
-        <path d="M19 63 Q18 65 20 65 Q22 65 21 63" stroke="#C9956A" stroke-width="0.8" fill="none" stroke-linecap="round" opacity="0.6"/>
-        <path d="M43 63 Q42 65 44 65 Q46 65 45 63" stroke="#C9956A" stroke-width="0.8" fill="none" stroke-linecap="round" opacity="0.6"/>
-        <!-- Rabo curvado -->
-        <path d="M44 52 Q52 50 56 44 Q58 40 55 38 Q52 40 52 44 Q50 48 46 50" stroke="#C9956A" stroke-width="1.3" fill="none" stroke-linecap="round"/>
-        <!-- Ondas de uivo saindo da boca -->
-        <path d="M40 14 Q46 10 48 14" stroke="#E0B899" stroke-width="0.9" fill="none" stroke-linecap="round" opacity="0.5"/>
-        <path d="M41 12 Q49 6 52 11" stroke="#E0B899" stroke-width="0.7" fill="none" stroke-linecap="round" opacity="0.3"/>
+      <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="popupMgCenter" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#C9956A" stop-opacity="0.4"/>
+            <stop offset="50%" stop-color="#7B2D3E" stop-opacity="0.2"/>
+            <stop offset="100%" stop-color="#2C1A1E" stop-opacity="0"/>
+          </radialGradient>
+          <filter id="popupMgGlow">
+            <feGaussianBlur stdDeviation="1.5" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+        <!-- Fundo radial -->
+        <circle cx="250" cy="250" r="245" fill="url(#popupMgCenter)"/>
+        <!-- Anéis concêntricos -->
+        <circle cx="250" cy="250" r="240" stroke="#C9956A" stroke-width="1.2" fill="none" opacity="0.7"/>
+        <circle cx="250" cy="250" r="225" stroke="#7B2D3E" stroke-width="0.5" fill="none" opacity="0.5" stroke-dasharray="4,4"/>
+        <circle cx="250" cy="250" r="210" stroke="#7B2D3E" stroke-width="1.8" fill="none" opacity="0.8"/>
+        <circle cx="250" cy="250" r="195" stroke="#C9956A" stroke-width="0.5" fill="none" opacity="0.4" stroke-dasharray="3,6"/>
+        <circle cx="250" cy="250" r="175" stroke="#C9956A" stroke-width="1" fill="none" opacity="0.6"/>
+        <circle cx="250" cy="250" r="145" stroke="#E0B899" stroke-width="1.4" fill="none" opacity="0.7"/>
+        <circle cx="250" cy="250" r="125" stroke="#C9956A" stroke-width="0.5" fill="none" opacity="0.4" stroke-dasharray="2,5"/>
+        <circle cx="250" cy="250" r="110" stroke="#7B2D3E" stroke-width="1.2" fill="none" opacity="0.6"/>
+        <circle cx="250" cy="250" r="90"  stroke="#E0B899" stroke-width="0.6" fill="none" opacity="0.4" stroke-dasharray="3,4"/>
+        <circle cx="250" cy="250" r="75"  stroke="#C9956A" stroke-width="1.8" fill="none" opacity="0.8"/>
+        <circle cx="250" cy="250" r="56"  stroke="#E0B899" stroke-width="0.8" fill="none" opacity="0.5"/>
+        <circle cx="250" cy="250" r="42"  stroke="#E0B899" stroke-width="1.2" fill="none" opacity="0.7"/>
+        <circle cx="250" cy="250" r="28"  stroke="#C9956A" stroke-width="0.6" fill="none" opacity="0.5"/>
+        <circle cx="250" cy="250" r="16"  fill="#C9956A" opacity="0.85"/>
+        <circle cx="250" cy="250" r="10"  fill="#7B2D3E" opacity="0.95"/>
+        <circle cx="250" cy="250" r="5"   fill="#E0B899" opacity="1"/>
+        <!-- Raios (12 direções) -->
+        <g stroke="#C9956A" stroke-width="0.8" opacity="0.45">
+          <line x1="250" y1="10"  x2="250" y2="490"/>
+          <line x1="10"  y1="250" x2="490" y2="250"/>
+          <line x1="73"  y1="73"  x2="427" y2="427"/>
+          <line x1="427" y1="73"  x2="73"  y2="427"/>
+          <line x1="10"  y1="160" x2="490" y2="340"/>
+          <line x1="10"  y1="340" x2="490" y2="160"/>
+          <line x1="160" y1="10"  x2="340" y2="490"/>
+          <line x1="340" y1="10"  x2="160" y2="490"/>
+          <line x1="36"  y1="113" x2="464" y2="387"/>
+          <line x1="36"  y1="387" x2="464" y2="113"/>
+          <line x1="113" y1="36"  x2="387" y2="464"/>
+          <line x1="387" y1="36"  x2="113" y2="464"/>
+        </g>
+        <!-- Pétalas decorativas -->
+        <g opacity="0.35" fill="#C9956A">
+          <ellipse cx="250" cy="105" rx="8" ry="18" transform="rotate(0 250 250)"/>
+          <ellipse cx="250" cy="105" rx="8" ry="18" transform="rotate(30 250 250)"/>
+          <ellipse cx="250" cy="105" rx="8" ry="18" transform="rotate(60 250 250)"/>
+          <ellipse cx="250" cy="105" rx="8" ry="18" transform="rotate(90 250 250)"/>
+          <ellipse cx="250" cy="105" rx="8" ry="18" transform="rotate(120 250 250)"/>
+          <ellipse cx="250" cy="105" rx="8" ry="18" transform="rotate(150 250 250)"/>
+          <ellipse cx="250" cy="105" rx="8" ry="18" transform="rotate(180 250 250)"/>
+          <ellipse cx="250" cy="105" rx="8" ry="18" transform="rotate(210 250 250)"/>
+          <ellipse cx="250" cy="105" rx="8" ry="18" transform="rotate(240 250 250)"/>
+          <ellipse cx="250" cy="105" rx="8" ry="18" transform="rotate(270 250 250)"/>
+          <ellipse cx="250" cy="105" rx="8" ry="18" transform="rotate(300 250 250)"/>
+          <ellipse cx="250" cy="105" rx="8" ry="18" transform="rotate(330 250 250)"/>
+        </g>
+        <!-- Losangos anel interno -->
+        <g fill="none" stroke="#E0B899" stroke-width="1" opacity="0.55">
+          <polygon points="250,208 258,216 250,224 242,216" transform="rotate(0 250 250)"/>
+          <polygon points="250,208 258,216 250,224 242,216" transform="rotate(30 250 250)"/>
+          <polygon points="250,208 258,216 250,224 242,216" transform="rotate(60 250 250)"/>
+          <polygon points="250,208 258,216 250,224 242,216" transform="rotate(90 250 250)"/>
+          <polygon points="250,208 258,216 250,224 242,216" transform="rotate(120 250 250)"/>
+          <polygon points="250,208 258,216 250,224 242,216" transform="rotate(150 250 250)"/>
+          <polygon points="250,208 258,216 250,224 242,216" transform="rotate(180 250 250)"/>
+          <polygon points="250,208 258,216 250,224 242,216" transform="rotate(210 250 250)"/>
+          <polygon points="250,208 258,216 250,224 242,216" transform="rotate(240 250 250)"/>
+          <polygon points="250,208 258,216 250,224 242,216" transform="rotate(270 250 250)"/>
+          <polygon points="250,208 258,216 250,224 242,216" transform="rotate(300 250 250)"/>
+          <polygon points="250,208 258,216 250,224 242,216" transform="rotate(330 250 250)"/>
+        </g>
+        <!-- Texto central -->
+        <text x="250" y="258" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#C9956A" opacity="0.9">✦ 12 CONTOS ✦</text>
       </svg>
     </div>
     <h3 class="popup-title">Fique por dentro!</h3>
