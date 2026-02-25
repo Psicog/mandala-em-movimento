@@ -1912,8 +1912,8 @@ app.get('/', (c) => {
 <div class="popup-overlay" id="popup">
   <div class="popup-box">
     <button class="popup-close" onclick="closePopup()">✕</button>
-    <div class="popup-icon">
-      <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+    <div class="popup-icon" style="display:flex;justify-content:center;align-items:center;width:100%;margin:0 auto 20px;">
+      <svg style="display:block;margin:0 auto;" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <radialGradient id="popupMgCenter" cx="50%" cy="50%" r="50%">
             <stop offset="0%" stop-color="#C9956A" stop-opacity="0.4"/>
