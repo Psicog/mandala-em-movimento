@@ -1436,13 +1436,74 @@ app.get('/', (c) => {
       </div>
       <div class="faixa-card faixa-card-3 faixa-card-especial" style="overflow:hidden">
         <div class="faixa-num">60–69</div>
-        <div class="faixa-icon">🌹</div>
+        <div class="faixa-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Corpo da coruja -->
+            <ellipse cx="24" cy="28" rx="11" ry="13" fill="rgba(74,107,124,0.35)" stroke="#C9956A" stroke-width="1.5"/>
+            <!-- Cabeca -->
+            <ellipse cx="24" cy="16" rx="8" ry="7" fill="rgba(74,107,124,0.3)" stroke="#C9956A" stroke-width="1.4"/>
+            <!-- Orelhas (tufos) -->
+            <path d="M17 10 Q16 6 19 8" stroke="#C9956A" stroke-width="1.3" stroke-linecap="round" fill="none"/>
+            <path d="M31 10 Q32 6 29 8" stroke="#C9956A" stroke-width="1.3" stroke-linecap="round" fill="none"/>
+            <!-- Olho esquerdo -->
+            <circle cx="20" cy="15" r="3.2" fill="rgba(201,149,106,0.2)" stroke="#E0B899" stroke-width="1.2"/>
+            <circle cx="20" cy="15" r="1.5" fill="#C9956A" opacity="0.9"/>
+            <circle cx="20.6" cy="14.4" r="0.5" fill="#E0B899" opacity="0.9"/>
+            <!-- Olho direito -->
+            <circle cx="28" cy="15" r="3.2" fill="rgba(201,149,106,0.2)" stroke="#E0B899" stroke-width="1.2"/>
+            <circle cx="28" cy="15" r="1.5" fill="#C9956A" opacity="0.9"/>
+            <circle cx="28.6" cy="14.4" r="0.5" fill="#E0B899" opacity="0.9"/>
+            <!-- Bico -->
+            <path d="M22.5 18 L24 20.5 L25.5 18 Q24 17 22.5 18 Z" fill="#C9956A" opacity="0.85"/>
+            <!-- Padrao peito -->
+            <path d="M18 23 Q24 20 30 23" stroke="#E0B899" stroke-width="0.8" opacity="0.5" fill="none"/>
+            <path d="M17 27 Q24 24 31 27" stroke="#E0B899" stroke-width="0.7" opacity="0.35" fill="none"/>
+            <!-- Asas abertas levemente -->
+            <path d="M13 26 Q8 22 9 18 Q12 20 14 24" fill="rgba(201,149,106,0.2)" stroke="#C9956A" stroke-width="1.2" stroke-linejoin="round"/>
+            <path d="M35 26 Q40 22 39 18 Q36 20 34 24" fill="rgba(201,149,106,0.2)" stroke="#C9956A" stroke-width="1.2" stroke-linejoin="round"/>
+            <!-- Garras no galho -->
+            <line x1="19" y1="41" x2="19" y2="45" stroke="#C9956A" stroke-width="1.1" stroke-linecap="round"/>
+            <line x1="24" y1="41" x2="24" y2="45" stroke="#C9956A" stroke-width="1.1" stroke-linecap="round"/>
+            <line x1="29" y1="41" x2="29" y2="45" stroke="#C9956A" stroke-width="1.1" stroke-linecap="round"/>
+            <!-- Galho -->
+            <line x1="10" y1="43" x2="38" y2="43" stroke="#E0B899" stroke-width="1.3" stroke-linecap="round"/>
+            <!-- Estrela de sabedoria -->
+            <path d="M24 3 L24.8 5.5 L27 5.5 L25.2 7 L25.9 9.5 L24 8 L22.1 9.5 L22.8 7 L21 5.5 L23.2 5.5 Z" fill="#E0B899" opacity="0.75"/>
+          </svg>
+        </div>
         <div class="faixa-label">Sabedoria</div>
         <div class="faixa-desc">Integrando vida inteira. Transmitindo conhecimento. Celebrando cicatrizes com orgulho.</div>
       </div>
       <div class="faixa-card faixa-card-4 faixa-card-especial" style="overflow:hidden">
         <div class="faixa-num">70+</div>
-        <div class="faixa-icon">🌻</div>
+        <div class="faixa-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Raizes profundas -->
+            <path d="M24 38 Q20 42 17 46" stroke="#C9956A" stroke-width="1.2" stroke-linecap="round" opacity="0.7"/>
+            <path d="M24 38 Q24 43 24 46" stroke="#C9956A" stroke-width="1.3" stroke-linecap="round" opacity="0.8"/>
+            <path d="M24 38 Q28 42 31 46" stroke="#C9956A" stroke-width="1.2" stroke-linecap="round" opacity="0.7"/>
+            <path d="M21 40 Q18 44 16 47" stroke="#C9956A" stroke-width="0.9" stroke-linecap="round" opacity="0.45"/>
+            <path d="M27 40 Q30 44 32 47" stroke="#C9956A" stroke-width="0.9" stroke-linecap="round" opacity="0.45"/>
+            <!-- Tronco -->
+            <path d="M21 38 Q22 28 24 22" stroke="#C9956A" stroke-width="2" stroke-linecap="round"/>
+            <path d="M27 38 Q26 28 24 22" stroke="#C9956A" stroke-width="2" stroke-linecap="round"/>
+            <!-- Copa da arvore - ramos principais -->
+            <path d="M24 22 Q16 18 12 10 Q18 10 22 16" fill="rgba(201,149,106,0.2)" stroke="#C9956A" stroke-width="1.3" stroke-linejoin="round"/>
+            <path d="M24 22 Q32 18 36 10 Q30 10 26 16" fill="rgba(201,149,106,0.2)" stroke="#C9956A" stroke-width="1.3" stroke-linejoin="round"/>
+            <path d="M24 18 Q20 12 18 5 Q23 7 24 14" fill="rgba(224,184,153,0.2)" stroke="#E0B899" stroke-width="1.2" stroke-linejoin="round"/>
+            <path d="M24 18 Q28 12 30 5 Q25 7 24 14" fill="rgba(224,184,153,0.2)" stroke="#E0B899" stroke-width="1.2" stroke-linejoin="round"/>
+            <!-- Ramos laterais pequenos -->
+            <path d="M22 28 Q17 25 14 22" stroke="#C9956A" stroke-width="1" stroke-linecap="round" opacity="0.65"/>
+            <path d="M26 28 Q31 25 34 22" stroke="#C9956A" stroke-width="1" stroke-linecap="round" opacity="0.65"/>
+            <!-- Estrelas / frutos de sabedoria na copa -->
+            <circle cx="18" cy="9" r="1.5" fill="#E0B899" opacity="0.8"/>
+            <circle cx="30" cy="9" r="1.5" fill="#E0B899" opacity="0.8"/>
+            <circle cx="24" cy="4" r="2" fill="#C9956A" opacity="0.9"/>
+            <circle cx="24" cy="4" r="0.8" fill="#E0B899" opacity="1"/>
+            <!-- Lua crescente ao lado -->
+            <path d="M38 14 Q42 17 38 21 Q36 18 38 14 Z" fill="#E0B899" opacity="0.55"/>
+          </svg>
+        </div>
         <div class="faixa-label">Anciã Iniciada</div>
         <div class="faixa-desc">Iniciada. Mentora. Compartilhando sabedoria ancestral. Fechando ciclos com graça.</div>
       </div>
