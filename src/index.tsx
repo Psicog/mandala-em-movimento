@@ -520,18 +520,26 @@ app.get('/', (c) => {
     .popup-box {
       background: linear-gradient(135deg, #F2E8DF, #EDE0D5);
       border: 2px solid rgba(201,149,106,0.5); border-radius: 20px; padding: 40px;
-      max-width: 460px; width: 100%; text-align: center; position: relative;
-      display: flex; flex-direction: column; align-items: center;
+      max-width: 460px; width: 100%; position: relative;
+      display: flex; flex-direction: column; align-items: center; text-align: center;
       transform: scale(0.9); transition: transform 0.4s;
     }
     .popup-overlay.show .popup-box { transform: scale(1); }
     .popup-close { position: absolute; top: 14px; right: 18px; background: none; border: none; color: var(--cinza); font-size: 1.5rem; cursor: pointer; transition: color 0.2s; }
     .popup-close:hover { color: var(--ouro); }
-    .popup-icon { display: flex; align-items: center; justify-content: center; width: 100%; margin: 0 auto 20px; }
-    .popup-icon svg { width: 100px; height: 100px; animation: rotateSlow 40s linear infinite; display: block; margin: 0 auto; }
-    .popup-title { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--bordô); margin-bottom: 8px; }
-    .popup-text { color: #6A5045; font-size: 0.9rem; line-height: 1.6; margin-bottom: 24px; }
-    .popup-form { display: flex; flex-direction: column; gap: 12px; }
+    .popup-icon {
+      display: block;
+      width: 100px; height: 100px;
+      margin: 0 auto 20px;
+    }
+    .popup-icon svg {
+      width: 100px; height: 100px;
+      animation: rotateSlow 40s linear infinite;
+      display: block;
+    }
+    .popup-title { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--bordô); margin-bottom: 8px; width: 100%; }
+    .popup-text { color: #6A5045; font-size: 0.9rem; line-height: 1.6; margin-bottom: 24px; width: 100%; }
+    .popup-form { display: flex; flex-direction: column; gap: 12px; width: 100%; }
     .popup-form input {
       padding: 12px 16px; border-radius: 8px; border: 1px solid rgba(176,120,72,0.3);
       background: rgba(255,255,255,0.7); color: #3A2820; font-size: 0.9rem;
