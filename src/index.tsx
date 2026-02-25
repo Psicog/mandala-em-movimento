@@ -283,8 +283,8 @@ app.get('/', (c) => {
     .faixa-num { font-family: 'Playfair Display', serif; font-size: 3.5rem; font-weight: 900; color: var(--rose-gold); line-height: 1; }
     .faixa-icon { font-size: 2rem; margin: 12px 0; display: flex; align-items: center; justify-content: center; }
     .faixa-icon svg { width: 48px; height: 48px; }
-    .faixa-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px; color: #7A5A4A; }
-    .faixa-desc { font-size: 0.88rem; color: #4A3028; line-height: 1.6; }
+    .faixa-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px; color: rgba(255,255,255,0.85); }
+    .faixa-desc { font-size: 0.88rem; color: rgba(255,255,255,0.75); line-height: 1.6; }
     .faixa-msg {
       text-align: center; margin-top: 50px;
       font-family: 'Playfair Display', serif; font-size: clamp(1.2rem, 3vw, 1.7rem);
