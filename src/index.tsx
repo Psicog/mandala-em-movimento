@@ -519,27 +519,26 @@ app.get('/', (c) => {
     .popup-overlay.show { opacity: 1; pointer-events: all; }
     .popup-box {
       background: linear-gradient(135deg, #F2E8DF, #EDE0D5);
-      border: 2px solid rgba(201,149,106,0.5); border-radius: 20px; padding: 40px 40px 32px;
-      max-width: 460px; width: 100%; position: relative;
-      display: flex; flex-direction: column; align-items: center; text-align: center;
-      transform: scale(0.9); transition: transform 0.4s; box-sizing: border-box;
+      border: 2px solid rgba(201,149,106,0.5); border-radius: 20px;
+      padding: 20px 40px 36px; max-width: 460px; width: 100%;
+      position: relative; box-sizing: border-box;
+      transform: scale(0.9); transition: transform 0.4s;
     }
     .popup-overlay.show .popup-box { transform: scale(1); }
     .popup-close { position: absolute; top: 14px; right: 18px; background: none; border: none; color: var(--cinza); font-size: 1.5rem; cursor: pointer; transition: color 0.2s; }
     .popup-close:hover { color: var(--ouro); }
     .popup-icon {
-      width: 110px; height: 110px;
-      margin: 0 auto 20px auto;
       display: block;
-      flex-shrink: 0;
+      width: 80px; height: 80px;
+      margin: 8px auto 12px auto;
     }
     .popup-icon svg {
-      width: 110px; height: 110px;
+      width: 80px; height: 80px;
       animation: rotateSlow 40s linear infinite;
       display: block;
     }
-    .popup-title { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--bordô); margin-bottom: 8px; width: 100%; }
-    .popup-text { color: #6A5045; font-size: 0.9rem; line-height: 1.6; margin-bottom: 24px; width: 100%; }
+    .popup-title { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--bordô); margin-bottom: 8px; text-align: center; }
+    .popup-text { color: #6A5045; font-size: 0.9rem; line-height: 1.6; margin-bottom: 24px; text-align: center; }
     .popup-form { display: flex; flex-direction: column; gap: 12px; width: 100%; }
     .popup-form input {
       padding: 12px 16px; border-radius: 8px; border: 1px solid rgba(176,120,72,0.3);
@@ -1913,8 +1912,9 @@ app.get('/', (c) => {
 <div class="popup-overlay" id="popup">
   <div class="popup-box">
     <button class="popup-close" onclick="closePopup()">✕</button>
-    <div class="popup-icon">
-      <svg width="110" height="110" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+    <div style="width:100%;text-align:center;">
+      <div class="popup-icon">
+        <svg width="80" height="80" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <radialGradient id="popupMgCenter" cx="50%" cy="50%" r="50%">
             <stop offset="0%" stop-color="#C9956A" stop-opacity="0.4"/>
@@ -1993,13 +1993,14 @@ app.get('/', (c) => {
         <!-- Texto central -->
         <text x="250" y="258" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#C9956A" opacity="0.9">✦ 12 CONTOS ✦</text>
       </svg>
-    </div>
-    <h3 class="popup-title">Fique por dentro!</h3>
-    <p class="popup-text">Deixe seu e-mail para receber informações sobre a Vivência Gratuita e a Jornada Mandala em Movimento.</p>
-    <div class="popup-form">
-      <input type="text" placeholder="Seu nome" />
-      <input type="email" placeholder="Seu melhor e-mail" />
-      <a href="#cta-final" class="btn btn-primary" onclick="closePopup()" style="text-align:center">Quero receber!</a>
+      </div>
+      <h3 class="popup-title">Fique por dentro!</h3>
+      <p class="popup-text">Deixe seu e-mail para receber informações sobre a Vivência Gratuita e a Jornada Mandala em Movimento.</p>
+      <div class="popup-form">
+        <input type="text" placeholder="Seu nome" />
+        <input type="email" placeholder="Seu melhor e-mail" />
+        <a href="#cta-final" class="btn btn-primary" onclick="closePopup()" style="text-align:center">Quero receber!</a>
+      </div>
     </div>
   </div>
 </div>
