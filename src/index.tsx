@@ -526,7 +526,8 @@ app.get('/', (c) => {
     .popup-overlay.show .popup-box { transform: scale(1); }
     .popup-close { position: absolute; top: 14px; right: 18px; background: none; border: none; color: var(--cinza); font-size: 1.5rem; cursor: pointer; transition: color 0.2s; }
     .popup-close:hover { color: var(--ouro); }
-    .popup-icon { font-size: 3rem; margin-bottom: 16px; }
+    .popup-icon { display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
+    .popup-icon svg { width: 72px; height: 72px; }
     .popup-title { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--bordô); margin-bottom: 8px; }
     .popup-text { color: #6A5045; font-size: 0.9rem; line-height: 1.6; margin-bottom: 24px; }
     .popup-form { display: flex; flex-direction: column; gap: 12px; }
@@ -1902,7 +1903,53 @@ app.get('/', (c) => {
 <div class="popup-overlay" id="popup">
   <div class="popup-box">
     <button class="popup-close" onclick="closePopup()">✕</button>
-    <div class="popup-icon">🌀</div>
+    <div class="popup-icon">
+      <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Lua cheia ao fundo -->
+        <circle cx="52" cy="14" r="10" fill="rgba(224,184,153,0.18)" stroke="#E0B899" stroke-width="1.2" opacity="0.7"/>
+        <circle cx="52" cy="14" r="7" fill="rgba(224,184,153,0.12)" stroke="#E0B899" stroke-width="0.8" opacity="0.5"/>
+        <!-- Estrelas -->
+        <circle cx="20" cy="8" r="1.2" fill="#E0B899" opacity="0.6"/>
+        <circle cx="30" cy="5" r="0.9" fill="#E0B899" opacity="0.5"/>
+        <circle cx="62" cy="28" r="1" fill="#E0B899" opacity="0.55"/>
+        <circle cx="10" cy="20" r="0.8" fill="#C9956A" opacity="0.5"/>
+        <circle cx="65" cy="10" r="0.7" fill="#E0B899" opacity="0.4"/>
+        <!-- Corpo da loba - postura de uivo (sentada, cabeca erguida) -->
+        <!-- Corpo / torso -->
+        <ellipse cx="32" cy="52" rx="13" ry="11" fill="rgba(107,31,50,0.15)" stroke="#C9956A" stroke-width="1.4"/>
+        <!-- Pescoco erguido uivando -->
+        <path d="M28 42 Q26 34 28 26 Q30 20 34 18 Q38 16 40 20 Q42 25 40 30 Q38 35 36 42" stroke="#C9956A" stroke-width="1.5" fill="rgba(107,31,50,0.1)" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- Cabeca inclinada para cima (uivo) -->
+        <ellipse cx="34" cy="16" rx="7" ry="5.5" fill="rgba(107,31,50,0.15)" stroke="#C9956A" stroke-width="1.4" transform="rotate(-20 34 16)"/>
+        <!-- Orelha esquerda -->
+        <path d="M27 12 Q25 6 29 8 Q30 10 29 12" fill="rgba(201,149,106,0.25)" stroke="#C9956A" stroke-width="1.2" stroke-linejoin="round"/>
+        <!-- Orelha direita -->
+        <path d="M33 10 Q33 4 37 6 Q37 9 35 11" fill="rgba(201,149,106,0.3)" stroke="#C9956A" stroke-width="1.2" stroke-linejoin="round"/>
+        <path d="M34 10 Q34 6 36 7 Q36 9 35 10" fill="#C9956A" opacity="0.3"/>
+        <!-- Focinho apontado para cima -->
+        <path d="M30 18 Q32 14 36 13 Q40 12 41 16" stroke="#C9956A" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="38" cy="14" rx="2.2" ry="1.5" fill="#C9956A" opacity="0.8" transform="rotate(-20 38 14)"/>
+        <!-- Olho semicerrado (concentrado no uivo) -->
+        <path d="M29 17 Q31 15.5 33 17" stroke="#E0B899" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+        <circle cx="31" cy="17" r="1" fill="#7B2D3E" opacity="0.7"/>
+        <!-- Pelo do pescoco / juba -->
+        <path d="M28 26 Q24 28 23 32 Q24 36 28 38" stroke="#C9956A" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.55"/>
+        <path d="M36 24 Q40 26 41 30 Q40 35 37 38" stroke="#C9956A" stroke-width="0.9" fill="none" stroke-linecap="round" opacity="0.45"/>
+        <!-- Patas dianteiras -->
+        <path d="M24 52 Q21 58 20 63" stroke="#C9956A" stroke-width="1.4" stroke-linecap="round"/>
+        <path d="M26 53 Q24 59 23 64" stroke="#C9956A" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+        <path d="M40 52 Q43 58 44 63" stroke="#C9956A" stroke-width="1.4" stroke-linecap="round"/>
+        <path d="M38 53 Q40 59 41 64" stroke="#C9956A" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+        <!-- Garras -->
+        <path d="M19 63 Q18 65 20 65 Q22 65 21 63" stroke="#C9956A" stroke-width="0.8" fill="none" stroke-linecap="round" opacity="0.6"/>
+        <path d="M43 63 Q42 65 44 65 Q46 65 45 63" stroke="#C9956A" stroke-width="0.8" fill="none" stroke-linecap="round" opacity="0.6"/>
+        <!-- Rabo curvado -->
+        <path d="M44 52 Q52 50 56 44 Q58 40 55 38 Q52 40 52 44 Q50 48 46 50" stroke="#C9956A" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+        <!-- Ondas de uivo saindo da boca -->
+        <path d="M40 14 Q46 10 48 14" stroke="#E0B899" stroke-width="0.9" fill="none" stroke-linecap="round" opacity="0.5"/>
+        <path d="M41 12 Q49 6 52 11" stroke="#E0B899" stroke-width="0.7" fill="none" stroke-linecap="round" opacity="0.3"/>
+      </svg>
+    </div>
     <h3 class="popup-title">Fique por dentro!</h3>
     <p class="popup-text">Deixe seu e-mail para receber informações sobre a Vivência Gratuita e a Jornada Mandala em Movimento.</p>
     <div class="popup-form">
