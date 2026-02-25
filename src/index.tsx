@@ -520,30 +520,24 @@ app.get('/', (c) => {
     .popup-box {
       background: linear-gradient(135deg, #F2E8DF, #EDE0D5);
       border: 2px solid rgba(201,149,106,0.5); border-radius: 20px;
-      padding: 20px 40px 36px; max-width: 460px; width: 100%;
+      padding: 36px 40px 36px; max-width: 460px; width: 100%;
       position: relative; box-sizing: border-box;
       transform: scale(0.9); transition: transform 0.4s;
+      overflow: hidden;
     }
     .popup-overlay.show .popup-box { transform: scale(1); }
-    .popup-close { position: absolute; top: 14px; right: 18px; background: none; border: none; color: var(--cinza); font-size: 1.5rem; cursor: pointer; transition: color 0.2s; }
+    .popup-close { position: absolute; top: 14px; right: 18px; background: none; border: none; color: var(--cinza); font-size: 1.5rem; cursor: pointer; transition: color 0.2s; z-index: 2; }
     .popup-close:hover { color: var(--ouro); }
-    .popup-icon {
-      display: block;
-      width: 80px; height: 80px;
-      margin: 8px auto 12px auto;
-    }
-    .popup-icon svg {
-      width: 80px; height: 80px;
-      animation: rotateSlow 40s linear infinite;
-      display: block;
-    }
-    .popup-title { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--bordô); margin-bottom: 8px; text-align: center; }
-    .popup-text { color: #6A5045; font-size: 0.9rem; line-height: 1.6; margin-bottom: 24px; text-align: center; }
+    .popup-inner { display: table; width: 100%; }
+    .popup-mandala-wrap { display: block; text-align: center; margin: 0 0 12px 0; line-height: 0; }
+    .popup-mandala-wrap svg { animation: rotateSlow 40s linear infinite; }
+    .popup-title { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--bordô); margin-bottom: 8px; text-align: center; display: block; }
+    .popup-text { color: #6A5045; font-size: 0.9rem; line-height: 1.6; margin-bottom: 24px; text-align: center; display: block; }
     .popup-form { display: flex; flex-direction: column; gap: 12px; width: 100%; }
     .popup-form input {
       padding: 12px 16px; border-radius: 8px; border: 1px solid rgba(176,120,72,0.3);
       background: rgba(255,255,255,0.7); color: #3A2820; font-size: 0.9rem;
-      outline: none; transition: border-color 0.2s;
+      outline: none; transition: border-color 0.2s; width: 100%; box-sizing: border-box;
     }
     .popup-form input:focus { border-color: var(--rose-gold); }
     .popup-form input::placeholder { color: rgba(90,60,40,0.4); }
@@ -1912,40 +1906,26 @@ app.get('/', (c) => {
 <div class="popup-overlay" id="popup">
   <div class="popup-box">
     <button class="popup-close" onclick="closePopup()">✕</button>
-    <div style="width:100%;text-align:center;">
-      <div class="popup-icon">
-        <svg width="80" height="80" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+    <div class="popup-mandala-wrap">
+      <svg width="90" height="90" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <radialGradient id="popupMgCenter" cx="50%" cy="50%" r="50%">
             <stop offset="0%" stop-color="#C9956A" stop-opacity="0.4"/>
             <stop offset="50%" stop-color="#7B2D3E" stop-opacity="0.2"/>
             <stop offset="100%" stop-color="#2C1A1E" stop-opacity="0"/>
           </radialGradient>
-          <filter id="popupMgGlow">
-            <feGaussianBlur stdDeviation="1.5" result="blur"/>
-            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-          </filter>
         </defs>
-        <!-- Fundo radial -->
         <circle cx="250" cy="250" r="245" fill="url(#popupMgCenter)"/>
-        <!-- Anéis concêntricos -->
         <circle cx="250" cy="250" r="240" stroke="#C9956A" stroke-width="1.2" fill="none" opacity="0.7"/>
-        <circle cx="250" cy="250" r="225" stroke="#7B2D3E" stroke-width="0.5" fill="none" opacity="0.5" stroke-dasharray="4,4"/>
         <circle cx="250" cy="250" r="210" stroke="#7B2D3E" stroke-width="1.8" fill="none" opacity="0.8"/>
-        <circle cx="250" cy="250" r="195" stroke="#C9956A" stroke-width="0.5" fill="none" opacity="0.4" stroke-dasharray="3,6"/>
         <circle cx="250" cy="250" r="175" stroke="#C9956A" stroke-width="1" fill="none" opacity="0.6"/>
         <circle cx="250" cy="250" r="145" stroke="#E0B899" stroke-width="1.4" fill="none" opacity="0.7"/>
-        <circle cx="250" cy="250" r="125" stroke="#C9956A" stroke-width="0.5" fill="none" opacity="0.4" stroke-dasharray="2,5"/>
         <circle cx="250" cy="250" r="110" stroke="#7B2D3E" stroke-width="1.2" fill="none" opacity="0.6"/>
-        <circle cx="250" cy="250" r="90"  stroke="#E0B899" stroke-width="0.6" fill="none" opacity="0.4" stroke-dasharray="3,4"/>
         <circle cx="250" cy="250" r="75"  stroke="#C9956A" stroke-width="1.8" fill="none" opacity="0.8"/>
-        <circle cx="250" cy="250" r="56"  stroke="#E0B899" stroke-width="0.8" fill="none" opacity="0.5"/>
         <circle cx="250" cy="250" r="42"  stroke="#E0B899" stroke-width="1.2" fill="none" opacity="0.7"/>
-        <circle cx="250" cy="250" r="28"  stroke="#C9956A" stroke-width="0.6" fill="none" opacity="0.5"/>
         <circle cx="250" cy="250" r="16"  fill="#C9956A" opacity="0.85"/>
         <circle cx="250" cy="250" r="10"  fill="#7B2D3E" opacity="0.95"/>
         <circle cx="250" cy="250" r="5"   fill="#E0B899" opacity="1"/>
-        <!-- Raios (12 direções) -->
         <g stroke="#C9956A" stroke-width="0.8" opacity="0.45">
           <line x1="250" y1="10"  x2="250" y2="490"/>
           <line x1="10"  y1="250" x2="490" y2="250"/>
@@ -1960,7 +1940,6 @@ app.get('/', (c) => {
           <line x1="113" y1="36"  x2="387" y2="464"/>
           <line x1="387" y1="36"  x2="113" y2="464"/>
         </g>
-        <!-- Pétalas decorativas -->
         <g opacity="0.35" fill="#C9956A">
           <ellipse cx="250" cy="105" rx="8" ry="18" transform="rotate(0 250 250)"/>
           <ellipse cx="250" cy="105" rx="8" ry="18" transform="rotate(30 250 250)"/>
@@ -1975,34 +1954,15 @@ app.get('/', (c) => {
           <ellipse cx="250" cy="105" rx="8" ry="18" transform="rotate(300 250 250)"/>
           <ellipse cx="250" cy="105" rx="8" ry="18" transform="rotate(330 250 250)"/>
         </g>
-        <!-- Losangos anel interno -->
-        <g fill="none" stroke="#E0B899" stroke-width="1" opacity="0.55">
-          <polygon points="250,208 258,216 250,224 242,216" transform="rotate(0 250 250)"/>
-          <polygon points="250,208 258,216 250,224 242,216" transform="rotate(30 250 250)"/>
-          <polygon points="250,208 258,216 250,224 242,216" transform="rotate(60 250 250)"/>
-          <polygon points="250,208 258,216 250,224 242,216" transform="rotate(90 250 250)"/>
-          <polygon points="250,208 258,216 250,224 242,216" transform="rotate(120 250 250)"/>
-          <polygon points="250,208 258,216 250,224 242,216" transform="rotate(150 250 250)"/>
-          <polygon points="250,208 258,216 250,224 242,216" transform="rotate(180 250 250)"/>
-          <polygon points="250,208 258,216 250,224 242,216" transform="rotate(210 250 250)"/>
-          <polygon points="250,208 258,216 250,224 242,216" transform="rotate(240 250 250)"/>
-          <polygon points="250,208 258,216 250,224 242,216" transform="rotate(270 250 250)"/>
-          <polygon points="250,208 258,216 250,224 242,216" transform="rotate(300 250 250)"/>
-          <polygon points="250,208 258,216 250,224 242,216" transform="rotate(330 250 250)"/>
-        </g>
-        <!-- Texto central -->
         <text x="250" y="258" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#C9956A" opacity="0.9">✦ 12 CONTOS ✦</text>
       </svg>
-      </div>
-      <h3 class="popup-title">Fique por dentro!</h3>
-      <p class="popup-text">Deixe seu e-mail para receber informações sobre a Vivência Gratuita e a Jornada Mandala em Movimento.</p>
-      <div class="popup-form">
-        <input type="text" placeholder="Seu nome" />
-        <input type="email" placeholder="Seu melhor e-mail" />
-        <a href="#cta-final" class="btn btn-primary" onclick="closePopup()" style="text-align:center">Quero receber!</a>
-      </div>
     </div>
-  </div>
+    <h3 class="popup-title">Fique por dentro!</h3>
+    <p class="popup-text">Deixe seu e-mail para receber informações sobre a Vivência Gratuita e a Jornada Mandala em Movimento.</p>
+    <div class="popup-form">
+      <input type="text" placeholder="Seu nome" />
+      <input type="email" placeholder="Seu melhor e-mail" />
+      <a href="#cta-final" class="btn btn-primary" onclick="closePopup()" style="text-align:center">Quero receber!</a>
 </div>
 
 <script>
