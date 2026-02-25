@@ -1179,23 +1179,38 @@ app.get('/', (c) => {
           <div class="sobre-badge">
             <div class="sobre-badge-icon">
               <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <!-- Livro aberto -->
-                <path d="M4 9 Q4 7 6 7 L16 9 L16 25 L6 23 Q4 23 4 21 Z" fill="rgba(201,149,106,0.13)" stroke="#C9956A" stroke-width="1.4" stroke-linejoin="round"/>
-                <path d="M28 9 Q28 7 26 7 L16 9 L16 25 L26 23 Q28 23 28 21 Z" fill="rgba(201,149,106,0.07)" stroke="#C9956A" stroke-width="1.4" stroke-linejoin="round"/>
-                <!-- Lombada -->
-                <line x1="16" y1="9" x2="16" y2="25" stroke="#E0B899" stroke-width="1.3" opacity="0.85"/>
-                <!-- Linhas de texto pagina esquerda -->
-                <line x1="7" y1="13" x2="14" y2="13.5" stroke="#C9956A" stroke-width="0.8" opacity="0.5"/>
-                <line x1="7" y1="15.5" x2="14" y2="16" stroke="#C9956A" stroke-width="0.8" opacity="0.5"/>
-                <line x1="7" y1="18" x2="12" y2="18.3" stroke="#C9956A" stroke-width="0.8" opacity="0.5"/>
-                <!-- Broto nascendo do livro = historia que vira vida -->
-                <line x1="16" y1="9" x2="16" y2="4" stroke="#C9956A" stroke-width="1.3" stroke-linecap="round"/>
-                <path d="M16 6 Q12 4 11 6 Q13 8 16 7" fill="#C9956A" opacity="0.65"/>
-                <path d="M16 5 Q20 3 21 5 Q19 7 16 6" fill="#E0B899" opacity="0.6"/>
-                <!-- Coracao pagina direita = humanismo -->
-                <path d="M19 15 Q19 13 21 13 Q23 13 23 15 Q23 17 21 19 Q19 17 19 15 Z" fill="#C9956A" opacity="0.6"/>
-                <!-- Estrela pequena -->
-                <circle cx="23" cy="20" r="1.2" fill="#E0B899" opacity="0.7"/>
+                <!-- Cabeca da loba - perfil voltado para direita -->
+                <!-- Focinho / queixo -->
+                <path d="M6 20 Q7 23 10 24 Q13 25 15 23 Q17 21 17 19" stroke="#C9956A" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+                <!-- Nariz -->
+                <ellipse cx="15.5" cy="18.5" rx="1.8" ry="1.2" fill="#C9956A" opacity="0.85"/>
+                <!-- Boca / focinho inferior -->
+                <path d="M13 21 Q14.5 22.5 16 21" stroke="#E0B899" stroke-width="0.9" fill="none" stroke-linecap="round" opacity="0.7"/>
+                <!-- Contorno do cranio -->
+                <path d="M6 20 Q4 16 5 12 Q6 8 10 7 Q14 6 17 9 Q20 11 19 15 Q18 18 17 19" stroke="#C9956A" stroke-width="1.4" fill="rgba(201,149,106,0.08)" stroke-linecap="round" stroke-linejoin="round"/>
+                <!-- Orelha esquerda (fundo) -->
+                <path d="M8 8 Q7 4 10 5 Q11 7 10 8" fill="rgba(201,149,106,0.2)" stroke="#C9956A" stroke-width="1.1" stroke-linejoin="round"/>
+                <!-- Orelha direita (frente) -->
+                <path d="M13 7 Q13 3 16 4 Q17 6 15 8" fill="rgba(201,149,106,0.25)" stroke="#C9956A" stroke-width="1.2" stroke-linejoin="round"/>
+                <!-- Interior orelha direita -->
+                <path d="M14 7 Q14 5 15.5 5.5 Q16 6.5 15 7.5" fill="#C9956A" opacity="0.35"/>
+                <!-- Olho da loba - expressivo -->
+                <ellipse cx="12" cy="13" rx="2.8" ry="2.2" fill="rgba(107,31,50,0.3)" stroke="#E0B899" stroke-width="1.1"/>
+                <circle cx="12" cy="13" r="1.4" fill="#7B2D3E" opacity="0.9"/>
+                <circle cx="12.6" cy="12.4" r="0.5" fill="#E0B899" opacity="1"/>
+                <!-- Pelo / textura no pescoco -->
+                <path d="M6 20 Q5 22 6 24 Q8 26 11 26 Q13 25 14 24" stroke="#C9956A" stroke-width="1.1" fill="none" stroke-linecap="round" opacity="0.6"/>
+                <!-- Lua crescente atras = noite / instinto selvagem -->
+                <path d="M23 5 Q28 9 28 16 Q28 22 23 26 Q27 22 27 16 Q27 9 23 5 Z" fill="#E0B899" opacity="0.25" stroke="#E0B899" stroke-width="0.8" opacity="0.4"/>
+                <!-- Estrelas ao redor -->
+                <circle cx="25" cy="7" r="0.8" fill="#E0B899" opacity="0.7"/>
+                <circle cx="27" cy="13" r="0.6" fill="#E0B899" opacity="0.5"/>
+                <circle cx="26" cy="19" r="0.7" fill="#E0B899" opacity="0.6"/>
+                <circle cx="22" cy="4" r="0.5" fill="#C9956A" opacity="0.6"/>
+                <!-- Pontinhos de pelo no queixo -->
+                <line x1="10" y1="24" x2="9" y2="26" stroke="#C9956A" stroke-width="0.8" stroke-linecap="round" opacity="0.5"/>
+                <line x1="12" y1="25" x2="12" y2="27" stroke="#C9956A" stroke-width="0.8" stroke-linecap="round" opacity="0.45"/>
+                <line x1="14" y1="24" x2="15" y2="26" stroke="#C9956A" stroke-width="0.8" stroke-linecap="round" opacity="0.4"/>
               </svg>
             </div>
             <div>
