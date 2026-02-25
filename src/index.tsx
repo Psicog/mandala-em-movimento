@@ -198,29 +198,29 @@ app.get('/', (c) => {
     /* Fundamentos em 3 colunas lado a lado */
     .sobre-badges { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 0; width: 100%; }
     .sobre-badge {
-      display: flex; flex-direction: column; align-items: flex-start; gap: 14px;
+      display: flex; flex-direction: column; align-items: center; text-align: center; gap: 14px;
       background: rgba(255,255,255,0.55); border: 1px solid rgba(176,120,72,0.2);
-      border-radius: 16px; padding: 24px 20px;
+      border-radius: 16px; padding: 32px 24px;
       transition: border-color 0.3s, background 0.3s, transform 0.3s, box-shadow 0.3s;
       position: relative; overflow: hidden;
     }
     .sobre-badge::before {
-      content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px;
-      background: linear-gradient(180deg, var(--rose-gold), var(--borde));
-      border-radius: 16px 0 0 16px;
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--rose-gold), var(--bordô));
+      border-radius: 16px 16px 0 0;
     }
-    .sobre-badge:hover { border-color: var(--rose-gold); background: rgba(255,255,255,0.85); transform: translateY(-4px); box-shadow: 0 8px 32px rgba(176,120,72,0.18); }
+    .sobre-badge:hover { border-color: var(--rose-gold); background: rgba(255,255,255,0.85); transform: translateY(-6px); box-shadow: 0 12px 36px rgba(176,120,72,0.2); }
     .sobre-badge-icon {
-      flex-shrink: 0; width: 60px; height: 60px;
-      background: rgba(201,149,106,0.1); border: 1px solid rgba(201,149,106,0.3);
-      border-radius: 16px; display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; width: 72px; height: 72px;
+      background: rgba(201,149,106,0.12); border: 1.5px solid rgba(201,149,106,0.35);
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
       transition: background 0.3s, transform 0.3s;
     }
-    .sobre-badge:hover .sobre-badge-icon { background: rgba(201,149,106,0.2); transform: scale(1.08); }
-    .sobre-badge-icon svg { width: 32px; height: 32px; }
-    .sobre-badge-subtitle { color: var(--ouro-claro); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 4px; opacity: 0.85; }
-    .sobre-badge-title { color: var(--rose-gold); font-weight: 700; font-size: 0.95rem; margin-bottom: 6px; }
-    .sobre-badge-text { color: #6A5045; font-size: 0.85rem; line-height: 1.6; }
+    .sobre-badge:hover .sobre-badge-icon { background: rgba(201,149,106,0.25); transform: scale(1.1) rotate(5deg); }
+    .sobre-badge-icon svg { width: 36px; height: 36px; }
+    .sobre-badge-subtitle { color: var(--ouro-claro); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; opacity: 0.85; }
+    .sobre-badge-title { color: var(--rose-gold); font-weight: 700; font-size: 1rem; line-height: 1.4; }
+    .sobre-badge-text { color: #6A5045; font-size: 0.85rem; line-height: 1.65; }
     /* Mandala decorativa – centralizada entre fundamentos e estrutura */
     .sobre-visual { display: flex; align-items: center; justify-content: center; width: 100%; margin: 40px 0; }
     .sobre-mandala { width: 200px; height: 200px; animation: rotateSlow 40s linear infinite; opacity: 0.75; }
