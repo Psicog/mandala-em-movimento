@@ -221,9 +221,7 @@ app.get('/', (c) => {
     .sobre-badge-subtitle { color: var(--ouro-claro); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; opacity: 0.85; }
     .sobre-badge-title { color: var(--rose-gold); font-weight: 700; font-size: 1rem; line-height: 1.4; }
     .sobre-badge-text { color: #6A5045; font-size: 0.85rem; line-height: 1.65; }
-    /* Mandala decorativa – centralizada entre fundamentos e estrutura */
-    .sobre-visual { display: flex; align-items: center; justify-content: center; width: 100%; margin: 40px 0; }
-    .sobre-mandala { width: 200px; height: 200px; animation: rotateSlow 40s linear infinite; opacity: 0.75; }
+
     /* Caixa de estrutura do encontro – largura total */
     .espiral-box {
       background: rgba(255,255,255,0.5);
@@ -550,8 +548,6 @@ app.get('/', (c) => {
     }
     @media (max-width: 900px) {
       .sobre-badges { grid-template-columns: 1fr; }
-      .sobre-visual { margin: 24px 0; }
-      .sobre-mandala { width: 140px; height: 140px; }
       .espiral-steps { grid-template-columns: repeat(2, 1fr); }
       .datas-grid { grid-template-columns: 1fr; }
       .footer-grid { grid-template-columns: 1fr 1fr; }
@@ -1211,29 +1207,6 @@ app.get('/', (c) => {
 
       </div>
 
-      <!-- Mandala decorativa centralizada -->
-      <div class="sobre-visual fade-in">
-        <svg class="sobre-mandala" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <radialGradient id="g1m" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stop-color="#C9956A" stop-opacity="0.4"/>
-              <stop offset="100%" stop-color="#7B2D3E" stop-opacity="0.05"/>
-            </radialGradient>
-          </defs>
-          <circle cx="200" cy="200" r="198" fill="url(#g1m)" stroke="#C9956A" stroke-width="1.5"/>
-          <circle cx="200" cy="200" r="150" stroke="#7B2D3E" stroke-width="1.5" fill="none" opacity="0.6"/>
-          <circle cx="200" cy="200" r="100" stroke="#C9956A" stroke-width="1" fill="none" opacity="0.5"/>
-          <circle cx="200" cy="200" r="50" stroke="#C9956A" stroke-width="1.5" fill="none" opacity="0.7"/>
-          <circle cx="200" cy="200" r="12" fill="#C9956A" opacity="0.9"/>
-          <g stroke="#C9956A" stroke-width="0.8" opacity="0.4">
-            <line x1="200" y1="2" x2="200" y2="398"/>
-            <line x1="2" y1="200" x2="398" y2="200"/>
-            <line x1="60" y1="60" x2="340" y2="340"/>
-            <line x1="340" y1="60" x2="60" y2="340"/>
-          </g>
-          <text x="200" y="208" text-anchor="middle" font-family="Georgia,serif" font-size="16" fill="#C9956A" opacity="0.9">✦ 12 CONTOS ✦</text>
-        </svg>
-      </div>
 
       <!-- Estrutura de cada encontro - largura total -->
       <div class="espiral-box fade-in">
