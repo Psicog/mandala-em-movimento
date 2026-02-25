@@ -186,17 +186,21 @@ app.get('/', (c) => {
 
     /* ===== SEÇÃO 2: SOBRE ===== */
     #sobre { background: linear-gradient(180deg, var(--bg-base) 0%, var(--bg-alt) 100%); position: relative; overflow: hidden; }
-    .sobre-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
-    .sobre-headline-wrap { text-align: center; margin-bottom: 50px; }
+    /* Layout principal: todo o conteúdo centralizado em coluna única */
+    .sobre-grid { display: flex; flex-direction: column; align-items: center; gap: 0; }
+    .sobre-headline-wrap { text-align: center; margin-bottom: 16px; width: 100%; }
     .sobre-headline-wrap .section-headline { margin-bottom: 12px; }
     .sobre-headline-wrap .section-subline { margin-bottom: 0; }
-    .sobre-text p { color: #3A2820; font-size: 1.05rem; line-height: 1.9; margin-bottom: 20px; }
-    .sobre-text p strong { color: var(--bordô); }
-    .sobre-badges { display: flex; flex-direction: column; gap: 20px; margin-top: 30px; }
+    /* Intro centralizado */
+    .sobre-intro { text-align: center; max-width: 720px; margin: 0 auto 40px; }
+    .sobre-intro p { color: #3A2820; font-size: 1.05rem; line-height: 1.9; margin-bottom: 14px; }
+    .sobre-intro p strong { color: var(--bordô); }
+    /* Fundamentos em 3 colunas lado a lado */
+    .sobre-badges { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 0; width: 100%; }
     .sobre-badge {
-      display: flex; align-items: flex-start; gap: 20px;
+      display: flex; flex-direction: column; align-items: flex-start; gap: 14px;
       background: rgba(255,255,255,0.55); border: 1px solid rgba(176,120,72,0.2);
-      border-radius: 16px; padding: 20px 24px;
+      border-radius: 16px; padding: 24px 20px;
       transition: border-color 0.3s, background 0.3s, transform 0.3s, box-shadow 0.3s;
       position: relative; overflow: hidden;
     }
@@ -205,7 +209,7 @@ app.get('/', (c) => {
       background: linear-gradient(180deg, var(--rose-gold), var(--borde));
       border-radius: 16px 0 0 16px;
     }
-    .sobre-badge:hover { border-color: var(--rose-gold); background: rgba(255,255,255,0.85); transform: translateX(4px); box-shadow: 0 6px 30px rgba(176,120,72,0.15); }
+    .sobre-badge:hover { border-color: var(--rose-gold); background: rgba(255,255,255,0.85); transform: translateY(-4px); box-shadow: 0 8px 32px rgba(176,120,72,0.18); }
     .sobre-badge-icon {
       flex-shrink: 0; width: 60px; height: 60px;
       background: rgba(201,149,106,0.1); border: 1px solid rgba(201,149,106,0.3);
@@ -215,17 +219,19 @@ app.get('/', (c) => {
     .sobre-badge:hover .sobre-badge-icon { background: rgba(201,149,106,0.2); transform: scale(1.08); }
     .sobre-badge-icon svg { width: 32px; height: 32px; }
     .sobre-badge-subtitle { color: var(--ouro-claro); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 4px; opacity: 0.85; }
-    .sobre-badge-title { color: var(--rose-gold); font-weight: 700; font-size: 1rem; margin-bottom: 6px; }
-    .sobre-badge-text { color: #6A5045; font-size: 0.87rem; line-height: 1.6; }
-    .sobre-visual { position: relative; display: flex; align-items: center; justify-content: center; min-height: 400px; }
-    .sobre-mandala { width: 100%; max-width: 380px; animation: rotateSlow 40s linear infinite; opacity: 0.9; }
+    .sobre-badge-title { color: var(--rose-gold); font-weight: 700; font-size: 0.95rem; margin-bottom: 6px; }
+    .sobre-badge-text { color: #6A5045; font-size: 0.85rem; line-height: 1.6; }
+    /* Mandala decorativa – centralizada entre fundamentos e estrutura */
+    .sobre-visual { display: flex; align-items: center; justify-content: center; width: 100%; margin: 40px 0; }
+    .sobre-mandala { width: 200px; height: 200px; animation: rotateSlow 40s linear infinite; opacity: 0.75; }
+    /* Caixa de estrutura do encontro – largura total */
     .espiral-box {
       background: rgba(255,255,255,0.5);
-      border: 1px solid rgba(176,120,72,0.25); border-radius: 16px; padding: 32px;
-      margin-top: 50px;
+      border: 1px solid rgba(176,120,72,0.25); border-radius: 16px; padding: 36px 40px;
+      width: 100%; box-sizing: border-box;
     }
     .espiral-title {
-      color: var(--rose-gold); font-size: 1.3rem; font-weight: 700; margin-bottom: 24px;
+      color: var(--rose-gold); font-size: 1.3rem; font-weight: 700; margin-bottom: 28px;
       text-align: center; display: flex; align-items: center; justify-content: center; gap: 12px;
     }
     .espiral-title-icon {
@@ -234,28 +240,29 @@ app.get('/', (c) => {
       display: flex; align-items: center; justify-content: center; flex-shrink: 0;
     }
     .espiral-title-icon svg { width: 20px; height: 20px; }
-    .espiral-steps { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    /* 4 passos em linha horizontal */
+    .espiral-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
     .espiral-step {
-      background: rgba(255,255,255,0.6); border-radius: 14px; padding: 18px 16px;
+      background: rgba(255,255,255,0.6); border-radius: 14px; padding: 20px 16px;
       border: 1px solid rgba(176,120,72,0.18);
       transition: border-color 0.3s, background 0.3s, transform 0.3s;
-      display: flex; flex-direction: column; gap: 10px;
+      display: flex; flex-direction: column; gap: 12px; text-align: center; align-items: center;
     }
-    .espiral-step:hover { border-color: rgba(176,120,72,0.5); background: rgba(255,255,255,0.9); transform: translateY(-3px); }
-    .espiral-step-header { display: flex; align-items: center; gap: 10px; }
+    .espiral-step:hover { border-color: rgba(176,120,72,0.5); background: rgba(255,255,255,0.9); transform: translateY(-4px); box-shadow: 0 6px 24px rgba(176,120,72,0.15); }
+    .espiral-step-header { display: flex; flex-direction: column; align-items: center; gap: 10px; }
     .espiral-step-icon {
-      width: 40px; height: 40px; flex-shrink: 0;
-      border-radius: 12px; display: flex; align-items: center; justify-content: center;
+      width: 48px; height: 48px; flex-shrink: 0;
+      border-radius: 14px; display: flex; align-items: center; justify-content: center;
       border: 1px solid rgba(201,149,106,0.3);
     }
-    .espiral-step-icon svg { width: 22px; height: 22px; }
+    .espiral-step-icon svg { width: 26px; height: 26px; }
     .espiral-step-icon-1 { background: rgba(155,58,80,0.2); border-color: rgba(155,58,80,0.5); }
     .espiral-step-icon-2 { background: rgba(201,149,106,0.15); border-color: rgba(201,149,106,0.4); }
     .espiral-step-icon-3 { background: rgba(92,122,90,0.2); border-color: rgba(92,122,90,0.5); }
     .espiral-step-icon-4 { background: rgba(224,184,153,0.15); border-color: rgba(224,184,153,0.4); }
-    .espiral-step-num { font-size: 0.65rem; font-weight: 800; color: rgba(201,149,106,0.5); letter-spacing: 1px; }
-    .espiral-step-label { color: var(--rose-gold); font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; line-height: 1.2; }
-    .espiral-step-text { color: #6A5045; font-size: 0.87rem; margin-top: 0; font-style: italic; line-height: 1.5; padding-left: 2px; }
+    .espiral-step-num { font-size: 0.65rem; font-weight: 800; color: rgba(201,149,106,0.6); letter-spacing: 1px; }
+    .espiral-step-label { color: var(--rose-gold); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; line-height: 1.2; }
+    .espiral-step-text { color: #6A5045; font-size: 0.87rem; font-style: italic; line-height: 1.5; }
 
     /* ===== SEÇÃO 3: FAIXA ETÁRIA ===== */
     #faixa { background: var(--bg-deep); position: relative; overflow: hidden; }
@@ -542,8 +549,10 @@ app.get('/', (c) => {
       .faixa-grid { grid-template-columns: repeat(2, 1fr); }
     }
     @media (max-width: 900px) {
-      .sobre-grid { grid-template-columns: 1fr; }
-      .sobre-visual { display: none; }
+      .sobre-badges { grid-template-columns: 1fr; }
+      .sobre-visual { margin: 24px 0; }
+      .sobre-mandala { width: 140px; height: 140px; }
+      .espiral-steps { grid-template-columns: repeat(2, 1fr); }
       .datas-grid { grid-template-columns: 1fr; }
       .footer-grid { grid-template-columns: 1fr 1fr; }
       .timeline { display: none; }
@@ -557,7 +566,7 @@ app.get('/', (c) => {
       .ciclos-grid { grid-template-columns: 1fr; max-width: 380px; margin: 0 auto; }
       .faixa-grid { grid-template-columns: 1fr 1fr; }
       .footer-grid { grid-template-columns: 1fr; }
-      .espiral-steps { grid-template-columns: 1fr; }
+      .espiral-steps { grid-template-columns: repeat(2, 1fr); }
       .cta-info { flex-direction: column; align-items: center; }
       .footer-bar { flex-direction: column; gap: 10px; text-align: center; }
       .sticky-cta { bottom: 16px; right: 16px; flex-direction: column; align-items: flex-end; }
@@ -567,6 +576,8 @@ app.get('/', (c) => {
       .faixa-grid { grid-template-columns: 1fr; max-width: 320px; margin: 0 auto; }
       .contos-grid { grid-template-columns: 1fr; }
       .hero-btns { flex-direction: column; align-items: center; }
+      .sobre-badges { grid-template-columns: 1fr; }
+      .espiral-steps { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -1096,19 +1107,22 @@ app.get('/', (c) => {
   <div class="container">
     <div class="sobre-headline-wrap fade-in">
       <h2 class="section-headline">O que é Mandala em Movimento?</h2>
-      <p class="section-subline">Uma jornada terapêutica de 12 encontros para mulheres 40+ em transição e transformação</p>
+      <p class="section-subline">Uma jornada terapêutica de 12 encontros para mulheres 40+, 50+, 60+ e 70+ em transição e transformação</p>
     </div>
     <div class="sobre-grid">
-      <div class="sobre-text fade-in">
+      <!-- Intro centralizado -->
+      <div class="sobre-intro fade-in">
         <p>
-          <strong>Mandala em Movimento</strong> é uma jornada terapêutica de <strong>12 encontros semanais</strong> 
+          <strong>Mandala em Movimento</strong> é uma jornada terapêutica de <strong>12 encontros semanais</strong>
           para mulheres 40+, com especial atenção para 50+, 60+ e 70+.
         </p>
         <p>
-          Usando os contos de <strong>"Mulheres que Correm com os Lobos"</strong> (Clarissa Pinkola Estés), 
+          Usando os contos de <strong>"Mulheres que Correm com os Lobos"</strong> (Clarissa Pinkola Estés),
           integramos três fundamentos em cada encontro:
         </p>
-        <div class="sobre-badges">
+      </div>
+      <!-- Fundamentos: 3 colunas centralizadas -->
+      <div class="sobre-badges fade-in">
 
           <!-- Fundamento 1: Focalizacao -->
           <div class="sobre-badge">
@@ -1195,8 +1209,34 @@ app.get('/', (c) => {
             </div>
           </div>
 
-        </div>
-        <div class="espiral-box fade-in" style="margin-top:30px">
+      </div>
+
+      <!-- Mandala decorativa centralizada -->
+      <div class="sobre-visual fade-in">
+        <svg class="sobre-mandala" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="g1m" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#C9956A" stop-opacity="0.4"/>
+              <stop offset="100%" stop-color="#7B2D3E" stop-opacity="0.05"/>
+            </radialGradient>
+          </defs>
+          <circle cx="200" cy="200" r="198" fill="url(#g1m)" stroke="#C9956A" stroke-width="1.5"/>
+          <circle cx="200" cy="200" r="150" stroke="#7B2D3E" stroke-width="1.5" fill="none" opacity="0.6"/>
+          <circle cx="200" cy="200" r="100" stroke="#C9956A" stroke-width="1" fill="none" opacity="0.5"/>
+          <circle cx="200" cy="200" r="50" stroke="#C9956A" stroke-width="1.5" fill="none" opacity="0.7"/>
+          <circle cx="200" cy="200" r="12" fill="#C9956A" opacity="0.9"/>
+          <g stroke="#C9956A" stroke-width="0.8" opacity="0.4">
+            <line x1="200" y1="2" x2="200" y2="398"/>
+            <line x1="2" y1="200" x2="398" y2="200"/>
+            <line x1="60" y1="60" x2="340" y2="340"/>
+            <line x1="340" y1="60" x2="60" y2="340"/>
+          </g>
+          <text x="200" y="208" text-anchor="middle" font-family="Georgia,serif" font-size="16" fill="#C9956A" opacity="0.9">✦ 12 CONTOS ✦</text>
+        </svg>
+      </div>
+
+      <!-- Estrutura de cada encontro - largura total -->
+      <div class="espiral-box fade-in">
 
           <div class="espiral-title">
             <div class="espiral-title-icon">
@@ -1329,49 +1369,6 @@ app.get('/', (c) => {
 
           </div>
         </div>
-      </div>
-      <div class="sobre-visual fade-in">
-        <svg class="sobre-mandala" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <radialGradient id="g1" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stop-color="#C9956A" stop-opacity="0.3"/>
-              <stop offset="100%" stop-color="#7B2D3E" stop-opacity="0.1"/>
-            </radialGradient>
-          </defs>
-          <circle cx="200" cy="200" r="198" fill="url(#g1)" stroke="#C9956A" stroke-width="1.5"/>
-          <circle cx="200" cy="200" r="160" stroke="#7B2D3E" stroke-width="2" fill="none"/>
-          <circle cx="200" cy="200" r="120" stroke="#C9956A" stroke-width="1.5" fill="none"/>
-          <circle cx="200" cy="200" r="80" stroke="#C0C0C0" stroke-width="1.5" fill="none"/>
-          <circle cx="200" cy="200" r="40" stroke="#C9956A" stroke-width="2" fill="none"/>
-          <circle cx="200" cy="200" r="12" fill="#C9956A"/>
-          <g stroke="#C9956A" stroke-width="1" opacity="0.6">
-            <line x1="200" y1="2" x2="200" y2="398"/>
-            <line x1="2" y1="200" x2="398" y2="200"/>
-            <line x1="60" y1="60" x2="340" y2="340"/>
-            <line x1="340" y1="60" x2="60" y2="340"/>
-            <line x1="2" y1="120" x2="398" y2="280"/>
-            <line x1="2" y1="280" x2="398" y2="120"/>
-            <line x1="120" y1="2" x2="280" y2="398"/>
-            <line x1="280" y1="2" x2="120" y2="398"/>
-          </g>
-          <g fill="#C9956A">
-            <polygon points="200,42 205,55 200,52 195,55" opacity="0.8"/>
-            <polygon points="358,200 345,205 348,200 345,195" opacity="0.8"/>
-            <polygon points="200,358 195,345 200,348 205,345" opacity="0.8"/>
-            <polygon points="42,200 55,195 52,200 55,205" opacity="0.8"/>
-          </g>
-          <g fill="#7B2D3E" opacity="0.7">
-            <circle cx="200" cy="80" r="6"/>
-            <circle cx="320" cy="200" r="6"/>
-            <circle cx="200" cy="320" r="6"/>
-            <circle cx="80" cy="200" r="6"/>
-          </g>
-          <text x="200" y="208" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#C9956A" opacity="0.9">✦ 12 CONTOS ✦</text>
-        </svg>
-        <p style="text-align:center;color:var(--cinza);font-style:italic;font-size:0.9rem;margin-top:16px">
-          "Cada volta da espiral nos eleva.<br>Não voltamos ao mesmo lugar; <strong style='color:var(--rose-gold)'>aprofundamos.</strong>"
-        </p>
-      </div>
     </div>
   </div>
 </section>
