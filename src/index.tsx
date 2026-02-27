@@ -204,12 +204,28 @@ app.get('/', (c) => {
     }
     .sobre-foto-wrap {
       flex-shrink: 0; width: 220px;
-      display: flex; align-items: flex-end; justify-content: center;
+      display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 10px;
     }
     .sobre-foto-wrap img {
       width: 220px; height: auto;
       border-radius: 16px;
       filter: drop-shadow(0 8px 24px rgba(150,30,30,0.20));
+    }
+    .sobre-foto-nome {
+      display: flex; flex-direction: column; align-items: center; gap: 2px;
+      background: linear-gradient(135deg, var(--vermelho), #7A1212);
+      border-radius: 10px; padding: 8px 18px;
+      width: 100%; text-align: center;
+      box-shadow: 0 4px 16px rgba(150,30,30,0.25);
+    }
+    .sobre-foto-nome-titulo {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 2.5px;
+      text-transform: uppercase; color: rgba(255,255,255,0.75);
+    }
+    .sobre-foto-nome-nome {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem; font-weight: 700;
+      color: #E0B899; letter-spacing: 0.5px;
     }
     .sobre-citacao {
       flex: 1;
@@ -1157,7 +1173,11 @@ app.get('/', (c) => {
       <!-- Foto da facilitadora com citação -->
       <div class="sobre-facilitadora fade-in">
         <div class="sobre-foto-wrap">
-          <img src="/static/foto-facilitadora.png" alt="Facilitadora segurando o livro Mulheres que Correm com os Lobos" />
+          <img src="/static/foto-facilitadora.png" alt="Terapeuta Mônica Langsdorff segurando o livro Mulheres que Correm com os Lobos" />
+          <div class="sobre-foto-nome">
+            <span class="sobre-foto-nome-titulo">Terapeuta</span>
+            <span class="sobre-foto-nome-nome">Mônica Langsdorff</span>
+          </div>
         </div>
         <div class="sobre-citacao">
           <div class="sobre-citacao-quote">
