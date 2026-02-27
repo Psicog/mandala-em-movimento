@@ -193,6 +193,41 @@ app.get('/', (c) => {
     .sobre-headline-wrap { text-align: center; margin-bottom: 16px; width: 100%; }
     .sobre-headline-wrap .section-headline { margin-bottom: 12px; }
     .sobre-headline-wrap .section-subline { margin-bottom: 0; }
+    /* Facilitadora foto-citação */
+    .sobre-facilitadora {
+      display: flex; align-items: center; gap: 48px;
+      margin: 0 auto 48px; max-width: 860px;
+      background: rgba(255,255,255,0.60);
+      border: 1px solid rgba(176,120,72,0.25);
+      border-radius: 24px; padding: 36px 40px;
+      box-shadow: 0 8px 40px rgba(150,30,30,0.08);
+    }
+    .sobre-foto-wrap {
+      flex-shrink: 0; width: 220px;
+      display: flex; align-items: flex-end; justify-content: center;
+    }
+    .sobre-foto-wrap img {
+      width: 220px; height: auto;
+      border-radius: 16px;
+      filter: drop-shadow(0 8px 24px rgba(150,30,30,0.20));
+    }
+    .sobre-citacao {
+      flex: 1;
+    }
+    .sobre-citacao-quote {
+      font-family: 'Great Vibes', cursive;
+      font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+      color: var(--vermelho); line-height: 1.55;
+      margin-bottom: 16px;
+    }
+    .sobre-citacao-autor {
+      font-size: 0.78rem; font-weight: 700; letter-spacing: 2px;
+      text-transform: uppercase; color: var(--rose-gold); margin-bottom: 12px;
+    }
+    .sobre-citacao-desc {
+      font-size: 0.92rem; color: #5A3030; line-height: 1.75;
+    }
+    .sobre-citacao-desc strong { color: var(--vermelho); }
     /* Intro centralizado */
     .sobre-intro { text-align: center; max-width: 720px; margin: 0 auto 40px; }
     .sobre-intro p { color: #3A2820; font-size: 1.05rem; line-height: 1.9; margin-bottom: 14px; }
@@ -554,6 +589,9 @@ app.get('/', (c) => {
     }
     @media (max-width: 900px) {
       .sobre-badges { grid-template-columns: 1fr; }
+      .sobre-facilitadora { flex-direction: column; align-items: center; text-align: center; padding: 28px 24px; gap: 24px; }
+      .sobre-foto-wrap { width: 180px; }
+      .sobre-foto-wrap img { width: 180px; }
       .espiral-steps { grid-template-columns: repeat(2, 1fr); }
       .datas-grid { grid-template-columns: 1fr; }
       .footer-grid { grid-template-columns: 1fr 1fr; }
@@ -579,6 +617,9 @@ app.get('/', (c) => {
       .contos-grid { grid-template-columns: 1fr; }
       .hero-btns { flex-direction: column; align-items: center; }
       .sobre-badges { grid-template-columns: 1fr; }
+      .sobre-facilitadora { flex-direction: column; align-items: center; text-align: center; }
+      .sobre-foto-wrap { width: 160px; }
+      .sobre-foto-wrap img { width: 160px; }
       .espiral-steps { grid-template-columns: 1fr; }
     }
   </style>
@@ -1112,16 +1153,29 @@ app.get('/', (c) => {
       <p class="section-subline">Uma jornada terapêutica de 12 encontros para mulheres 40+, 50+, 60+ e 70+ em transição e transformação</p>
     </div>
     <div class="sobre-grid">
-      <!-- Intro centralizado -->
-      <div class="sobre-intro fade-in">
-        <p>
-          <strong>Mandala em Movimento</strong> é uma jornada terapêutica de <strong>12 encontros semanais</strong>
-          para mulheres 40+, com especial atenção para 50+, 60+ e 70+.
-        </p>
-        <p>
-          Usando os contos de <strong>"Mulheres que Correm com os Lobos"</strong> (Clarissa Pinkola Estés),
-          integramos três fundamentos em cada encontro:
-        </p>
+
+      <!-- Foto da facilitadora com citação -->
+      <div class="sobre-facilitadora fade-in">
+        <div class="sobre-foto-wrap">
+          <img src="/static/foto-facilitadora.png" alt="Facilitadora segurando o livro Mulheres que Correm com os Lobos" />
+        </div>
+        <div class="sobre-citacao">
+          <div class="sobre-citacao-quote">
+            "A mulher selvagem não envelhece —<br>ela se aprofunda."
+          </div>
+          <div class="sobre-citacao-autor">— Clarissa Pinkola Estés</div>
+          <div class="sobre-citacao-desc">
+            <strong>Mandala em Movimento</strong> é uma jornada terapêutica de <strong>12 encontros semanais</strong>
+            para mulheres 40+, com especial atenção para 50+, 60+ e 70+.<br><br>
+            Usando os contos de <strong>"Mulheres que Correm com os Lobos"</strong>,
+            integramos Focalização, Psicologia Analítica e Contoterapia Humanista em cada encontro.
+          </div>
+        </div>
+      </div>
+
+      <!-- Intro resumido (mantido para SEO) -->
+      <div class="sobre-intro fade-in" style="display:none">
+        <p><strong>Mandala em Movimento</strong> é uma jornada terapêutica de <strong>12 encontros semanais</strong> para mulheres 40+.</p>
       </div>
       <!-- Fundamentos: 3 colunas centralizadas -->
       <div class="sobre-badges fade-in">
