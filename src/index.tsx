@@ -1175,7 +1175,7 @@ app.get('/', (c) => {
         <div class="sobre-foto-wrap">
           <img src="/static/foto-facilitadora.png" alt="Terapeuta Mônica Langsdorff segurando o livro Mulheres que Correm com os Lobos" />
           <div class="sobre-foto-nome">
-            <span class="sobre-foto-nome-titulo">Terapeuta</span>
+            <span class="sobre-foto-nome-titulo">Terapeuta Holística</span>
             <span class="sobre-foto-nome-nome">Mônica Langsdorff</span>
           </div>
         </div>
