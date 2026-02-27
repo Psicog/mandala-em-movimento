@@ -1816,7 +1816,7 @@ app.get('/', (c) => {
         <a href="https://forms.gle/WUkarZdTAAPwGFjg7" target="_blank" class="btn btn-secondary" style="font-size:1rem;padding:16px 32px">
           <i class="fas fa-star" style="margin-right:8px"></i>Inscrever para Vivência Gratuita – 25/03
         </a>
-        <a href="https://wa.me/SEU_NUMERO" target="_blank" class="btn btn-whatsapp" style="font-size:0.95rem;padding:16px 28px">
+        <a href="https://wa.me/message/WO4OBZ4EECG2D1" target="_blank" class="btn btn-whatsapp" style="font-size:0.95rem;padding:16px 28px">
           <i class="fab fa-whatsapp" style="margin-right:8px"></i>Tirar Dúvidas no WhatsApp
         </a>
       </div>
@@ -1853,7 +1853,7 @@ app.get('/', (c) => {
           <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
           <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
           <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://wa.me/SEU_NUMERO" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://wa.me/message/WO4OBZ4EECG2D1" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
         </div>
       </div>
       <div class="footer-col">
@@ -1869,7 +1869,7 @@ app.get('/', (c) => {
         <div class="footer-col-title">Contato</div>
         <ul>
           <li><a href="mailto:contato@mandalamovimento.com">📧 contato@mandala.com</a></li>
-          <li><a href="https://wa.me/SEU_NUMERO">📱 WhatsApp</a></li>
+          <li><a href="https://wa.me/message/WO4OBZ4EECG2D1">📱 WhatsApp</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -1896,7 +1896,7 @@ app.get('/', (c) => {
 
 <!-- STICKY CTA -->
 <div class="sticky-cta" id="stickyCta">
-  <a href="https://wa.me/SEU_NUMERO" target="_blank" class="btn btn-whatsapp" style="padding:12px 18px;font-size:0.8rem">
+  <a href="https://wa.me/message/WO4OBZ4EECG2D1" target="_blank" class="btn btn-whatsapp" style="padding:12px 18px;font-size:0.8rem">
     <i class="fab fa-whatsapp"></i>
   </a>
   <a href="https://forms.gle/5YFSvrEpk55tvBcH8" target="_blank" class="btn btn-primary" style="padding:12px 20px;font-size:0.78rem">Inscrever-se</a>
