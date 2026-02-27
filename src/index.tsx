@@ -61,6 +61,8 @@ app.get('/', (c) => {
       margin-bottom: 1rem;
       font-weight: 700;
     }
+    #contos .section-headline { color: #E0B899; }
+    #contos .section-subline { color: rgba(255,255,255,0.80); }
     .section-subline {
       text-align: center;
       color: #7A6055;
@@ -319,7 +321,7 @@ app.get('/', (c) => {
     .ciclo-msg { text-align: center; margin-top: 40px; color: #7A6055; font-style: italic; font-size: 1rem; }
 
     /* ===== SEÇÃO 5: 12 CONTOS (TIMELINE) ===== */
-    #contos { background: var(--bg-deep); }
+    #contos { background: linear-gradient(180deg, #7A1212 0%, #961E1E 50%, #7A1212 100%); }
     .timeline { position: relative; max-width: 1000px; margin: 0 auto; }
     .timeline::before {
       content: ''; position: absolute; left: 50%; transform: translateX(-50%);
@@ -333,11 +335,11 @@ app.get('/', (c) => {
     .tl-item:nth-child(odd) { flex-direction: row; }
     .tl-item:nth-child(even) { flex-direction: row-reverse; }
     .tl-card {
-      width: calc(50% - 40px); background: rgba(201,149,106,0.05);
-      border-radius: 12px; padding: 20px; border: 1px solid rgba(201,149,106,0.15);
+      width: calc(50% - 40px); background: rgba(0,0,0,0.25);
+      border-radius: 12px; padding: 20px; border: 1px solid rgba(201,149,106,0.35);
       transition: border-color 0.3s, background 0.3s;
     }
-    .tl-card:hover { border-color: var(--rose-gold); background: rgba(201,149,106,0.1); }
+    .tl-card:hover { border-color: var(--rose-gold); background: rgba(0,0,0,0.35); }
     .tl-item:nth-child(odd) .tl-card { margin-right: auto; }
     .tl-item:nth-child(even) .tl-card { margin-left: auto; }
     .tl-dot {
@@ -345,7 +347,7 @@ app.get('/', (c) => {
       width: 40px; height: 40px; border-radius: 50%;
       display: flex; align-items: center; justify-content: center;
       font-weight: 900; font-size: 0.85rem; z-index: 2;
-      border: 2px solid var(--rose-gold); background: var(--bg-deep);
+      border: 2px solid var(--rose-gold); background: #6B0E0E;
       color: var(--rose-gold); flex-shrink: 0;
       top: 50%; margin-top: -20px;
     }
@@ -353,23 +355,23 @@ app.get('/', (c) => {
     .tl-ciclo-2 { border-color: var(--verde); }
     .tl-ciclo-3 { border-color: var(--azul); }
     .tl-ciclo-4 { border-color: var(--rose-gold); }
-    .tl-num { font-size: 0.7rem; font-weight: 700; letter-spacing: 1px; color: var(--cinza); text-transform: uppercase; }
-    .tl-conto { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: var(--rose-gold); margin: 4px 0; }
-    .tl-desc { font-size: 0.85rem; color: rgba(255,255,255,0.75); margin-bottom: 6px; }
-    .tl-tema { font-size: 0.8rem; color: var(--cinza); font-style: italic; }
-    .tl-data { font-size: 0.75rem; color: var(--prata); margin-top: 8px; }
+    .tl-num { font-size: 0.7rem; font-weight: 700; letter-spacing: 1px; color: rgba(255,255,255,0.65); text-transform: uppercase; }
+    .tl-conto { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: #E0B899; margin: 4px 0; }
+    .tl-desc { font-size: 0.85rem; color: rgba(255,255,255,0.90); margin-bottom: 6px; }
+    .tl-tema { font-size: 0.8rem; color: rgba(255,255,255,0.70); font-style: italic; }
+    .tl-data { font-size: 0.75rem; color: rgba(255,255,255,0.60); margin-top: 8px; }
     .tl-special { background: rgba(201,149,106,0.15); border-radius: 6px; padding: 3px 8px; font-size: 0.7rem; font-weight: 700; color: var(--rose-gold); display: inline-block; margin-top: 6px; }
 
     /* CONTOS MOBILE GRID */
     .contos-grid { display: none; grid-template-columns: repeat(3, 1fr); gap: 16px; }
     .conto-mini {
-      background: rgba(201,149,106,0.05); border-radius: 10px; padding: 16px;
-      border: 1px solid rgba(201,149,106,0.15); transition: all 0.3s;
+      background: rgba(0,0,0,0.25); border-radius: 10px; padding: 16px;
+      border: 1px solid rgba(201,149,106,0.30); transition: all 0.3s;
     }
-    .conto-mini:hover { border-color: var(--rose-gold); background: rgba(201,149,106,0.1); }
+    .conto-mini:hover { border-color: var(--rose-gold); background: rgba(0,0,0,0.35); }
     .conto-mini-num { color: var(--rose-gold); font-weight: 700; font-size: 0.75rem; }
-    .conto-mini-name { font-family: 'Playfair Display', serif; color: var(--creme); font-size: 0.95rem; margin: 4px 0; }
-    .conto-mini-desc { color: var(--cinza); font-size: 0.8rem; }
+    .conto-mini-name { font-family: 'Playfair Display', serif; color: #E0B899; font-size: 0.95rem; margin: 4px 0; }
+    .conto-mini-desc { color: rgba(255,255,255,0.75); font-size: 0.8rem; }
 
     /* ===== SEÇÃO 6: DATAS ===== */
     #datas { background: linear-gradient(180deg, var(--bg-base) 0%, var(--bg-alt) 100%); }
