@@ -1090,7 +1090,7 @@ app.get('/', (c) => {
         <i class="fas fa-star" style="margin-right:8px"></i>INSCREVER-SE NA JORNADA
       </a>
       <a href="#datas" class="btn btn-secondary" style="font-size:1rem;padding:16px 30px">
-        <i class="fas fa-key" style="margin-right:8px"></i>A Chave está na sua mão – 25/03
+        <i class="fas fa-star" style="margin-right:8px"></i>Inscrever para Vivência Gratuita – 25/03
       </a>
       <a href="#sobre" class="btn btn-outline" style="font-size:0.9rem;padding:14px 24px">
         Saber Mais <i class="fas fa-arrow-down" style="margin-left:8px"></i>
@@ -1814,7 +1814,7 @@ app.get('/', (c) => {
           <i class="fas fa-star" style="margin-right:8px"></i>INSCREVER-SE NA JORNADA
         </a>
         <a href="https://forms.gle/WUkarZdTAAPwGFjg7" target="_blank" class="btn btn-secondary" style="font-size:1rem;padding:16px 32px">
-          <i class="fas fa-key" style="margin-right:8px"></i>A Chave está na sua mão – 25/03
+          <i class="fas fa-star" style="margin-right:8px"></i>Inscrever para Vivência Gratuita – 25/03
         </a>
         <a href="https://wa.me/SEU_NUMERO" target="_blank" class="btn btn-whatsapp" style="font-size:0.95rem;padding:16px 28px">
           <i class="fab fa-whatsapp" style="margin-right:8px"></i>Tirar Dúvidas no WhatsApp
