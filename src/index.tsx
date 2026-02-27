@@ -288,7 +288,7 @@ app.get('/', (c) => {
     .faixa-msg {
       text-align: center; margin-top: 50px;
       font-family: 'Playfair Display', serif; font-size: clamp(1.2rem, 3vw, 1.7rem);
-      color: var(--bordô); line-height: 1.6;
+      color: rgba(255,255,255,0.9); line-height: 1.6;
     }
     .faixa-obs { text-align: center; margin-top: 16px; color: #7A6055; font-size: 0.85rem; }
 
@@ -309,7 +309,7 @@ app.get('/', (c) => {
     .ciclo-icon { font-size: 2.5rem; margin-bottom: 14px; }
     .ciclo-period { font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.6); margin-bottom: 8px; }
     .ciclo-name { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: var(--ouro-claro); margin-bottom: 10px; }
-    .ciclo-contos { font-size: 0.8rem; color: var(--prata); margin-bottom: 12px; line-height: 1.6; }
+    .ciclo-contos { font-size: 0.8rem; color: var(--vermelho); font-weight: 600; margin-bottom: 12px; line-height: 1.6; }
     .ciclo-desc { font-size: 0.88rem; color: rgba(245,230,218,0.85); font-style: italic; line-height: 1.5; }
     .ciclo-temas { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin-top: 14px; }
     .ciclo-tema-tag { background: rgba(201,149,106,0.12); border-radius: 50px; padding: 3px 12px; font-size: 0.72rem; color: var(--creme-escuro); }
@@ -1530,7 +1530,7 @@ app.get('/', (c) => {
     <div class="faixa-msg fade-in">
       "A selvagem interior não envelhece.<br>
       Transformação não tem data de validade.<br>
-      <span style="color:var(--creme)">Bem-vinda em qualquer idade.</span>"
+      <span style="color:#ffffff; font-weight:700;">Bem-vinda em qualquer idade.</span>"
     </div>
     <p class="faixa-obs fade-in">Especialmente desenhado para mulheres 50+, 60+ e 70+. Acolhemos mulheres a partir de 40 anos.</p>
   </div>
@@ -1661,7 +1661,7 @@ app.get('/', (c) => {
     <div class="datas-grid fade-in">
       <!-- Bloco Vivência -->
       <div class="datas-card datas-card-vivencia">
-        <div class="datas-card-title">🌱 Vivência Gratuita</div>
+        <div class="datas-card-title"><svg width="28" height="28" viewBox="0 0 28 28" style="vertical-align:middle;margin-right:8px" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="14" cy="14" r="13" stroke="#B07848" stroke-width="1.5" fill="rgba(176,120,72,0.1)"/><path d="M14 6 Q14 10 10 12 Q7 13.5 7 17 Q7 21 14 22 Q21 21 21 17 Q21 13.5 18 12 Q14 10 14 6Z" stroke="#B07848" stroke-width="1.3" fill="rgba(176,120,72,0.15)"/><circle cx="14" cy="17" r="2.5" fill="#B07848" opacity="0.8"/><path d="M14 6 Q16 9 14 11 Q12 9 14 6Z" fill="#C9956A" opacity="0.9"/></svg>Vivência Gratuita</div>
         <div class="datas-item"><span class="datas-item-icon">📅</span><span class="datas-item-text"><strong>Quarta, 25 de Março de 2026</strong></span></div>
         <div class="datas-item"><span class="datas-item-icon">🕖</span><span class="datas-item-text">19h30</span></div>
         <div class="datas-item"><span class="datas-item-icon">⏱️</span><span class="datas-item-text">90 minutos</span></div>
