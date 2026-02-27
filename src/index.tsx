@@ -1960,7 +1960,7 @@ app.get('/', (c) => {
     <h3 class="popup-title">Fique por dentro!</h3>
     <p class="popup-text">Deixe seu e-mail para receber informações sobre a Vivência Gratuita e a Jornada Mandala em Movimento.</p>
     <div class="popup-form">
-      <a href="https://forms.gle/WUkarZdTAAPwGFjg7" target="_blank" class="btn btn-primary" style="text-align:center;padding:16px" onclick="closePopup()">
+      <a href="https://forms.gle/zfwYRpcPgmH7z1zk9" target="_blank" class="btn btn-primary" style="text-align:center;padding:16px" onclick="closePopup()">
         <i class="fas fa-envelope" style="margin-right:8px"></i>Quero receber!
       </a>
       <p style="font-size:0.78rem;color:#8A7070;margin-top:4px">Você será direcionada ao formulário de inscrição.</p>
