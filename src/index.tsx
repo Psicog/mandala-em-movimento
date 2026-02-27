@@ -1810,10 +1810,10 @@ app.get('/', (c) => {
         <div class="cta-info-item"><i class="fas fa-clock"></i> Vagas limitadas</div>
       </div>
       <div class="cta-btns">
-        <a href="https://forms.google.com" target="_blank" class="btn btn-primary" style="font-size:1.05rem;padding:18px 42px">
+        <a href="https://forms.gle/WUkarZdTAAPwGFjg7" target="_blank" class="btn btn-primary" style="font-size:1.05rem;padding:18px 42px">
           <i class="fas fa-star" style="margin-right:8px"></i>INSCREVER-SE NA JORNADA
         </a>
-        <a href="https://forms.google.com" target="_blank" class="btn btn-secondary" style="font-size:1rem;padding:16px 32px">
+        <a href="https://forms.gle/WUkarZdTAAPwGFjg7" target="_blank" class="btn btn-secondary" style="font-size:1rem;padding:16px 32px">
           <i class="fas fa-key" style="margin-right:8px"></i>A Chave está na sua mão – 25/03
         </a>
         <a href="https://wa.me/SEU_NUMERO" target="_blank" class="btn btn-whatsapp" style="font-size:0.95rem;padding:16px 28px">
@@ -1960,10 +1960,11 @@ app.get('/', (c) => {
     <h3 class="popup-title">Fique por dentro!</h3>
     <p class="popup-text">Deixe seu e-mail para receber informações sobre a Vivência Gratuita e a Jornada Mandala em Movimento.</p>
     <div class="popup-form">
-      <input type="text" placeholder="Seu nome" />
-      <input type="email" placeholder="Seu melhor e-mail" />
-      <a href="#cta-final" class="btn btn-primary" onclick="closePopup()" style="text-align:center">Quero receber!</a>
-</div>
+      <a href="https://forms.gle/WUkarZdTAAPwGFjg7" target="_blank" class="btn btn-primary" style="text-align:center;padding:16px" onclick="closePopup()">
+        <i class="fas fa-envelope" style="margin-right:8px"></i>Quero receber!
+      </a>
+      <p style="font-size:0.78rem;color:#8A7070;margin-top:4px">Você será direcionada ao formulário de inscrição.</p>
+    </div>
 
 <script>
 // ===== PROGRESS BAR =====
