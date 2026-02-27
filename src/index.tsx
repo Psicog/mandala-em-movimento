@@ -626,7 +626,7 @@ app.get('/', (c) => {
         <li><a href="#faq">FAQ</a></li>
       </ul>
       <div class="nav-cta">
-        <a href="#cta-final" class="btn btn-primary" style="padding:10px 22px;font-size:0.8rem">INSCREVER-SE AGORA</a>
+        <a href="https://forms.gle/5YFSvrEpk55tvBcH8" target="_blank" class="btn btn-primary" style="padding:10px 22px;font-size:0.8rem">INSCREVER-SE AGORA</a>
       </div>
       <div class="hamburger" id="hamburger" onclick="toggleMenu()">
         <span></span><span></span><span></span>
@@ -642,7 +642,7 @@ app.get('/', (c) => {
     <li><a href="#datas" onclick="closeMenu()">Datas</a></li>
     <li><a href="#faq" onclick="closeMenu()">FAQ</a></li>
   </ul>
-  <a href="#cta-final" class="btn btn-primary" onclick="closeMenu()">INSCREVER-SE AGORA</a>
+  <a href="https://forms.gle/5YFSvrEpk55tvBcH8" target="_blank" class="btn btn-primary" onclick="closeMenu()">INSCREVER-SE AGORA</a>
 </div>
 
 <!-- ===== SEÇÃO 1: HERO ===== -->
@@ -1086,7 +1086,7 @@ app.get('/', (c) => {
       Volte para sua selvagem interior.
     </p>
     <div class="hero-btns">
-      <a href="#cta-final" class="btn btn-primary" style="font-size:1rem;padding:16px 38px">
+      <a href="https://forms.gle/5YFSvrEpk55tvBcH8" target="_blank" class="btn btn-primary" style="font-size:1rem;padding:16px 38px">
         <i class="fas fa-star" style="margin-right:8px"></i>INSCREVER-SE NA JORNADA
       </a>
       <a href="#datas" class="btn btn-secondary" style="font-size:1rem;padding:16px 30px">
@@ -1690,7 +1690,7 @@ app.get('/', (c) => {
           <div class="datas-invest-val">A definir</div>
           <div class="datas-invest-info">À vista · 2x · 3x · 4x com juros<br>Plano flexível disponível</div>
         </div>
-        <a href="#cta-final" class="btn btn-primary" style="width:100%;text-align:center;display:block">
+        <a href="https://forms.gle/5YFSvrEpk55tvBcH8" target="_blank" class="btn btn-primary" style="width:100%;text-align:center;display:block">
           INSCREVER-SE NA JORNADA
         </a>
       </div>
@@ -1810,7 +1810,7 @@ app.get('/', (c) => {
         <div class="cta-info-item"><i class="fas fa-clock"></i> Vagas limitadas</div>
       </div>
       <div class="cta-btns">
-        <a href="https://forms.gle/WUkarZdTAAPwGFjg7" target="_blank" class="btn btn-primary" style="font-size:1.05rem;padding:18px 42px">
+        <a href="https://forms.gle/5YFSvrEpk55tvBcH8" target="_blank" class="btn btn-primary" style="font-size:1.05rem;padding:18px 42px">
           <i class="fas fa-star" style="margin-right:8px"></i>INSCREVER-SE NA JORNADA
         </a>
         <a href="https://forms.gle/WUkarZdTAAPwGFjg7" target="_blank" class="btn btn-secondary" style="font-size:1rem;padding:16px 32px">
@@ -1899,7 +1899,7 @@ app.get('/', (c) => {
   <a href="https://wa.me/SEU_NUMERO" target="_blank" class="btn btn-whatsapp" style="padding:12px 18px;font-size:0.8rem">
     <i class="fab fa-whatsapp"></i>
   </a>
-  <a href="#cta-final" class="btn btn-primary" style="padding:12px 20px;font-size:0.78rem">Inscrever-se</a>
+  <a href="https://forms.gle/5YFSvrEpk55tvBcH8" target="_blank" class="btn btn-primary" style="padding:12px 20px;font-size:0.78rem">Inscrever-se</a>
 </div>
 
 <!-- POPUP -->
