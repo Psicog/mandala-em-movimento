@@ -9,7 +9,7 @@ app.get('/', (c) => {
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jornada Mandala em Movimento | 12 Encontros para Mulheres 40+</title>
-  <meta name="description" content="Jornada terapêutica para mulheres 40+, 50+, 60+ e 70+. Integra Focalização, Jung e ACP. Vivência gratuita 25/03. Jornada começa 01/04. Inscrições abertas." />
+  <meta name="description" content="Rito de Reconstrução Feminina 40+. Jornada terapêutica de 12 semanas para mulheres que desejam recuperar sua voz, limites e autonomia relacional. Turma Fundadora com vagas limitadas." />
   <meta name="keywords" content="Mandala em Movimento, Jornada terapêutica mulheres, Mulheres 40+, Focalização, Psicologia Junguiana, Contoterapia Humanista, Mulheres que Correm com os Lobos" />
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
@@ -679,6 +679,7 @@ app.get('/', (c) => {
       </a>
       <ul class="nav-menu">
         <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#para-quem">Para Quem</a></li>
         <li><a href="#ciclos">Ciclos</a></li>
         <li><a href="#contos">Contos</a></li>
         <li><a href="#datas">Datas</a></li>
@@ -696,6 +697,7 @@ app.get('/', (c) => {
 <div class="mobile-menu" id="mobileMenu">
   <ul>
     <li><a href="#sobre" onclick="closeMenu()">Sobre</a></li>
+    <li><a href="#para-quem" onclick="closeMenu()">Para Quem</a></li>
     <li><a href="#ciclos" onclick="closeMenu()">Ciclos</a></li>
     <li><a href="#contos" onclick="closeMenu()">Contos</a></li>
     <li><a href="#datas" onclick="closeMenu()">Datas</a></li>
@@ -1139,10 +1141,10 @@ app.get('/', (c) => {
     <h1 class="hero-title">
       Jornada <span>Mandala</span><br>em Movimento
     </h1>
-    <p class="hero-sub">12 Encontros para Mulheres 40+ em Transição e Transformação</p>
+    <p class="hero-sub">Para mulheres 40+ que estão cansadas de se adaptar demais e desejam aprender a existir nas relações sem perder a própria voz.</p>
     <p class="hero-desc">
-      Volte para você. Volte para seu corpo.<br>
-      Volte para sua selvagem interior.
+      Uma travessia terapêutica de 12 semanas para reconstruir sua autonomia<br>
+      com segurança, consciência e direção.
     </p>
     <div class="hero-btns">
       <a href="https://forms.gle/5YFSvrEpk55tvBcH8" target="_blank" class="btn btn-primary" style="font-size:1rem;padding:16px 38px">
@@ -1166,7 +1168,7 @@ app.get('/', (c) => {
   <div class="container">
     <div class="sobre-headline-wrap fade-in">
       <h2 class="section-headline">O que é Mandala em Movimento?</h2>
-      <p class="section-subline">Uma jornada terapêutica de 12 encontros para mulheres 40+, 50+, 60+ e 70+ em transição e transformação</p>
+      <p class="section-subline">Um Rito de Reconstrução Feminina 40+ — para mulheres que desejam recuperar sua voz, seus limites e sua direção</p>
     </div>
     <div class="sobre-grid">
 
@@ -1175,7 +1177,7 @@ app.get('/', (c) => {
         <div class="sobre-foto-wrap">
           <img src="/static/foto-facilitadora.png" alt="Terapeuta Mônica Langsdorff segurando o livro Mulheres que Correm com os Lobos" />
           <div class="sobre-foto-nome">
-            <span class="sobre-foto-nome-titulo">Terapeuta Holística</span>
+            <span class="sobre-foto-nome-titulo">Conteterapeuta (Método CIP) · Facilitadora de Focalização</span>
             <span class="sobre-foto-nome-nome">Mônica Langsdorff</span>
           </div>
         </div>
@@ -1185,10 +1187,9 @@ app.get('/', (c) => {
           </div>
           <div class="sobre-citacao-autor">— Clarissa Pinkola Estés</div>
           <div class="sobre-citacao-desc">
-            <strong>Mandala em Movimento</strong> é uma jornada terapêutica de <strong>12 encontros semanais</strong>
-            para mulheres 40+, com especial atenção para 50+, 60+ e 70+.<br><br>
+            <strong>Mandala em Movimento</strong> é um <strong>Rito de Reconstrução Feminina 40+</strong>. Uma jornada terapêutica estruturada para mulheres que, após anos se adaptando para manter vínculos, desejam recuperar sua voz, seus limites e sua direção.<br><br>
             Usando os contos de <strong>"Mulheres que Correm com os Lobos"</strong>,
-            integramos Focalização, Psicologia Analítica e Contoterapia Humanista em cada encontro.
+            integramos Focalização, Psicologia Analítica e Contoterapia (Método CIP) em cada encontro.
           </div>
         </div>
       </div>
@@ -1223,7 +1224,7 @@ app.get('/', (c) => {
             <div>
               <div class="sobre-badge-subtitle">1&#186; Fundamento</div>
               <div class="sobre-badge-title">Focalização · Eugene Gendlin</div>
-              <div class="sobre-badge-text">Escuta corporal profunda — aprender a escutar os sinais do seu corpo como sabedoria interior.</div>
+              <div class="sobre-badge-text">Escuta corporal e regulação emocional — aprender a escutar os sinais do corpo como sabedoria interior para sustentação de limites.</div>
             </div>
           </div>
 
@@ -1251,7 +1252,7 @@ app.get('/', (c) => {
             <div>
               <div class="sobre-badge-subtitle">2&#186; Fundamento</div>
               <div class="sobre-badge-title">Psicologia Analítica · Carl Jung</div>
-              <div class="sobre-badge-text">Trabalho com símbolos, arquétipos e o inconsciente coletivo para transformação profunda.</div>
+              <div class="sobre-badge-text">Diferenciação identitária e trabalho com símbolos e arquétipos para recuperação da voz e reconstrução da autonomia relacional.</div>
             </div>
           </div>
 
@@ -1295,8 +1296,8 @@ app.get('/', (c) => {
             </div>
             <div>
               <div class="sobre-badge-subtitle">3&#186; Fundamento</div>
-              <div class="sobre-badge-title">Contoterapia Humanista</div>
-              <div class="sobre-badge-text">Escuta empática e espaço de segurança para que cada mulher encontre suas próprias respostas.</div>
+              <div class="sobre-badge-title">Abordagem Centrada na Pessoa · Carl Rogers</div>
+              <div class="sobre-badge-text">Segurança emocional e responsabilidade pessoal — espaço para que cada mulher construa direção consciente e autonomia interna.</div>
             </div>
           </div>
 
@@ -1612,6 +1613,57 @@ app.get('/', (c) => {
   </div>
 </section>
 
+<!-- ===== SEÇÃO PARA QUEM É: NOVA SEÇÃO ===== -->
+<section id="para-quem" style="background: linear-gradient(180deg, var(--bg-deep) 0%, var(--bg-alt) 100%); padding: 90px 0;">
+  <div class="container">
+    <h2 class="section-headline fade-in">Para quem é esta Jornada?</h2>
+    <p class="section-subline fade-in">Esta travessia foi desenhada para mulheres em um momento específico de vida</p>
+    <div class="fade-in" style="max-width:860px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px">
+
+      <div style="background:rgba(255,255,255,0.6);border:1px solid rgba(176,120,72,0.25);border-left:4px solid var(--bordô);border-radius:16px;padding:28px 28px 28px 32px;display:flex;gap:18px;align-items:flex-start">
+        <div style="flex-shrink:0;width:44px;height:44px;background:rgba(150,30,30,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.3rem">🪞</div>
+        <div>
+          <div style="font-weight:700;color:var(--bordô);font-size:1rem;margin-bottom:6px">Adaptação demais nas relações</div>
+          <div style="color:#5A3030;font-size:0.9rem;line-height:1.7">Mulheres 40+ que se percebem sempre cedendo, se moldando e abrindo mão de si mesmas para manter vínculos.</div>
+        </div>
+      </div>
+
+      <div style="background:rgba(255,255,255,0.6);border:1px solid rgba(176,120,72,0.25);border-left:4px solid var(--rose-gold);border-radius:16px;padding:28px 28px 28px 32px;display:flex;gap:18px;align-items:flex-start">
+        <div style="flex-shrink:0;width:44px;height:44px;background:rgba(176,120,72,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.3rem">🚧</div>
+        <div>
+          <div style="font-weight:700;color:var(--bordô);font-size:1rem;margin-bottom:6px">Dificuldade de colocar limites</div>
+          <div style="color:#5A3030;font-size:0.9rem;line-height:1.7">Sentimento de que dizer "não" quebra relações. Fronteiras difusas com família, parceiros, filhos ou no trabalho.</div>
+        </div>
+      </div>
+
+      <div style="background:rgba(255,255,255,0.6);border:1px solid rgba(176,120,72,0.25);border-left:4px solid var(--verde);border-radius:16px;padding:28px 28px 28px 32px;display:flex;gap:18px;align-items:flex-start">
+        <div style="flex-shrink:0;width:44px;height:44px;background:rgba(92,122,90,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.3rem">💬</div>
+        <div>
+          <div style="font-weight:700;color:var(--bordô);font-size:1rem;margin-bottom:6px">Culpa ao se posicionar</div>
+          <div style="color:#5A3030;font-size:0.9rem;line-height:1.7">Sensação de egoísmo ou ingratidão quando tenta ocupar seu espaço, expressar sua opinião ou cuidar de si.</div>
+        </div>
+      </div>
+
+      <div style="background:rgba(255,255,255,0.6);border:1px solid rgba(176,120,72,0.25);border-left:4px solid var(--ouro);border-radius:16px;padding:28px 28px 28px 32px;display:flex;gap:18px;align-items:flex-start">
+        <div style="flex-shrink:0;width:44px;height:44px;background:rgba(201,149,106,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.3rem">🧭</div>
+        <div>
+          <div style="font-weight:700;color:var(--bordô);font-size:1rem;margin-bottom:6px">Desejo de reconstruir direção</div>
+          <div style="color:#5A3030;font-size:0.9rem;line-height:1.7">Mulheres que sentem que chegou a hora de construir uma nova fase com consciência, autonomia e direção própria.</div>
+        </div>
+      </div>
+
+    </div>
+    <p class="fade-in" style="text-align:center;margin-top:40px;font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--bordô);font-style:italic">
+      "Se pelo menos uma dessas descrições ressoa em você — esta jornada foi feita para você."
+    </p>
+    <div class="fade-in" style="text-align:center;margin-top:28px">
+      <a href="https://forms.gle/5YFSvrEpk55tvBcH8" target="_blank" class="btn btn-primary">
+        <i class="fas fa-star" style="margin-right:8px"></i>Quero fazer parte desta jornada
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- ===== SEÇÃO 4: 4 CICLOS ===== -->
 <section id="ciclos">
   <div class="container">
@@ -1623,9 +1675,9 @@ app.get('/', (c) => {
         <div class="ciclo-num">1</div>
         <div class="ciclo-icon">💀</div>
         <div class="ciclo-period">Encontros 1–3 · Semanas 1–3</div>
-        <div class="ciclo-name">RESSURREIÇÃO</div>
+        <div class="ciclo-name">RECONHECER O AUTOABANDONO</div>
         <div class="ciclo-contos">La Loba · Barba-Azul · Vasalisa</div>
-        <div class="ciclo-desc">Acordar a mulher selvagem adormecida</div>
+        <div class="ciclo-desc">Identificar onde e como você se perdeu nas relações</div>
         <div class="ciclo-temas">
           <span class="ciclo-tema-tag">Ressurreição</span>
           <span class="ciclo-tema-tag">Proteção</span>
@@ -1645,12 +1697,12 @@ app.get('/', (c) => {
         <div class="ciclo-num">2</div>
         <div class="ciclo-icon">🦴</div>
         <div class="ciclo-period">Encontros 4–6 · Semanas 4–6</div>
-        <div class="ciclo-name">FERIDA &amp; PROTEÇÃO</div>
+        <div class="ciclo-name">ILUMINAR PADRÕES RELACIONAIS</div>
         <div class="ciclo-contos">Manawee · Mulher-Esqueleto · Patinho Feio</div>
-        <div class="ciclo-desc">Reconhecer o que foi ferido e recuperar poder</div>
+        <div class="ciclo-desc">Reconhecer os padrões que repetem e iluminar o que precisa mudar</div>
         <div class="ciclo-temas">
-          <span class="ciclo-tema-tag">Relacionamento</span>
-          <span class="ciclo-tema-tag">Alma</span>
+          <span class="ciclo-tema-tag">Diferenciação</span>
+          <span class="ciclo-tema-tag">Padrões</span>
           <span class="ciclo-tema-tag">Pertencimento</span>
         </div>
         <div class="ciclo-expand">
@@ -1667,13 +1719,13 @@ app.get('/', (c) => {
         <div class="ciclo-num">3</div>
         <div class="ciclo-icon">🦭</div>
         <div class="ciclo-period">Encontros 7–9 · Semanas 7–9</div>
-        <div class="ciclo-name">CORPO &amp; TRANSFORMAÇÃO</div>
+        <div class="ciclo-name">CONSTRUIR AUTONOMIA INTERNA</div>
         <div class="ciclo-contos">Pele de Foca · La Llorona · Deusas Sujas</div>
-        <div class="ciclo-desc">Habitar o corpo com presença e criatividade</div>
+        <div class="ciclo-desc">Recuperar a voz, o instinto e a capacidade de se posicionar</div>
         <div class="ciclo-temas">
-          <span class="ciclo-tema-tag">Encarnação</span>
-          <span class="ciclo-tema-tag">Criatividade</span>
-          <span class="ciclo-tema-tag">Sexualidade</span>
+          <span class="ciclo-tema-tag">Autonomia</span>
+          <span class="ciclo-tema-tag">Limites</span>
+          <span class="ciclo-tema-tag">Voz Própria</span>
         </div>
         <div class="ciclo-expand">
           <div class="ciclo-expand-inner">
@@ -1689,13 +1741,13 @@ app.get('/', (c) => {
         <div class="ciclo-num">4</div>
         <div class="ciclo-icon">✨</div>
         <div class="ciclo-period">Encontros 10–12 · Semanas 10–12</div>
-        <div class="ciclo-name">SABEDORIA &amp; INTEGRAÇÃO</div>
+        <div class="ciclo-name">DIREÇÃO E INTEGRAÇÃO</div>
         <div class="ciclo-contos">Urso da Meia-Lua · Mulher Cabelos de Ouro · Donzela sem Mãos</div>
-        <div class="ciclo-desc">Integrar sabedoria e celebrar seu poder</div>
+        <div class="ciclo-desc">Consolidar direção consciente e integrar a nova fase com autonomia</div>
         <div class="ciclo-temas">
           <span class="ciclo-tema-tag">Raiva Sagrada</span>
           <span class="ciclo-tema-tag">Cicatrizes</span>
-          <span class="ciclo-tema-tag">Integração</span>
+          <span class="ciclo-tema-tag">Direção Consciente</span>
         </div>
         <div class="ciclo-expand">
           <div class="ciclo-expand-inner">
@@ -1715,7 +1767,8 @@ app.get('/', (c) => {
 <section id="contos">
   <div class="container">
     <h2 class="section-headline fade-in">Os 12 Contos da Jornada</h2>
-    <p class="section-subline fade-in">Uma espiral de 12 semanas · 4 ciclos · 12 transformações</p>
+    <p class="section-subline fade-in">Uma espiral de 12 semanas · 4 ciclos · 12 portais de reconstrução</p>
+    <p class="section-subline fade-in" style="margin-top:-1.5rem;margin-bottom:2.5rem;font-style:italic;font-size:1rem;color:rgba(255,255,255,0.75)">Cada conto é utilizado como portal simbólico a serviço de uma função terapêutica específica. O foco não é estudo literário, mas reconstrução da autonomia feminina na maturidade.</p>
 
     <!-- TIMELINE (desktop) -->
     <div class="timeline fade-in">
@@ -1760,11 +1813,11 @@ app.get('/', (c) => {
         <div class="datas-item"><span class="datas-item-icon">🕖</span><span class="datas-item-text"><strong>19h30–21h</strong> · toda quarta-feira</span></div>
         <div class="datas-item"><span class="datas-item-icon">⏱️</span><span class="datas-item-text">12 encontros semanais</span></div>
         <div class="datas-item"><span class="datas-item-icon">👥</span><span class="datas-item-text"><strong>Número limitado de participantes</strong></span></div>
-        <div class="datas-desc">4 ciclos · 12 contos · 12 transformações</div>
+        <div class="datas-desc">4 ciclos · 12 contos · Rito de Reconstrução Feminina 40+</div>
         <div class="datas-investimento">
           <div class="datas-invest-label">Investimento</div>
-          <div class="datas-invest-val">A definir</div>
-          <div class="datas-invest-info">À vista · 2x · 3x · 4x com juros<br>Plano flexível disponível</div>
+          <div class="datas-invest-val" style="font-size:1rem;font-weight:800;color:var(--rose-gold)">✦ Turma Fundadora</div>
+          <div class="datas-invest-info" style="font-size:0.9rem;margin-top:4px">Valor especial de implantação<br>Grupo fechado para <strong>6 a 10 mulheres</strong><br><br>À vista · 2x sem juros · 3x sem juros · 4x com juros<br>Plano flexível disponível</div>
         </div>
         <a href="https://forms.gle/5YFSvrEpk55tvBcH8" target="_blank" class="btn btn-primary" style="width:100%;text-align:center;display:block">
           INSCREVER-SE NA JORNADA
@@ -1877,12 +1930,12 @@ app.get('/', (c) => {
   </svg>
   <div class="container">
     <div class="cta-final-content fade-in">
-      <h2 class="cta-title">Está pronta para voltar?</h2>
+      <h2 class="cta-title">Está pronta para se reconstruir?</h2>
       <p class="cta-sub">A Vivência começa Quarta 25/03 · A Jornada começa Quarta 01/04</p>
       <div class="cta-info">
         <div class="cta-info-item"><i class="fas fa-calendar"></i> Encontros toda quarta, 19h30–21h</div>
         <div class="cta-info-item"><i class="fas fa-users"></i> Número limitado de participantes</div>
-        <div class="cta-info-item"><i class="fas fa-heart"></i> 12 semanas de transformação</div>
+        <div class="cta-info-item"><i class="fas fa-heart"></i> 12 semanas de reconstrução da autonomia</div>
         <div class="cta-info-item"><i class="fas fa-clock"></i> Vagas limitadas</div>
       </div>
       <div class="cta-btns">
@@ -1896,7 +1949,7 @@ app.get('/', (c) => {
           <i class="fab fa-whatsapp" style="margin-right:8px"></i>Tirar Dúvidas no WhatsApp
         </a>
       </div>
-      <p class="cta-obs">Vagas limitadas. Oferecemos plano de pagamento flexível. Conversamos sobre necessidades especiais.</p>
+      <p class="cta-obs">Turma Fundadora · Grupo fechado de 6 a 10 mulheres · Vagas limitadas. Plano de pagamento flexível disponível.</p>
     </div>
   </div>
 </section>
@@ -1922,7 +1975,8 @@ app.get('/', (c) => {
         </div>
         <p class="footer-desc">
           Jornada terapêutica para mulheres 40+.<br>
-          Integrando Focalização, Jung e ACP.<br>
+          Rito de Reconstrução Feminina 40+.<br>
+          Conteterapeuta (Método CIP) · Facilitadora de Focalização.<br>
           Encontros toda quarta-feira, 19h30–21h.
         </p>
         <div class="footer-social" style="margin-top:16px">
@@ -2199,7 +2253,7 @@ function generateFAQ(): string {
     { q: 'Preciso ter lido "Mulheres que Correm com os Lobos"?', a: '<strong>Não.</strong> Vou ler os trechos com você e guiar toda a jornada. O livro é inspiração, não pré-requisito.' },
     { q: 'Qual é o investimento? Há plano de pagamento?', a: 'Valor a ser definido. <strong>À vista · 2x sem juros · 3x sem juros · 4x com juros</strong>. Plano flexível disponível. Conversamos sobre outras opções.' },
     { q: 'Como é o formato – presencial ou online?', a: 'Formato a ser confirmado. Tecnologia testada e suporte disponível para participantes online.' },
-    { q: 'Há certificado ao final?', a: 'Sim. Você recebe <strong>certificado de participação</strong> e acesso a grupo de suporte contínuo (opcional).' },
+    { q: 'Há certificado ao final?', a: 'Sim. Você recebe <strong>Certificado de Conclusão — Carga horária total: 18 horas — Rito de Reconstrução Feminina 40+</strong>, além de acesso a grupo de suporte contínuo (opcional).' },
     { q: 'Preciso ter vivência prévia em terapia?', a: '<strong>Não.</strong> Essa jornada é desenhada para mulheres em qualquer estágio. Se você tem trauma intenso ativo, podemos conversar individualmente.' },
     { q: 'Como é o processo de inscrição?', a: '1. Preencha o formulário no botão de inscrição<br>2. Você receberá email de confirmação<br>3. Entraremos em contato via WhatsApp<br>4. Você assina acordo de grupo<br>5. <strong>Bem-vinda à jornada!</strong>' },
   ]
