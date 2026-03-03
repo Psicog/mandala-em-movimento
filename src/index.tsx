@@ -1554,7 +1554,7 @@ app.get('/', (c) => {
 
     <div class="sobre-headline-wrap fade-in" style="margin-bottom:48px">
       <h2 class="section-headline">Sobre Mônica Langsdorff</h2>
-      <p class="section-subline">Facilitadora de Focalização · Contoterapeuta · Psicóloga em formação</p>
+      <p class="section-subline">Facilitadora de Focalização · Contoterapeuta</p>
     </div>
 
     <div class="fade-in" style="display:flex;align-items:flex-start;gap:48px;max-width:960px;margin:0 auto;background:rgba(255,255,255,0.60);border:1px solid rgba(176,120,72,0.25);border-radius:24px;padding:40px 44px;box-shadow:0 8px 40px rgba(150,30,30,0.07)">
@@ -2143,7 +2143,7 @@ app.get('/', (c) => {
     <p class="fade-in" style="text-align:center;margin-top:32px;color:#7A6055;font-size:0.88rem;max-width:560px;margin-left:auto;margin-right:auto;line-height:1.7">
       <i class="fas fa-info-circle" style="color:var(--rose-gold);margin-right:6px"></i>
       Dúvidas sobre pagamento ou condições especiais?
-      <a href="https://wa.me/message/WO4OBZ4EECG2D1" target="_blank" style="color:var(--bordô);font-weight:700;text-decoration:none"> Fale via WhatsApp →</a>
+      <a href="https://wa.me/5531984985635" target="_blank" style="color:var(--bordô);font-weight:700;text-decoration:none"> Fale via WhatsApp →</a>
     </p>
   </div>
 </section>
@@ -2189,7 +2189,7 @@ app.get('/', (c) => {
         <a href="https://forms.gle/WUkarZdTAAPwGFjg7" target="_blank" class="btn btn-secondary" style="font-size:1rem;padding:16px 32px">
           <i class="fas fa-star" style="margin-right:8px"></i>Inscrever para Vivência Gratuita – 25/03
         </a>
-        <a href="https://wa.me/message/WO4OBZ4EECG2D1" target="_blank" class="btn btn-whatsapp" style="font-size:0.95rem;padding:16px 28px">
+        <a href="https://wa.me/5531984985635" target="_blank" class="btn btn-whatsapp" style="font-size:0.95rem;padding:16px 28px">
           <i class="fab fa-whatsapp" style="margin-right:8px"></i>Tirar Dúvidas no WhatsApp
         </a>
       </div>
@@ -2227,7 +2227,7 @@ app.get('/', (c) => {
           <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
           <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
           <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://wa.me/message/WO4OBZ4EECG2D1" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://wa.me/5531984985635" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
         </div>
       </div>
       <div class="footer-col">
@@ -2242,8 +2242,8 @@ app.get('/', (c) => {
       <div class="footer-col">
         <div class="footer-col-title">Contato</div>
         <ul>
-          <li><a href="mailto:contato@mandalamovimento.com">📧 contato@mandala.com</a></li>
-          <li><a href="https://wa.me/message/WO4OBZ4EECG2D1">📱 WhatsApp</a></li>
+          <li><a href="mailto:mclangsdorff@gmail.com">📧 mclangsdorff@gmail.com</a></li>
+          <li><a href="https://wa.me/5531984985635">📱 WhatsApp (31) 9 8498-5635</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -2271,7 +2271,7 @@ app.get('/', (c) => {
 
 <!-- STICKY CTA -->
 <div class="sticky-cta" id="stickyCta">
-  <a href="https://wa.me/message/WO4OBZ4EECG2D1" target="_blank" class="btn btn-whatsapp" style="padding:12px 18px;font-size:0.8rem">
+  <a href="https://wa.me/5531984985635" target="_blank" class="btn btn-whatsapp" style="padding:12px 18px;font-size:0.8rem">
     <i class="fab fa-whatsapp"></i>
   </a>
   <a href="https://forms.gle/5YFSvrEpk55tvBcH8" target="_blank" class="btn btn-primary" style="padding:12px 20px;font-size:0.78rem">Inscrever-se</a>
@@ -2497,7 +2497,7 @@ function generateFAQ(): string {
     { q: 'Posso faltar alguns encontros?', a: 'Sim, mas recomendamos <strong>80%+ de presença</strong>. A jornada é em espiral crescente. Cada encontro aprofunda. Faltas frequentes prejudicam a experiência.' },
     { q: 'Preciso ter lido "Mulheres que Correm com os Lobos"?', a: '<strong>Não.</strong> Vou ler os trechos com você e guiar toda a jornada. O livro é inspiração, não pré-requisito.' },
     { q: 'Qual é o investimento? Há plano de pagamento?', a: '<strong>À vista: R$ 1.680,00</strong> + Bônus Sessão individual após encerramento da jornada (50 min).<br><strong>A prazo: R$ 1.800,00</strong> em até 10x sem juros. Plano flexível disponível.' },
-    { q: 'Como é o formato – presencial ou online?', a: 'Formato a ser confirmado. Tecnologia testada e suporte disponível para participantes online.' },
+    { q: 'Como é o formato – presencial ou online?', a: 'Formato <strong>online</strong> na plataforma <strong>Zoom</strong>. Tecnologia testada e suporte disponível para todas as participantes.' },
     { q: 'Há certificado ao final?', a: 'Sim. Você recebe <strong>Certificado de Conclusão — Carga horária total: 18 horas — Rito de Reconstrução Feminina 40+</strong>, além de acesso a grupo de suporte contínuo (opcional).' },
     { q: 'Preciso ter vivência prévia em terapia?', a: '<strong>Não.</strong> Essa jornada é desenhada para mulheres em qualquer estágio. Se você tem trauma intenso ativo, podemos conversar individualmente.' },
     { q: 'Como é o processo de inscrição?', a: '1. Preencha o formulário no botão de inscrição<br>2. Você receberá email de confirmação<br>3. Entraremos em contato via WhatsApp<br>4. Você assina acordo de grupo<br>5. <strong>Bem-vinda à jornada!</strong>' },
