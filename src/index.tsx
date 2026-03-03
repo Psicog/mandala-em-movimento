@@ -1552,22 +1552,22 @@ app.get('/', (c) => {
 <section id="monica" style="background: linear-gradient(180deg, var(--bg-deep) 0%, var(--bg-base) 100%); padding: 90px 0;">
   <div class="container">
 
-    <div class="sobre-headline-wrap fade-in" style="margin-bottom:48px">
+    <div class="sobre-headline-wrap fade-in" style="margin-bottom:32px">
       <h2 class="section-headline">Sobre Mônica Langsdorff</h2>
       <p class="section-subline">Facilitadora de Focalização · Contoterapeuta</p>
     </div>
 
-    <div class="fade-in" style="display:flex;align-items:flex-start;gap:48px;max-width:960px;margin:0 auto;background:rgba(255,255,255,0.60);border:1px solid rgba(176,120,72,0.25);border-radius:24px;padding:40px 44px;box-shadow:0 8px 40px rgba(150,30,30,0.07)">
-
-      <!-- Foto -->
-      <div style="flex-shrink:0;display:flex;flex-direction:column;align-items:center;gap:12px">
-        <img id="monica-foto" src="/static/foto-monica.png" alt="Mônica Langsdorff — Facilitadora de Focalização e Contoterapeuta"
-          style="width:220px;height:auto;border-radius:16px;filter:drop-shadow(0 8px 24px rgba(150,30,30,0.20))" />
-        <div style="background:linear-gradient(135deg,var(--vermelho),#7A1212);border-radius:10px;padding:8px 18px;width:100%;text-align:center;box-shadow:0 4px 16px rgba(150,30,30,0.25)">
-          <div style="font-size:0.62rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,0.75)">Facilitadora · Contoterapeuta</div>
-          <div style="font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:#E0B899;letter-spacing:0.5px;margin-top:2px">Mônica Langsdorff</div>
-        </div>
+    <!-- Foto centralizada abaixo do título -->
+    <div class="fade-in" style="display:flex;flex-direction:column;align-items:center;margin-bottom:40px;gap:14px">
+      <img src="/static/foto-monica.png" alt="Mônica Langsdorff — Facilitadora de Focalização e Contoterapeuta"
+        style="width:240px;height:auto;border-radius:50%;border:4px solid rgba(201,149,106,0.5);filter:drop-shadow(0 8px 28px rgba(150,30,30,0.22))" />
+      <div style="background:linear-gradient(135deg,var(--vermelho),#7A1212);border-radius:30px;padding:8px 24px;text-align:center;box-shadow:0 4px 16px rgba(150,30,30,0.25)">
+        <div style="font-size:0.62rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,0.75)">Facilitadora · Contoterapeuta</div>
+        <div style="font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:#E0B899;letter-spacing:0.5px;margin-top:2px">Mônica Langsdorff</div>
       </div>
+    </div>
+
+    <div class="fade-in" style="display:flex;align-items:flex-start;gap:48px;max-width:960px;margin:0 auto;background:rgba(255,255,255,0.60);border:1px solid rgba(176,120,72,0.25);border-radius:24px;padding:40px 44px;box-shadow:0 8px 40px rgba(150,30,30,0.07)">
 
       <!-- Texto -->
       <div style="flex:1">
