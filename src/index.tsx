@@ -630,6 +630,10 @@ app.get('/', (c) => {
       .sticky-cta { bottom: 16px; right: 16px; flex-direction: column; align-items: flex-end; }
       .contos-grid { grid-template-columns: repeat(2, 1fr); }
     }
+    @media (max-width: 640px) {
+      .sobre-para-quem-grid { grid-template-columns: 1fr !important; }
+      .sobre-diferenciais { flex-direction: column; align-items: center; }
+    }
     @media (max-width: 480px) {
       .faixa-grid { grid-template-columns: 1fr; max-width: 320px; margin: 0 auto; }
       .contos-grid { grid-template-columns: 1fr; }
@@ -1170,33 +1174,139 @@ app.get('/', (c) => {
   <div class="container">
     <div class="sobre-headline-wrap fade-in">
       <h2 class="section-headline">O que é Mandala em Movimento?</h2>
-      <p class="section-subline">Uma jornada estruturada de reconstrução identitária para mulheres 40+ em transição — emocional, relacional ou profissional</p>
+      <p class="section-subline">Uma jornada estruturada para mulheres 40+ que sentem que estão mudando — mas ainda não sabem como se reorganizar por dentro.</p>
     </div>
     <div class="sobre-grid">
 
-      <!-- Citação + descrição sem foto -->
+      <!-- Bloco principal de texto -->
       <div class="sobre-facilitadora fade-in" style="justify-content:center">
-        <div class="sobre-citacao" style="max-width:700px">
-          <div class="sobre-citacao-quote">
-            "A mulher selvagem não envelhece —<br>ela se aprofunda."
+        <div class="sobre-citacao" style="max-width:780px;width:100%">
+
+          <!-- Frase âncora em destaque -->
+          <div style="text-align:center;margin-bottom:36px;padding:28px 32px;background:rgba(123,45,62,0.06);border-radius:16px;border-left:4px solid var(--bordô)">
+            <p style="font-family:'Playfair Display',serif;font-size:1.35rem;color:var(--bordô);font-weight:700;line-height:1.5;margin:0 0 6px">Você não está perdida.</p>
+            <p style="font-family:'Playfair Display',serif;font-size:1.35rem;color:var(--bordô);font-weight:700;line-height:1.5;margin:0">Você está em transição.</p>
           </div>
-          <div class="sobre-citacao-autor">— Clarissa Pinkola Estés</div>
-          <div class="sobre-citacao-desc">
-            <strong>Mandala em Movimento</strong> é uma jornada estruturada de reconstrução identitária para mulheres 40+ que estão vivendo uma transição — emocional, relacional ou profissional — e desejam recuperar sua voz, seus limites e sua direção.<br><br>
-            Ao longo de <strong>12 encontros semanais</strong>, trabalhamos com contos arquetípicos e escuta corporal profunda para favorecer reorganização interna, clareza emocional e maturidade relacional.<br><br>
-            <span style="display:flex;flex-direction:column;gap:4px;margin:10px 0;padding-left:12px;border-left:2px solid var(--rose-gold)">
-              <span style="color:#5A3030;font-size:0.88rem">Não é um curso teórico.</span>
-              <span style="color:#5A3030;font-size:0.88rem">Não é aconselhamento religioso.</span>
-              <span style="color:#5A3030;font-size:0.88rem">Não é psicoterapia clínica.</span>
+
+          <!-- Contexto emocional -->
+          <div style="text-align:center;max-width:640px;margin:0 auto 36px;color:#5A3030;font-size:1rem;line-height:2">
+            <p style="margin:0">Talvez seus filhos tenham crescido.<br>
+            Talvez o casamento esteja diferente.<br>
+            Talvez o trabalho já não faça sentido.<br>
+            Talvez você esteja cansada de se adaptar a tudo… <strong>menos a si mesma.</strong></p>
+          </div>
+
+          <!-- Definição principal -->
+          <div class="sobre-citacao-desc" style="margin-bottom:36px">
+            <strong>Mandala em Movimento</strong> é um processo estruturado de <strong>reconstrução identitária</strong> para mulheres <strong>40+, 50+, 60+</strong> que estão atravessando mudanças emocionais, relacionais ou profissionais — e desejam recuperar sua voz, seus limites e sua direção.<br><br>
+            Ao longo de <strong>12 encontros semanais</strong>, você percorre uma espiral de crescimento baseada em contos arquetípicos do livro <em>Mulheres que Correm com os Lobos</em>, integrados à contoterapia e à Focalização (Eugene Gendlin).
+            <span style="display:flex;flex-direction:column;gap:4px;margin:18px 0 4px;padding-left:14px;border-left:2px solid var(--rose-gold)">
+              <span style="color:#5A3030;font-size:0.9rem">Não é sobre aprender teorias.</span>
+              <span style="color:#5A3030;font-size:0.9rem;font-weight:700">É sobre reorganizar sua experiência interna.</span>
             </span>
-            É um <strong>processo experiencial de desenvolvimento humano feminino</strong>, conduzido em grupo fechado, com começo, meio e fim claros.
           </div>
+
+          <!-- O que acontece na prática -->
+          <div style="margin-bottom:40px">
+            <p style="font-weight:800;color:var(--bordô);font-size:0.85rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px;text-align:center">O que acontece na prática?</p>
+            <p style="color:#5A3030;font-size:0.95rem;text-align:center;margin-bottom:20px">Em cada encontro você:</p>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px;max-width:560px;margin:0 auto">
+              <li style="display:flex;align-items:flex-start;gap:12px;color:#3A2820;font-size:0.93rem;line-height:1.5">
+                <i class="fas fa-circle" style="color:var(--rose-gold);font-size:0.5rem;margin-top:7px;flex-shrink:0"></i>
+                Trabalha um <strong>conto arquetípico</strong> como espelho psíquico
+              </li>
+              <li style="display:flex;align-items:flex-start;gap:12px;color:#3A2820;font-size:0.93rem;line-height:1.5">
+                <i class="fas fa-circle" style="color:var(--rose-gold);font-size:0.5rem;margin-top:7px;flex-shrink:0"></i>
+                Desenvolve <strong>escuta corporal profunda</strong> (Focalização)
+              </li>
+              <li style="display:flex;align-items:flex-start;gap:12px;color:#3A2820;font-size:0.93rem;line-height:1.5">
+                <i class="fas fa-circle" style="color:var(--rose-gold);font-size:0.5rem;margin-top:7px;flex-shrink:0"></i>
+                Identifica padrões de <strong>autoabandono</strong> e adaptação excessiva
+              </li>
+              <li style="display:flex;align-items:flex-start;gap:12px;color:#3A2820;font-size:0.93rem;line-height:1.5">
+                <i class="fas fa-circle" style="color:var(--rose-gold);font-size:0.5rem;margin-top:7px;flex-shrink:0"></i>
+                Reorganiza <strong>decisões adiadas</strong>
+              </li>
+              <li style="display:flex;align-items:flex-start;gap:12px;color:#3A2820;font-size:0.93rem;line-height:1.5">
+                <i class="fas fa-circle" style="color:var(--rose-gold);font-size:0.5rem;margin-top:7px;flex-shrink:0"></i>
+                Fortalece <strong>limites emocionais</strong>
+              </li>
+              <li style="display:flex;align-items:flex-start;gap:12px;color:#3A2820;font-size:0.93rem;line-height:1.5">
+                <i class="fas fa-circle" style="color:var(--rose-gold);font-size:0.5rem;margin-top:7px;flex-shrink:0"></i>
+                Recupera <strong>clareza e maturidade relacional</strong>
+              </li>
+            </ul>
+            <div style="margin-top:22px;text-align:center;color:#6A5045;font-size:0.92rem;line-height:2;font-style:italic">
+              É um trabalho experiencial.<br>
+              Sentido no corpo. Elaborado com consciência. Integrado na vida real.
+            </div>
+          </div>
+
+          <!-- Para quem é / não é (duas colunas) -->
+          <div class="sobre-para-quem-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:40px">
+            <!-- Para quem é -->
+            <div style="background:rgba(123,45,62,0.05);border-radius:14px;padding:24px 22px;border-top:3px solid var(--bordô)">
+              <p style="font-weight:800;color:var(--bordô);font-size:0.78rem;letter-spacing:2px;text-transform:uppercase;margin:0 0 16px">Para quem é</p>
+              <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px">
+                <li style="display:flex;align-items:flex-start;gap:8px;color:#3A2820;font-size:0.87rem;line-height:1.5"><span style="color:var(--bordô);font-weight:700;flex-shrink:0">✔</span>Mulheres 40+ em transição</li>
+                <li style="display:flex;align-items:flex-start;gap:8px;color:#3A2820;font-size:0.87rem;line-height:1.5"><span style="color:var(--bordô);font-weight:700;flex-shrink:0">✔</span>Mulheres que sentem que perderam partes de si</li>
+                <li style="display:flex;align-items:flex-start;gap:8px;color:#3A2820;font-size:0.87rem;line-height:1.5"><span style="color:var(--bordô);font-weight:700;flex-shrink:0">✔</span>Mulheres que evitam decisões por medo de conflito</li>
+                <li style="display:flex;align-items:flex-start;gap:8px;color:#3A2820;font-size:0.87rem;line-height:1.5"><span style="color:var(--bordô);font-weight:700;flex-shrink:0">✔</span>Mulheres que desejam amadurecer sem endurecer</li>
+                <li style="display:flex;align-items:flex-start;gap:8px;color:#3A2820;font-size:0.87rem;line-height:1.5"><span style="color:var(--bordô);font-weight:700;flex-shrink:0">✔</span>Mulheres que querem profundidade, não superficialidade motivacional</li>
+              </ul>
+            </div>
+            <!-- Para quem não é -->
+            <div style="background:rgba(90,48,48,0.04);border-radius:14px;padding:24px 22px;border-top:3px solid var(--cinza)">
+              <p style="font-weight:800;color:#7A6055;font-size:0.78rem;letter-spacing:2px;text-transform:uppercase;margin:0 0 16px">Para quem não é</p>
+              <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px">
+                <li style="display:flex;align-items:flex-start;gap:8px;color:#6A5045;font-size:0.87rem;line-height:1.5"><span style="color:#9A7060;font-weight:700;flex-shrink:0">✘</span>Para quem busca terapia clínica individual</li>
+                <li style="display:flex;align-items:flex-start;gap:8px;color:#6A5045;font-size:0.87rem;line-height:1.5"><span style="color:#9A7060;font-weight:700;flex-shrink:0">✘</span>Para quem quer aconselhamento religioso</li>
+                <li style="display:flex;align-items:flex-start;gap:8px;color:#6A5045;font-size:0.87rem;line-height:1.5"><span style="color:#9A7060;font-weight:700;flex-shrink:0">✘</span>Para quem espera fórmulas rápidas ou promessas mágicas</li>
+                <li style="display:flex;align-items:flex-start;gap:8px;color:#6A5045;font-size:0.87rem;line-height:1.5"><span style="color:#9A7060;font-weight:700;flex-shrink:0">✘</span>Para quem não está disposta a se escutar com honestidade</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- O diferencial -->
+          <div style="text-align:center;margin-bottom:40px">
+            <p style="font-weight:800;color:var(--bordô);font-size:0.85rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:20px">O diferencial</p>
+            <p style="color:#5A3030;font-size:0.95rem;margin-bottom:20px">Mandala em Movimento não trabalha apenas reflexão racional. Trabalha:</p>
+            <div style="display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-bottom:24px">
+              <div style="background:rgba(123,45,62,0.07);border-radius:30px;padding:10px 20px;font-size:0.88rem;color:var(--bordô);font-weight:600"><i class="fas fa-moon" style="margin-right:8px;opacity:0.7"></i>Arquétipos</div>
+              <div style="background:rgba(123,45,62,0.07);border-radius:30px;padding:10px 20px;font-size:0.88rem;color:var(--bordô);font-weight:600"><i class="fas fa-heart" style="margin-right:8px;opacity:0.7"></i>Corpo</div>
+              <div style="background:rgba(123,45,62,0.07);border-radius:30px;padding:10px 20px;font-size:0.88rem;color:var(--bordô);font-weight:600"><i class="fas fa-feather-alt" style="margin-right:8px;opacity:0.7"></i>Palavra</div>
+              <div style="background:rgba(123,45,62,0.07);border-radius:30px;padding:10px 20px;font-size:0.88rem;color:var(--bordô);font-weight:600"><i class="fas fa-users" style="margin-right:8px;opacity:0.7"></i>Grupo</div>
+            </div>
+            <p style="color:#6A5045;font-size:0.92rem;line-height:1.9;font-style:italic">
+              É uma mandala porque integra.<br>
+              É em movimento porque você não sai igual a como entrou.
+            </p>
+          </div>
+
+          <!-- Citação âncora de fechamento -->
+          <div class="sobre-citacao-quote" style="text-align:center;margin-bottom:12px">
+            "Aqui, envelhecer não é perder.<br>É aprofundar."
+          </div>
+
+          <!-- Frase de conversão -->
+          <div style="text-align:center;margin-top:28px;padding:28px 24px;background:rgba(123,45,62,0.05);border-radius:14px">
+            <p style="color:#5A3030;font-size:1rem;line-height:1.9;margin:0 0 20px">
+              Talvez não seja crise.<br>
+              Talvez seja a fase da vida em que você finalmente <strong>deixa de se abandonar.</strong><br><br>
+              Se você sente que é hora de se reorganizar por dentro,<br>
+              <strong style="color:var(--bordô)">a jornada começa aqui.</strong>
+            </p>
+            <a href="https://forms.gle/5YFSvrEpk55tvBcH8" target="_blank" class="btn btn-primary" style="display:inline-block;padding:16px 48px;font-size:1rem">
+              Quero entrar na Mandala
+            </a>
+          </div>
+
         </div>
       </div>
 
       <!-- Intro resumido (mantido para SEO) -->
       <div class="sobre-intro fade-in" style="display:none">
-        <p><strong>Mandala em Movimento</strong> é uma jornada terapêutica de <strong>12 encontros semanais</strong> para mulheres 40+.</p>
+        <p><strong>Mandala em Movimento</strong> é uma jornada estruturada de <strong>12 encontros semanais</strong> para mulheres 40+.</p>
       </div>
       <!-- Fundamentos: 3 colunas centralizadas -->
       <div class="sobre-badges fade-in">
