@@ -614,6 +614,8 @@ app.get('/', (c) => {
       .timeline { display: none; }
       .contos-grid { display: grid; }
       .timeline-visual { overflow-x: auto; }
+      #monica .fade-in > div { flex-direction: column !important; align-items: center !important; }
+      #monica img { width: 180px !important; }
     }
     @media (max-width: 768px) {
       .nav-menu, .nav-cta { display: none; }
@@ -679,6 +681,7 @@ app.get('/', (c) => {
       </a>
       <ul class="nav-menu">
         <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#monica">Mônica</a></li>
         <li><a href="#para-quem">Para Quem</a></li>
         <li><a href="#ciclos">Ciclos</a></li>
         <li><a href="#contos">Contos</a></li>
@@ -698,6 +701,7 @@ app.get('/', (c) => {
 <div class="mobile-menu" id="mobileMenu">
   <ul>
     <li><a href="#sobre" onclick="closeMenu()">Sobre</a></li>
+    <li><a href="#monica" onclick="closeMenu()">Mônica</a></li>
     <li><a href="#para-quem" onclick="closeMenu()">Para Quem</a></li>
     <li><a href="#ciclos" onclick="closeMenu()">Ciclos</a></li>
     <li><a href="#contos" onclick="closeMenu()">Contos</a></li>
@@ -1166,7 +1170,7 @@ app.get('/', (c) => {
   <div class="container">
     <div class="sobre-headline-wrap fade-in">
       <h2 class="section-headline">O que é Mandala em Movimento?</h2>
-      <p class="section-subline">Um Rito de Reconstrução Feminina 40+ — para mulheres que desejam recuperar sua voz, seus limites e sua direção</p>
+      <p class="section-subline">Uma jornada estruturada de reconstrução identitária para mulheres 40+ em transição — emocional, relacional ou profissional</p>
     </div>
     <div class="sobre-grid">
 
@@ -1185,9 +1189,14 @@ app.get('/', (c) => {
           </div>
           <div class="sobre-citacao-autor">— Clarissa Pinkola Estés</div>
           <div class="sobre-citacao-desc">
-            <strong>Mandala em Movimento</strong> é um <strong>Rito de Reconstrução Feminina 40+</strong>. Uma jornada terapêutica estruturada para mulheres que, após anos se adaptando para manter vínculos, desejam recuperar sua voz, seus limites e sua direção.<br><br>
-            Usando os contos de <strong>"Mulheres que Correm com os Lobos"</strong>,
-            integramos Focalização, Psicologia Analítica e Contoterapia (Método CIP) em cada encontro.
+            <strong>Mandala em Movimento</strong> é uma jornada estruturada de reconstrução identitária para mulheres 40+ que estão vivendo uma transição — emocional, relacional ou profissional — e desejam recuperar sua voz, seus limites e sua direção.<br><br>
+            Ao longo de <strong>12 encontros semanais</strong>, trabalhamos com contos arquetípicos e escuta corporal profunda para favorecer reorganização interna, clareza emocional e maturidade relacional.<br><br>
+            <span style="display:flex;flex-direction:column;gap:4px;margin:10px 0;padding-left:12px;border-left:2px solid var(--rose-gold)">
+              <span style="color:#5A3030;font-size:0.88rem">Não é um curso teórico.</span>
+              <span style="color:#5A3030;font-size:0.88rem">Não é aconselhamento religioso.</span>
+              <span style="color:#5A3030;font-size:0.88rem">Não é psicoterapia clínica.</span>
+            </span>
+            É um <strong>processo experiencial de desenvolvimento humano feminino</strong>, conduzido em grupo fechado, com começo, meio e fim claros.
           </div>
         </div>
       </div>
@@ -1250,7 +1259,7 @@ app.get('/', (c) => {
             <div>
               <div class="sobre-badge-subtitle">2&#186; Fundamento</div>
               <div class="sobre-badge-title">Contoterapia · Método CIP</div>
-              <div class="sobre-badge-text">Uso terapêutico de contos arquetípicos como espelhos simbólicos para reorganização interna e reconstrução da identidade.</div>
+              <div class="sobre-badge-text">Uso estruturado de contos arquetípicos como espelhos simbólicos para reorganização interna e reconstrução da identidade.</div>
             </div>
           </div>
 
@@ -1290,8 +1299,8 @@ app.get('/', (c) => {
             </div>
             <div>
               <div class="sobre-badge-subtitle">3&#186; Fundamento</div>
-              <div class="sobre-badge-title">Caminho de Interioridade e Maturidade Feminina</div>
-              <div class="sobre-badge-text">11 anos conduzindo grupos de aprofundamento espiritual e desenvolvimento pessoal voltados à autonomia e direção consciente.</div>
+              <div class="sobre-badge-title">Desenvolvimento Humano e Interioridade</div>
+              <div class="sobre-badge-text">11 anos conduzindo grupos de aprofundamento espiritual com foco em resiliência, sentido de vida e equilíbrio emocional. A jornada é um espaço plural, aberto a mulheres de diferentes crenças.</div>
             </div>
           </div>
 
@@ -1432,6 +1441,68 @@ app.get('/', (c) => {
 
           </div>
         </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SEÇÃO SOBRE MÔNICA LANGSDORFF ===== -->
+<section id="monica" style="background: linear-gradient(180deg, var(--bg-deep) 0%, var(--bg-base) 100%); padding: 90px 0;">
+  <div class="container">
+
+    <div class="sobre-headline-wrap fade-in" style="margin-bottom:48px">
+      <h2 class="section-headline">Sobre Mônica Langsdorff</h2>
+      <p class="section-subline">Facilitadora de Focalização · Contoterapeuta · Psicóloga em formação</p>
+    </div>
+
+    <div class="fade-in" style="display:flex;align-items:flex-start;gap:48px;max-width:960px;margin:0 auto;background:rgba(255,255,255,0.60);border:1px solid rgba(176,120,72,0.25);border-radius:24px;padding:40px 44px;box-shadow:0 8px 40px rgba(150,30,30,0.07)">
+
+      <!-- Foto -->
+      <div style="flex-shrink:0;display:flex;flex-direction:column;align-items:center;gap:12px">
+        <img id="monica-foto" src="/static/foto-monica.png" alt="Mônica Langsdorff — Facilitadora de Focalização e Contoterapeuta"
+          style="width:220px;height:auto;border-radius:16px;filter:drop-shadow(0 8px 24px rgba(150,30,30,0.20))" />
+        <div style="background:linear-gradient(135deg,var(--vermelho),#7A1212);border-radius:10px;padding:8px 18px;width:100%;text-align:center;box-shadow:0 4px 16px rgba(150,30,30,0.25)">
+          <div style="font-size:0.62rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,0.75)">Facilitadora · Contoterapeuta</div>
+          <div style="font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:#E0B899;letter-spacing:0.5px;margin-top:2px">Mônica Langsdorff</div>
+        </div>
+      </div>
+
+      <!-- Texto -->
+      <div style="flex:1">
+        <p style="font-family:'Great Vibes',cursive;font-size:clamp(1.3rem,2.5vw,1.75rem);color:var(--vermelho);line-height:1.55;margin-bottom:16px">
+          "Trabalho com desenvolvimento humano feminino através de contos arquetípicos e escuta corporal."
+        </p>
+
+        <p style="font-size:0.95rem;color:#3A2820;line-height:1.85;margin-bottom:14px">
+          Sou <strong>Facilitadora de Focalização certificada pelo Focusing Institute (NY)</strong> e <strong>Contoterapeuta pelo Método CIP</strong>. Atualmente curso Psicologia e atuo conduzindo mulheres 40+ em processos de reconstrução identitária, especialmente em fases de transição e redirecionamento de vida.
+        </p>
+
+        <div style="margin:20px 0;display:flex;flex-direction:column;gap:8px">
+          <div style="font-size:0.78rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--rose-gold);margin-bottom:4px">Minha prática integra</div>
+          <div style="display:flex;flex-direction:column;gap:7px">
+            <div style="display:flex;align-items:center;gap:10px;color:#3A2820;font-size:0.92rem">
+              <span style="width:6px;height:6px;border-radius:50%;background:var(--rose-gold);flex-shrink:0"></span>Escuta corporal profunda
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;color:#3A2820;font-size:0.92rem">
+              <span style="width:6px;height:6px;border-radius:50%;background:var(--rose-gold);flex-shrink:0"></span>Trabalho simbólico com narrativas
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;color:#3A2820;font-size:0.92rem">
+              <span style="width:6px;height:6px;border-radius:50%;background:var(--rose-gold);flex-shrink:0"></span>Condução estruturada de grupos
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;color:#3A2820;font-size:0.92rem">
+              <span style="width:6px;height:6px;border-radius:50%;background:var(--rose-gold);flex-shrink:0"></span>Desenvolvimento de maturidade relacional
+            </div>
+          </div>
+        </div>
+
+        <p style="font-size:0.92rem;color:#5A3030;line-height:1.8;margin-bottom:14px">
+          Ao longo de <strong>11 anos conduzi grupos de aprofundamento espiritual</strong> com foco em resiliência, sentido de vida e equilíbrio emocional — experiência que fortaleceu minha capacidade de sustentar processos humanos com escuta, presença e responsabilidade.
+        </p>
+
+        <p style="font-size:0.95rem;color:#3A2820;line-height:1.8;border-left:3px solid var(--rose-gold);padding-left:16px;font-style:italic">
+          <strong>Mandala em Movimento</strong> nasce desse percurso: um espaço experiencial e estruturado para mulheres que desejam atravessar mudanças com mais clareza, autonomia e direção.
+        </p>
+      </div>
+
     </div>
   </div>
 </section>
