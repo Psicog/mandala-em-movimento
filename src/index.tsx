@@ -1871,11 +1871,6 @@ app.get('/', (c) => {
         <div class="datas-item"><span class="datas-item-icon">⏱️</span><span class="datas-item-text">12 encontros semanais</span></div>
         <div class="datas-item"><span class="datas-item-icon">👥</span><span class="datas-item-text"><strong>Número limitado de participantes</strong></span></div>
         <div class="datas-desc">4 ciclos · 12 contos · Rito de Reconstrução Feminina 40+</div>
-        <div class="datas-investimento">
-          <div class="datas-invest-label">Investimento</div>
-          <div class="datas-invest-val" style="font-size:1rem;font-weight:800;color:var(--rose-gold)">✦ Turma Fundadora</div>
-          <div class="datas-invest-info" style="font-size:0.9rem;margin-top:4px">Valor especial de implantação<br>Grupo fechado para <strong>6 a 10 mulheres</strong><br><br>À vista · 2x sem juros · 3x sem juros · 4x com juros<br>Plano flexível disponível</div>
-        </div>
         <a href="https://forms.gle/5YFSvrEpk55tvBcH8" target="_blank" class="btn btn-primary" style="width:100%;text-align:center;display:block">
           INSCREVER-SE NA JORNADA
         </a>
@@ -2069,7 +2064,7 @@ app.get('/', (c) => {
           <i class="fab fa-whatsapp" style="margin-right:8px"></i>Tirar Dúvidas no WhatsApp
         </a>
       </div>
-      <p class="cta-obs">Turma Fundadora · Grupo fechado de 6 a 10 mulheres · Vagas limitadas. Plano de pagamento flexível disponível.</p>
+      <p class="cta-obs">Grupo fechado de 6 a 10 mulheres · À vista R$ 1.680,00 · A prazo R$ 1.800,00 em 10x sem juros · Plano flexível disponível.</p>
     </div>
   </div>
 </section>
@@ -2372,7 +2367,7 @@ function generateFAQ(): string {
     { q: 'Qual é o horário? Há flexibilidade?', a: 'Toda <strong>quarta-feira, 19h30–21h</strong> (1h30 de duração). Horário fixo. Flexibilidade limitada.' },
     { q: 'Posso faltar alguns encontros?', a: 'Sim, mas recomendamos <strong>80%+ de presença</strong>. A jornada é em espiral crescente. Cada encontro aprofunda. Faltas frequentes prejudicam a experiência.' },
     { q: 'Preciso ter lido "Mulheres que Correm com os Lobos"?', a: '<strong>Não.</strong> Vou ler os trechos com você e guiar toda a jornada. O livro é inspiração, não pré-requisito.' },
-    { q: 'Qual é o investimento? Há plano de pagamento?', a: 'Valor a ser definido. <strong>À vista · 2x sem juros · 3x sem juros · 4x com juros</strong>. Plano flexível disponível. Conversamos sobre outras opções.' },
+    { q: 'Qual é o investimento? Há plano de pagamento?', a: '<strong>À vista: R$ 1.680,00</strong> + Bônus Sessão individual após encerramento da jornada (50 min).<br><strong>A prazo: R$ 1.800,00</strong> em até 10x sem juros. Plano flexível disponível.' },
     { q: 'Como é o formato – presencial ou online?', a: 'Formato a ser confirmado. Tecnologia testada e suporte disponível para participantes online.' },
     { q: 'Há certificado ao final?', a: 'Sim. Você recebe <strong>Certificado de Conclusão — Carga horária total: 18 horas — Rito de Reconstrução Feminina 40+</strong>, além de acesso a grupo de suporte contínuo (opcional).' },
     { q: 'Preciso ter vivência prévia em terapia?', a: '<strong>Não.</strong> Essa jornada é desenhada para mulheres em qualquer estágio. Se você tem trauma intenso ativo, podemos conversar individualmente.' },
