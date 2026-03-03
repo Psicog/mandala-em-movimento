@@ -1174,16 +1174,9 @@ app.get('/', (c) => {
     </div>
     <div class="sobre-grid">
 
-      <!-- Foto da facilitadora com citação -->
-      <div class="sobre-facilitadora fade-in">
-        <div class="sobre-foto-wrap">
-          <img src="/static/foto-facilitadora.png" alt="Terapeuta Mônica Langsdorff segurando o livro Mulheres que Correm com os Lobos" />
-          <div class="sobre-foto-nome">
-            <span class="sobre-foto-nome-titulo">Conteterapeuta (Método CIP) · Facilitadora de Focalização</span>
-            <span class="sobre-foto-nome-nome">Mônica Langsdorff</span>
-          </div>
-        </div>
-        <div class="sobre-citacao">
+      <!-- Citação + descrição sem foto -->
+      <div class="sobre-facilitadora fade-in" style="justify-content:center">
+        <div class="sobre-citacao" style="max-width:700px">
           <div class="sobre-citacao-quote">
             "A mulher selvagem não envelhece —<br>ela se aprofunda."
           </div>
