@@ -1974,7 +1974,55 @@ app.get('/', (c) => {
       </div>
       <!-- Bloco Jornada -->
       <div class="datas-card datas-card-jornada">
-        <div class="datas-card-title">🌀 Jornada Completa</div>
+        <div class="datas-card-title" style="display:flex;align-items:center;gap:12px;justify-content:center">
+          <svg width="48" height="48" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0">
+            <!-- Círculo externo -->
+            <circle cx="50" cy="50" r="47" stroke="#C9956A" stroke-width="1.2" fill="none" opacity="0.4"/>
+            <!-- Círculo médio externo -->
+            <circle cx="50" cy="50" r="40" stroke="#C9956A" stroke-width="0.8" fill="none" opacity="0.3"/>
+            <!-- 12 pétalas externas (uma por encontro) -->
+            <g opacity="0.75">
+              <ellipse cx="50" cy="16" rx="4" ry="9" fill="#C9956A" opacity="0.55" transform="rotate(0 50 50)"/>
+              <ellipse cx="50" cy="16" rx="4" ry="9" fill="#C9956A" opacity="0.55" transform="rotate(30 50 50)"/>
+              <ellipse cx="50" cy="16" rx="4" ry="9" fill="#C9956A" opacity="0.55" transform="rotate(60 50 50)"/>
+              <ellipse cx="50" cy="16" rx="4" ry="9" fill="#C9956A" opacity="0.55" transform="rotate(90 50 50)"/>
+              <ellipse cx="50" cy="16" rx="4" ry="9" fill="#C9956A" opacity="0.55" transform="rotate(120 50 50)"/>
+              <ellipse cx="50" cy="16" rx="4" ry="9" fill="#C9956A" opacity="0.55" transform="rotate(150 50 50)"/>
+              <ellipse cx="50" cy="16" rx="4" ry="9" fill="#C9956A" opacity="0.55" transform="rotate(180 50 50)"/>
+              <ellipse cx="50" cy="16" rx="4" ry="9" fill="#C9956A" opacity="0.55" transform="rotate(210 50 50)"/>
+              <ellipse cx="50" cy="16" rx="4" ry="9" fill="#C9956A" opacity="0.55" transform="rotate(240 50 50)"/>
+              <ellipse cx="50" cy="16" rx="4" ry="9" fill="#C9956A" opacity="0.55" transform="rotate(270 50 50)"/>
+              <ellipse cx="50" cy="16" rx="4" ry="9" fill="#C9956A" opacity="0.55" transform="rotate(300 50 50)"/>
+              <ellipse cx="50" cy="16" rx="4" ry="9" fill="#C9956A" opacity="0.55" transform="rotate(330 50 50)"/>
+            </g>
+            <!-- 4 pétalas internas grandes (4 ciclos) -->
+            <g opacity="0.85">
+              <ellipse cx="50" cy="26" rx="6" ry="13" fill="#7B2D3E" opacity="0.45" transform="rotate(0 50 50)"/>
+              <ellipse cx="50" cy="26" rx="6" ry="13" fill="#7B2D3E" opacity="0.45" transform="rotate(90 50 50)"/>
+              <ellipse cx="50" cy="26" rx="6" ry="13" fill="#7B2D3E" opacity="0.45" transform="rotate(180 50 50)"/>
+              <ellipse cx="50" cy="26" rx="6" ry="13" fill="#7B2D3E" opacity="0.45" transform="rotate(270 50 50)"/>
+            </g>
+            <!-- Losangos / pontos cardinais -->
+            <g stroke="#C9956A" stroke-width="1" opacity="0.6">
+              <line x1="50" y1="10" x2="50" y2="18" stroke-width="1.5"/>
+              <line x1="90" y1="50" x2="82" y2="50" stroke-width="1.5"/>
+              <line x1="50" y1="90" x2="50" y2="82" stroke-width="1.5"/>
+              <line x1="10" y1="50" x2="18" y2="50" stroke-width="1.5"/>
+            </g>
+            <!-- Círculo interno decorativo -->
+            <circle cx="50" cy="50" r="22" stroke="#7B2D3E" stroke-width="1" fill="rgba(123,45,62,0.08)" opacity="0.7"/>
+            <circle cx="50" cy="50" r="16" stroke="#C9956A" stroke-width="0.8" fill="rgba(201,149,106,0.08)" opacity="0.8"/>
+            <!-- Estrela de 8 pontas interna -->
+            <g opacity="0.7">
+              <path d="M50 34 L52.5 47.5 L66 42 L54.5 51.5 L62 63 L50 55 L38 63 L45.5 51.5 L34 42 L47.5 47.5 Z" fill="#7B2D3E" opacity="0.35" stroke="#C9956A" stroke-width="0.6"/>
+            </g>
+            <!-- Núcleo central -->
+            <circle cx="50" cy="50" r="8" fill="#7B2D3E" opacity="0.7"/>
+            <circle cx="50" cy="50" r="5" fill="#C9956A" opacity="0.9"/>
+            <circle cx="50" cy="50" r="2.5" fill="#F5E6DA" opacity="0.95"/>
+          </svg>
+          Jornada Completa
+        </div>
         <div class="datas-item"><span class="datas-item-icon">📅</span><span class="datas-item-text">Começa: <strong>Quarta, 01/04/2026</strong></span></div>
         <div class="datas-item"><span class="datas-item-icon">📅</span><span class="datas-item-text">Finaliza: <strong>Quarta, 17/06/2026</strong></span></div>
         <div class="datas-item"><span class="datas-item-icon">🕖</span><span class="datas-item-text"><strong>19h30–21h</strong> · toda quarta-feira</span></div>
