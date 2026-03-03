@@ -1969,10 +1969,29 @@ app.get('/', (c) => {
         <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--bordô),var(--rose-gold))"></div>
         <div style="font-size:0.72rem;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:var(--bordô);margin-bottom:12px">À VISTA</div>
         <div style="font-family:'Playfair Display',serif;font-size:3rem;font-weight:900;color:var(--bordô);line-height:1;margin-bottom:4px">R$ 1.680</div>
-        <div style="font-size:0.82rem;color:#6A5045;margin-bottom:28px">Condição especial para pagamento à vista</div>
-        <div style="background:rgba(150,30,30,0.06);border:1px solid rgba(150,30,30,0.2);border-radius:10px;padding:14px 18px;margin-bottom:24px;font-size:0.88rem;color:#3A2820;line-height:1.6">
+        <div style="font-size:0.82rem;color:#6A5045;margin-bottom:24px">Condição especial para pagamento à vista</div>
+        <ul style="list-style:none;padding:0;margin:0 0 20px;text-align:left;display:flex;flex-direction:column;gap:10px">
+          <li style="display:flex;align-items:center;gap:10px;color:#3A2820;font-size:0.88rem">
+            <i class="fas fa-check-circle" style="color:var(--bordô);flex-shrink:0"></i>
+            12 encontros semanais (1h30 cada)
+          </li>
+          <li style="display:flex;align-items:center;gap:10px;color:#3A2820;font-size:0.88rem">
+            <i class="fas fa-check-circle" style="color:var(--bordô);flex-shrink:0"></i>
+            Grupo fechado (6 a 10 mulheres)
+          </li>
+          <li style="display:flex;align-items:center;gap:10px;color:#3A2820;font-size:0.88rem">
+            <i class="fas fa-check-circle" style="color:var(--bordô);flex-shrink:0"></i>
+            Estrutura completa em 4 ciclos
+          </li>
+          <li style="display:flex;align-items:center;gap:10px;color:#3A2820;font-size:0.88rem">
+            <i class="fas fa-check-circle" style="color:var(--bordô);flex-shrink:0"></i>
+            Certificação ao final
+          </li>
+        </ul>
+        <div style="background:rgba(150,30,30,0.06);border:1px solid rgba(150,30,30,0.25);border-radius:10px;padding:14px 18px;margin-bottom:24px;font-size:0.88rem;color:#3A2820;line-height:1.6;text-align:left">
+          <div style="font-size:0.7rem;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--bordô);margin-bottom:8px">✦ Bônus Especial</div>
           <i class="fas fa-star" style="color:var(--rose-gold);margin-right:6px"></i>
-          <strong>Inclui:</strong> Sessão individual de integração pós-jornada (50 minutos)
+          Sessão individual de integração pós-jornada (50 minutos)
         </div>
         <a href="https://forms.gle/5YFSvrEpk55tvBcH8" target="_blank" class="btn btn-secondary" style="width:100%;text-align:center;display:block">
           Quero este plano
