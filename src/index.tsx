@@ -1466,7 +1466,7 @@ app.get('/', (c) => {
         </p>
 
         <p style="font-size:0.95rem;color:#3A2820;line-height:1.85;margin-bottom:14px">
-          Sou <strong>Facilitadora de Focalização certificada pelo Focusing Institute (NY)</strong> e <strong>Contoterapeuta pelo Método CIP</strong>. Atualmente curso Psicologia e atuo conduzindo mulheres 40+ em processos de reconstrução identitária, especialmente em fases de transição e redirecionamento de vida.
+          Sou <strong>Facilitadora de Focalização certificada pelo Focusing Institute (NY)</strong> e <strong>Contoterapeuta pelo Método CIP</strong>. Atuo conduzindo mulheres 40+ em processos de reconstrução identitária, especialmente em fases de transição e redirecionamento de vida.
         </p>
 
         <div style="margin:20px 0;display:flex;flex-direction:column;gap:8px">
@@ -1500,8 +1500,8 @@ app.get('/', (c) => {
   </div>
 </section>
 
-<!-- ===== SEÇÃO 3: FAIXA ETÁRIA ===== -->
-<section id="faixa">
+<!-- SEÇÃO FAIXA ETÁRIA REMOVIDA -->
+<section id="faixa" style="display:none">
   <div class="container">
     <h2 class="section-headline fade-in">Para qual idade é a Jornada?</h2>
     <p class="section-subline fade-in">Uma jornada desenhada para honrar cada fase da mulher</p>
@@ -1667,7 +1667,7 @@ app.get('/', (c) => {
       Transformação não tem data de validade.<br>
       <span style="color:#ffffff; font-weight:700;">Bem-vinda em qualquer idade.</span>"
     </div>
-    <p class="faixa-obs fade-in">Especialmente desenhado para mulheres 50+, 60+ e 70+. Acolhemos mulheres a partir de 40 anos.</p>
+    <p class="faixa-obs fade-in" style="display:none">Especialmente desenhado para mulheres 50+, 60+ e 70+. Acolhemos mulheres a partir de 40 anos.</p>
   </div>
 </section>
 
