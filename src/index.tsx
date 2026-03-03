@@ -683,6 +683,7 @@ app.get('/', (c) => {
         <li><a href="#ciclos">Ciclos</a></li>
         <li><a href="#contos">Contos</a></li>
         <li><a href="#datas">Datas</a></li>
+        <li><a href="#investimento">Investimento</a></li>
         <li><a href="#faq">FAQ</a></li>
       </ul>
       <div class="nav-cta">
@@ -701,6 +702,7 @@ app.get('/', (c) => {
     <li><a href="#ciclos" onclick="closeMenu()">Ciclos</a></li>
     <li><a href="#contos" onclick="closeMenu()">Contos</a></li>
     <li><a href="#datas" onclick="closeMenu()">Datas</a></li>
+    <li><a href="#investimento" onclick="closeMenu()">Investimento</a></li>
     <li><a href="#faq" onclick="closeMenu()">FAQ</a></li>
   </ul>
   <a href="https://forms.gle/5YFSvrEpk55tvBcH8" target="_blank" class="btn btn-primary" onclick="closeMenu()">INSCREVER-SE AGORA</a>
@@ -1673,21 +1675,21 @@ app.get('/', (c) => {
       <!-- Ciclo 1 -->
       <div class="ciclo-card ciclo-card-1" onclick="toggleCiclo(this)">
         <div class="ciclo-num">1</div>
-        <div class="ciclo-icon">💀</div>
+        <div class="ciclo-icon">🌑</div>
         <div class="ciclo-period">Encontros 1–3 · Semanas 1–3</div>
         <div class="ciclo-name">RECONHECER O AUTOABANDONO</div>
-        <div class="ciclo-contos">La Loba · Barba-Azul · Vasalisa</div>
-        <div class="ciclo-desc">Identificar onde e como você se perdeu nas relações</div>
+        <div class="ciclo-contos">Vasalisa, a Sabida · O Patinho Feio · Manawee</div>
+        <div class="ciclo-desc">Um ciclo de fortalecimento interno. Antes do confronto, é preciso reconstruir a base da identidade.</div>
         <div class="ciclo-temas">
-          <span class="ciclo-tema-tag">Ressurreição</span>
-          <span class="ciclo-tema-tag">Proteção</span>
           <span class="ciclo-tema-tag">Intuição</span>
+          <span class="ciclo-tema-tag">Identidade</span>
+          <span class="ciclo-tema-tag">Diferenciação</span>
         </div>
         <div class="ciclo-expand">
           <div class="ciclo-expand-inner">
-            <p><strong style="color:var(--ouro)">La Loba:</strong> Ressurreição dos ossos – onde a vida retorna.</p>
-            <p><strong style="color:var(--ouro)">Barba-Azul:</strong> Reconhecer perigo – o corpo que avisa.</p>
-            <p><strong style="color:var(--ouro)">Vasalisa:</strong> Intuição – a boneca interior que guia.</p>
+            <p><strong style="color:var(--ouro)">Vasalisa, a Sabida:</strong> Recuperar a chama intuitiva.</p>
+            <p><strong style="color:var(--ouro)">O Patinho Feio:</strong> Reconhecer deslocamento identitário.</p>
+            <p><strong style="color:var(--ouro)">Manawee:</strong> Diferenciar-se e nomear o feminino próprio.</p>
             <p style="margin-top:10px;color:var(--cinza);font-size:0.78rem">Clique novamente para fechar</p>
           </div>
         </div>
@@ -1695,21 +1697,21 @@ app.get('/', (c) => {
       <!-- Ciclo 2 -->
       <div class="ciclo-card ciclo-card-2" onclick="toggleCiclo(this)">
         <div class="ciclo-num">2</div>
-        <div class="ciclo-icon">🦴</div>
+        <div class="ciclo-icon">🌘</div>
         <div class="ciclo-period">Encontros 4–6 · Semanas 4–6</div>
         <div class="ciclo-name">ILUMINAR PADRÕES RELACIONAIS</div>
-        <div class="ciclo-contos">Manawee · Mulher-Esqueleto · Patinho Feio</div>
-        <div class="ciclo-desc">Reconhecer os padrões que repetem e iluminar o que precisa mudar</div>
+        <div class="ciclo-contos">Mulher-Esqueleto · Barba-Azul · A Donzela sem Mãos</div>
+        <div class="ciclo-desc">Um ciclo de confronto consciente. Nomear padrões e reconhecer o que não pode mais ser ignorado.</div>
         <div class="ciclo-temas">
-          <span class="ciclo-tema-tag">Diferenciação</span>
-          <span class="ciclo-tema-tag">Padrões</span>
-          <span class="ciclo-tema-tag">Pertencimento</span>
+          <span class="ciclo-tema-tag">Intimidade</span>
+          <span class="ciclo-tema-tag">Autoengano</span>
+          <span class="ciclo-tema-tag">Autonomia</span>
         </div>
         <div class="ciclo-expand">
           <div class="ciclo-expand-inner">
-            <p><strong style="color:#4a9e4a">Manawee:</strong> Nomear o feminino – saber quem você é.</p>
-            <p><strong style="color:#4a9e4a">Mulher-Esqueleto:</strong> A dança com a morte como renovação.</p>
-            <p><strong style="color:#4a9e4a">Patinho Feio:</strong> Encontrar seu clã – o pertencimento verdadeiro.</p>
+            <p><strong style="color:#4a9e4a">Mulher-Esqueleto:</strong> Medo da intimidade.</p>
+            <p><strong style="color:#4a9e4a">Barba-Azul:</strong> Autoengano e silenciamento crônico.</p>
+            <p><strong style="color:#4a9e4a">A Donzela sem Mãos:</strong> Reconstrução após perda de autonomia.</p>
             <p style="margin-top:10px;color:var(--cinza);font-size:0.78rem">Clique novamente para fechar</p>
           </div>
         </div>
@@ -1717,21 +1719,21 @@ app.get('/', (c) => {
       <!-- Ciclo 3 -->
       <div class="ciclo-card ciclo-card-3" onclick="toggleCiclo(this)">
         <div class="ciclo-num">3</div>
-        <div class="ciclo-icon">🦭</div>
+        <div class="ciclo-icon">🌕</div>
         <div class="ciclo-period">Encontros 7–9 · Semanas 7–9</div>
         <div class="ciclo-name">CONSTRUIR AUTONOMIA INTERNA</div>
-        <div class="ciclo-contos">Pele de Foca · La Llorona · Deusas Sujas</div>
-        <div class="ciclo-desc">Recuperar a voz, o instinto e a capacidade de se posicionar</div>
+        <div class="ciclo-contos">Pele de Foca · La Llorona · Urso da Meia-Lua</div>
+        <div class="ciclo-desc">Um ciclo de fortalecimento emocional e posicionamento. Aqui nasce a autonomia comportamental.</div>
         <div class="ciclo-temas">
-          <span class="ciclo-tema-tag">Autonomia</span>
-          <span class="ciclo-tema-tag">Limites</span>
-          <span class="ciclo-tema-tag">Voz Própria</span>
+          <span class="ciclo-tema-tag">Identidade</span>
+          <span class="ciclo-tema-tag">Luto</span>
+          <span class="ciclo-tema-tag">Raiva Madura</span>
         </div>
         <div class="ciclo-expand">
           <div class="ciclo-expand-inner">
-            <p><strong style="color:#aaa">Pele de Foca:</strong> Voltar para si – recuperar a alma perdida.</p>
-            <p><strong style="color:#aaa">La Llorona:</strong> Luto e perda como portal de transformação.</p>
-            <p><strong style="color:#aaa">Deusas Sujas:</strong> Abraçar o instinto e a criatividade plena.</p>
+            <p><strong style="color:#aaa">Pele de Foca:</strong> Recuperar identidade.</p>
+            <p><strong style="color:#aaa">La Llorona:</strong> Atravessar lutos.</p>
+            <p><strong style="color:#aaa">Urso da Meia-Lua:</strong> Raiva madura e limites.</p>
             <p style="margin-top:10px;color:var(--cinza);font-size:0.78rem">Clique novamente para fechar</p>
           </div>
         </div>
@@ -1739,21 +1741,21 @@ app.get('/', (c) => {
       <!-- Ciclo 4 -->
       <div class="ciclo-card ciclo-card-4" onclick="toggleCiclo(this)">
         <div class="ciclo-num">4</div>
-        <div class="ciclo-icon">✨</div>
+        <div class="ciclo-icon">🌟</div>
         <div class="ciclo-period">Encontros 10–12 · Semanas 10–12</div>
         <div class="ciclo-name">DIREÇÃO E INTEGRAÇÃO</div>
-        <div class="ciclo-contos">Urso da Meia-Lua · Mulher Cabelos de Ouro · Donzela sem Mãos</div>
-        <div class="ciclo-desc">Consolidar direção consciente e integrar a nova fase com autonomia</div>
+        <div class="ciclo-contos">Deusas Sujas · Cabelos de Ouro · La Loba</div>
+        <div class="ciclo-desc">Um ciclo de integração e direção. Consolidar maturidade e assumir o próprio lugar no mundo.</div>
         <div class="ciclo-temas">
-          <span class="ciclo-tema-tag">Raiva Sagrada</span>
-          <span class="ciclo-tema-tag">Cicatrizes</span>
-          <span class="ciclo-tema-tag">Direção Consciente</span>
+          <span class="ciclo-tema-tag">Instinto Criativo</span>
+          <span class="ciclo-tema-tag">Discernimento</span>
+          <span class="ciclo-tema-tag">Identidade Plena</span>
         </div>
         <div class="ciclo-expand">
           <div class="ciclo-expand-inner">
-            <p><strong style="color:var(--ouro)">Urso da Meia-Lua:</strong> Raiva sagrada como força transformadora.</p>
-            <p><strong style="color:var(--ouro)">Mulher Cabelos de Ouro:</strong> Honrar cicatrizes como sabedoria.</p>
-            <p><strong style="color:var(--ouro)">Donzela sem Mãos:</strong> Integração final – quem sou agora?</p>
+            <p><strong style="color:var(--ouro)">Deusas Sujas:</strong> Instinto criativo integrado.</p>
+            <p><strong style="color:var(--ouro)">Cabelos de Ouro:</strong> Discernimento e maturidade.</p>
+            <p><strong style="color:var(--ouro)">La Loba:</strong> Reconstrução final da identidade.</p>
             <p style="margin-top:10px;color:var(--cinza);font-size:0.78rem">Clique novamente para fechar</p>
           </div>
         </div>
@@ -1796,11 +1798,10 @@ app.get('/', (c) => {
         <div class="datas-item"><span class="datas-item-icon">⏱️</span><span class="datas-item-text">90 minutos</span></div>
         <div class="datas-item"><span class="datas-item-icon">👥</span><span class="datas-item-text"><strong>Número limitado de participantes</strong></span></div>
         <div class="datas-desc">
-          Experimente o método completo em um encontro único.
-          Escuta corporal, leitura de conto, simbolização e integração.
-          <strong>Sem compromisso com a jornada.</strong>
+          Uma vivência introdutória utilizando o conto <strong>Barba-Azul</strong> como portal simbólico para reconhecer a intuição ignorada e os pequenos autoabandono cotidianos.<br><br>
+          A vivência é uma experiência inicial. A jornada aprofunda essa travessia ao longo de <strong>12 semanas estruturadas.</strong>
         </div>
-        <div class="datas-conto">✦ O Barba-Azul – Reconhecer perigo</div>
+        <div class="datas-conto">✦ Barba-Azul – Autoengano e silenciamento crônico</div>
         <a href="#cta-final" class="btn btn-secondary" style="width:100%;text-align:center;display:block">
           <i class="fas fa-key" style="margin-right:8px"></i>Abrir a Porta Proibida – Entrar
         </a>
@@ -1901,6 +1902,69 @@ app.get('/', (c) => {
         <button class="carousel-btn" onclick="moveCarousel(1)"><i class="fas fa-chevron-right"></i></button>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ===== SEÇÃO 8B: INVESTIMENTO ===== -->
+<section id="investimento" style="background: linear-gradient(180deg, var(--bg-base) 0%, var(--bg-alt) 100%); padding: 90px 0;">
+  <div class="container">
+    <h2 class="section-headline fade-in">Investimento</h2>
+    <p class="section-subline fade-in">Uma jornada estruturada, com suporte real e transformação duradoura</p>
+
+    <div class="fade-in" style="max-width:820px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:28px">
+
+      <!-- À Vista -->
+      <div style="background:linear-gradient(135deg,rgba(150,30,30,0.08),rgba(242,232,223,0.98));border:2px solid rgba(150,30,30,0.35);border-radius:20px;padding:40px 36px;position:relative;overflow:hidden;text-align:center">
+        <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--bordô),var(--rose-gold))"></div>
+        <div style="font-size:0.72rem;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:var(--bordô);margin-bottom:12px">À VISTA</div>
+        <div style="font-family:'Playfair Display',serif;font-size:3rem;font-weight:900;color:var(--bordô);line-height:1;margin-bottom:4px">R$ 1.680</div>
+        <div style="font-size:0.82rem;color:#6A5045;margin-bottom:28px">Condição especial para pagamento à vista</div>
+        <div style="background:rgba(150,30,30,0.06);border:1px solid rgba(150,30,30,0.2);border-radius:10px;padding:14px 18px;margin-bottom:24px;font-size:0.88rem;color:#3A2820;line-height:1.6">
+          <i class="fas fa-star" style="color:var(--rose-gold);margin-right:6px"></i>
+          <strong>Inclui:</strong> Sessão individual de integração pós-jornada (50 minutos)
+        </div>
+        <a href="https://forms.gle/5YFSvrEpk55tvBcH8" target="_blank" class="btn btn-secondary" style="width:100%;text-align:center;display:block">
+          Quero este plano
+        </a>
+      </div>
+
+      <!-- A Prazo -->
+      <div style="background:linear-gradient(135deg,rgba(176,120,72,0.08),rgba(242,232,223,0.98));border:2px solid rgba(176,120,72,0.35);border-radius:20px;padding:40px 36px;position:relative;overflow:hidden;text-align:center">
+        <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--rose-gold),var(--ouro-claro))"></div>
+        <div style="font-size:0.72rem;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:var(--rose-gold);margin-bottom:12px">A PRAZO</div>
+        <div style="font-family:'Playfair Display',serif;font-size:3rem;font-weight:900;color:var(--rose-gold);line-height:1;margin-bottom:4px">R$ 1.800</div>
+        <div style="font-size:0.82rem;color:#6A5045;margin-bottom:28px">Em até <strong>10x</strong> sem juros</div>
+        <ul style="list-style:none;padding:0;margin:0 0 24px;text-align:left;display:flex;flex-direction:column;gap:10px">
+          <li style="display:flex;align-items:center;gap:10px;color:#3A2820;font-size:0.88rem">
+            <i class="fas fa-check-circle" style="color:var(--rose-gold);flex-shrink:0"></i>
+            12 encontros semanais (1h30 cada)
+          </li>
+          <li style="display:flex;align-items:center;gap:10px;color:#3A2820;font-size:0.88rem">
+            <i class="fas fa-check-circle" style="color:var(--rose-gold);flex-shrink:0"></i>
+            Grupo fechado (6 a 10 mulheres)
+          </li>
+          <li style="display:flex;align-items:center;gap:10px;color:#3A2820;font-size:0.88rem">
+            <i class="fas fa-check-circle" style="color:var(--rose-gold);flex-shrink:0"></i>
+            Estrutura completa em 4 ciclos
+          </li>
+          <li style="display:flex;align-items:center;gap:10px;color:#3A2820;font-size:0.88rem">
+            <i class="fas fa-check-circle" style="color:var(--rose-gold);flex-shrink:0"></i>
+            Certificação ao final
+          </li>
+        </ul>
+        <a href="https://forms.gle/5YFSvrEpk55tvBcH8" target="_blank" class="btn btn-primary" style="width:100%;text-align:center;display:block">
+          Quero este plano
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Nota de rodapé -->
+    <p class="fade-in" style="text-align:center;margin-top:32px;color:#7A6055;font-size:0.88rem;max-width:560px;margin-left:auto;margin-right:auto;line-height:1.7">
+      <i class="fas fa-info-circle" style="color:var(--rose-gold);margin-right:6px"></i>
+      Dúvidas sobre pagamento ou condições especiais?
+      <a href="https://wa.me/message/WO4OBZ4EECG2D1" target="_blank" style="color:var(--bordô);font-weight:700;text-decoration:none"> Fale via WhatsApp →</a>
+    </p>
   </div>
 </section>
 
@@ -2008,6 +2072,7 @@ app.get('/', (c) => {
           <li><a href="#sobre">Sobre a Jornada</a></li>
           <li><a href="#ciclos">Os 4 Ciclos</a></li>
           <li><a href="#contos">12 Contos</a></li>
+          <li><a href="#investimento">Investimento</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#cta-final">Inscrição</a></li>
         </ul>
@@ -2191,18 +2256,18 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 // Helper: Timeline dos 12 contos
 function generateTimeline(): string {
   const contos = [
-    { n: '01', name: 'LA LOBA', desc: 'Ressurreição dos ossos', tema: 'Onde sinto a vida retornando?', data: 'Qua 01/04', ciclo: 1, icon: '💀', special: '' },
-    { n: '02', name: 'O BARBA-AZUL', desc: 'Reconhecer perigo', tema: 'Seu corpo avisa quando algo não é seguro?', data: 'Qua 08/04', ciclo: 1, icon: '🗝️', special: '' },
-    { n: '03', name: 'VASALISA', desc: 'A boneca interior', tema: 'Você confia na sua intuição?', data: 'Qua 15/04', ciclo: 1, icon: '🪆', special: '' },
-    { n: '04', name: 'MANAWEE', desc: 'Nomear o feminino', tema: 'Você sabe quem você é?', data: 'Qua 22/04', ciclo: 2, icon: '🐕', special: '' },
-    { n: '05', name: 'MULHER-ESQUELETO', desc: 'A dança com a morte', tema: 'O que precisa morrer para renascer?', data: 'Qua 29/04', ciclo: 2, icon: '🦴', special: '' },
-    { n: '06', name: 'PATINHO FEIO', desc: 'Encontrar o clã', tema: 'Onde é o seu lugar de pertencimento?', data: 'Qua 06/05', ciclo: 2, icon: '🦢', special: '' },
-    { n: '07', name: 'PELE DE FOCA', desc: 'Recuperar a alma', tema: 'Onde você perdeu contato consigo mesma?', data: 'Qua 13/05', ciclo: 3, icon: '🦭', special: '' },
-    { n: '08', name: 'LA LLORONA', desc: 'Luto e perda', tema: 'O que você ainda precisa chorar?', data: 'Qua 20/05', ciclo: 3, icon: '😢', special: '' },
-    { n: '09', name: 'DEUSAS SUJAS', desc: 'Abraçar o instinto', tema: 'Qual parte selvagem você reprimiu?', data: 'Qua 27/05', ciclo: 3, icon: '🔥', special: '' },
-    { n: '10', name: 'URSO DA MEIA-LUA', desc: 'Raiva sagrada', tema: 'Sua raiva te protege ou te prende?', data: 'Qua 03/06', ciclo: 4, icon: '🐻', special: '' },
-    { n: '11', name: 'MULHER CABELOS DE OURO', desc: 'Honrar cicatrizes', tema: 'O que suas cicatrizes ensinaram?', data: 'Qua 10/06', ciclo: 4, icon: '✨', special: '' },
-    { n: '12', name: 'DONZELA SEM MÃOS', desc: 'Integração final', tema: 'Quem sou agora?', data: 'Qua 17/06', ciclo: 4, icon: '🌟', special: 'Ritual de Fechamento' },
+    { n: '01', name: 'VASALISA, A SABIDA', desc: 'Recuperar a chama intuitiva', tema: 'Você ainda confia na sua intuição?', data: 'Qua 01/04', ciclo: 1, icon: '🪆', special: '' },
+    { n: '02', name: 'O PATINHO FEIO', desc: 'Reconhecer deslocamento identitário', tema: 'Onde você nunca se sentiu pertencer?', data: 'Qua 08/04', ciclo: 1, icon: '🦢', special: '' },
+    { n: '03', name: 'MANAWEE', desc: 'Diferenciar-se e nomear o feminino próprio', tema: 'Você sabe quem você realmente é?', data: 'Qua 15/04', ciclo: 1, icon: '🐕', special: '' },
+    { n: '04', name: 'MULHER-ESQUELETO', desc: 'Medo da intimidade', tema: 'O que faz você recuar quando alguém se aproxima?', data: 'Qua 22/04', ciclo: 2, icon: '🦴', special: '' },
+    { n: '05', name: 'BARBA-AZUL', desc: 'Autoengano e silenciamento crônico', tema: 'O que você sabe, mas finge não saber?', data: 'Qua 29/04', ciclo: 2, icon: '🗝️', special: '' },
+    { n: '06', name: 'A DONZELA SEM MÃOS', desc: 'Reconstrução após perda de autonomia', tema: 'O que foi tomado de você sem sua permissão?', data: 'Qua 06/05', ciclo: 2, icon: '🌙', special: '' },
+    { n: '07', name: 'PELE DE FOCA', desc: 'Recuperar identidade', tema: 'Onde você perdeu contato consigo mesma?', data: 'Qua 13/05', ciclo: 3, icon: '🦭', special: '' },
+    { n: '08', name: 'LA LLORONA', desc: 'Atravessar lutos', tema: 'O que você ainda precisa chorar?', data: 'Qua 20/05', ciclo: 3, icon: '💧', special: '' },
+    { n: '09', name: 'URSO DA MEIA-LUA', desc: 'Raiva madura e limites', tema: 'Sua raiva te protege ou te aprisiona?', data: 'Qua 27/05', ciclo: 3, icon: '🐻', special: '' },
+    { n: '10', name: 'DEUSAS SUJAS', desc: 'Instinto criativo integrado', tema: 'Qual parte selvagem você aprendeu a esconder?', data: 'Qua 03/06', ciclo: 4, icon: '🔥', special: '' },
+    { n: '11', name: 'CABELOS DE OURO', desc: 'Discernimento e maturidade', tema: 'O que suas cicatrizes ensinaram sobre você?', data: 'Qua 10/06', ciclo: 4, icon: '✨', special: '' },
+    { n: '12', name: 'LA LOBA', desc: 'Reconstrução final da identidade', tema: 'Quem sou agora?', data: 'Qua 17/06', ciclo: 4, icon: '🐺', special: 'Ritual de Fechamento' },
   ]
   const cicloColors: Record<number, string> = { 1: 'var(--vermelho)', 2: 'var(--verde)', 3: 'var(--prata)', 4: 'var(--ouro)' }
   return contos.map((c, i) => `
@@ -2222,18 +2287,18 @@ function generateTimeline(): string {
 
 function generateContosGrid(): string {
   const contos = [
-    { n: '01', name: 'La Loba', desc: 'Ressurreição', ciclo: 1 },
-    { n: '02', name: 'Barba-Azul', desc: 'Reconhecer Perigo', ciclo: 1 },
-    { n: '03', name: 'Vasalisa', desc: 'Intuição', ciclo: 1 },
-    { n: '04', name: 'Manawee', desc: 'Nomear o Feminino', ciclo: 2 },
-    { n: '05', name: 'Mulher-Esqueleto', desc: 'Dança com a Morte', ciclo: 2 },
-    { n: '06', name: 'Patinho Feio', desc: 'Encontrar o Clã', ciclo: 2 },
-    { n: '07', name: 'Pele de Foca', desc: 'Recuperar a Alma', ciclo: 3 },
-    { n: '08', name: 'La Llorona', desc: 'Luto e Transformação', ciclo: 3 },
-    { n: '09', name: 'Deusas Sujas', desc: 'Instinto Criativo', ciclo: 3 },
-    { n: '10', name: 'Urso da Meia-Lua', desc: 'Raiva Sagrada', ciclo: 4 },
-    { n: '11', name: 'Cabelos de Ouro', desc: 'Honrar Cicatrizes', ciclo: 4 },
-    { n: '12', name: 'Donzela sem Mãos', desc: 'Integração Final', ciclo: 4 },
+    { n: '01', name: 'Vasalisa, a Sabida', desc: 'Recuperar a Intuição', ciclo: 1 },
+    { n: '02', name: 'O Patinho Feio', desc: 'Deslocamento Identitário', ciclo: 1 },
+    { n: '03', name: 'Manawee', desc: 'Nomear o Feminino', ciclo: 1 },
+    { n: '04', name: 'Mulher-Esqueleto', desc: 'Medo da Intimidade', ciclo: 2 },
+    { n: '05', name: 'Barba-Azul', desc: 'Autoengano e Silêncio', ciclo: 2 },
+    { n: '06', name: 'A Donzela sem Mãos', desc: 'Perda de Autonomia', ciclo: 2 },
+    { n: '07', name: 'Pele de Foca', desc: 'Recuperar Identidade', ciclo: 3 },
+    { n: '08', name: 'La Llorona', desc: 'Atravessar Lutos', ciclo: 3 },
+    { n: '09', name: 'Urso da Meia-Lua', desc: 'Raiva Madura e Limites', ciclo: 3 },
+    { n: '10', name: 'Deusas Sujas', desc: 'Instinto Criativo', ciclo: 4 },
+    { n: '11', name: 'Cabelos de Ouro', desc: 'Discernimento e Maturidade', ciclo: 4 },
+    { n: '12', name: 'La Loba', desc: 'Identidade Reconstruída', ciclo: 4 },
   ]
   const cicloColors: Record<number, string> = { 1: 'var(--vermelho)', 2: 'var(--verde)', 3: 'var(--prata)', 4: 'var(--ouro)' }
   return contos.map(c => `
