@@ -2030,26 +2030,26 @@ app.get('/', (c) => {
       <div class="carousel-track" id="carouselTrack">
         <div class="carousel-slide">
           <div class="dep-card">
-            <div class="dep-avatar">J</div>
+            <div class="dep-avatar">S</div>
             <div class="dep-stars">★★★★★</div>
-            <div class="dep-name">Joana, 62 anos</div>
-            <p class="dep-text">"Essa jornada me devolveu para mim mesma. Entrei desconectada do corpo, saí habitando meu corpo inteiro. A vivência foi o passo que precisava."</p>
+            <div class="dep-name">SK</div>
+            <p class="dep-text">"Minha experiência foi muito positiva, constatei várias situações que ainda estavam obscuras para mim. A contoterapia revelou se tratar de um instrumento de grande valia no processo de autoconhecimento e auto-análise."</p>
           </div>
         </div>
         <div class="carousel-slide">
           <div class="dep-card">
-            <div class="dep-avatar">F</div>
+            <div class="dep-avatar">N</div>
             <div class="dep-stars">★★★★★</div>
-            <div class="dep-name">Fernanda, 67 anos</div>
-            <p class="dep-text">"Pela primeira vez em 30 anos, disse NÃO sem culpa. Meu corpo aprendeu a se proteger durante a jornada. Recomendo para toda mulher que busca ressignificação."</p>
+            <div class="dep-name">Nelci Baratz, 70 anos</div>
+            <p class="dep-text">"Tem sido surpreendente e desafiante. O conto escancara nossas dificuldades e comportamentos improdutivos. Fez muito sentido para mim neste momento e trouxe maior clareza de minhas emoções no processo que estava vivendo."</p>
           </div>
         </div>
         <div class="carousel-slide">
           <div class="dep-card">
             <div class="dep-avatar">A</div>
             <div class="dep-stars">★★★★★</div>
-            <div class="dep-name">Ana, 58 anos</div>
-            <p class="dep-text">"Encontrei meu clã. Mulheres que entendem. A jornada é terapêutica, mas o grupo é a cura. Aos 40+ merecia essa conexão."</p>
+            <div class="dep-name">Algeny F., 70 anos</div>
+            <p class="dep-text">"A Contoterapia possibilitou novas descobertas, novo momento de vida, maior clareza de emoções no processo que estava vivendo e alívio de emoções difíceis."</p>
           </div>
         </div>
       </div>
