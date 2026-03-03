@@ -1562,7 +1562,7 @@ app.get('/', (c) => {
       <img src="/static/foto-monica.png" alt="Mônica Langsdorff — Facilitadora de Focalização e Contoterapeuta"
         style="width:240px;height:auto;border-radius:50%;border:4px solid rgba(201,149,106,0.5);filter:drop-shadow(0 8px 28px rgba(150,30,30,0.22))" />
       <div style="background:linear-gradient(135deg,var(--vermelho),#7A1212);border-radius:30px;padding:8px 24px;text-align:center;box-shadow:0 4px 16px rgba(150,30,30,0.25)">
-        <div style="font-size:0.62rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,0.75)">Facilitadora · Contoterapeuta</div>
+        <div style="font-size:0.62rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,0.75)">Facilitadora de Focalização · Contoterapeuta</div>
         <div style="font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:#E0B899;letter-spacing:0.5px;margin-top:2px">Mônica Langsdorff</div>
       </div>
     </div>
