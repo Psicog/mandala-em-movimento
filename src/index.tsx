@@ -1144,10 +1144,6 @@ app.get('/', (c) => {
       Jornada <span>Mandala</span><br>em Movimento
     </h1>
     <p class="hero-sub">Para mulheres 40+ que estão cansadas de se adaptar demais e desejam aprender a existir nas relações sem perder a própria voz.</p>
-    <p class="hero-desc">
-      Uma travessia terapêutica de 12 semanas para reconstruir sua autonomia<br>
-      com segurança, consciência e direção.
-    </p>
     <div class="hero-btns">
       <a href="https://forms.gle/5YFSvrEpk55tvBcH8" target="_blank" class="btn btn-primary" style="font-size:1rem;padding:16px 38px">
         <i class="fas fa-star" style="margin-right:8px"></i>INSCREVER-SE NA JORNADA
@@ -1226,11 +1222,11 @@ app.get('/', (c) => {
             <div>
               <div class="sobre-badge-subtitle">1&#186; Fundamento</div>
               <div class="sobre-badge-title">Focalização · Eugene Gendlin</div>
-              <div class="sobre-badge-text">Escuta corporal e regulação emocional — aprender a escutar os sinais do corpo como sabedoria interior para sustentação de limites.</div>
+              <div class="sobre-badge-text">Uma prática de escuta corporal profunda que ajuda você a acessar aquilo que já sabe por dentro — mas ainda não conseguiu nomear.</div>
             </div>
           </div>
 
-          <!-- Fundamento 2: Psicologia Analitica -->
+          <!-- Fundamento 2: Contoterapia -->
           <div class="sobre-badge">
             <div class="sobre-badge-icon">
               <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1253,12 +1249,12 @@ app.get('/', (c) => {
             </div>
             <div>
               <div class="sobre-badge-subtitle">2&#186; Fundamento</div>
-              <div class="sobre-badge-title">Psicologia Analítica · Carl Jung</div>
-              <div class="sobre-badge-text">Diferenciação identitária e trabalho com símbolos e arquétipos para recuperação da voz e reconstrução da autonomia relacional.</div>
+              <div class="sobre-badge-title">Contoterapia · Método CIP</div>
+              <div class="sobre-badge-text">Uso terapêutico de contos arquetípicos como espelhos simbólicos para reorganização interna e reconstrução da identidade.</div>
             </div>
           </div>
 
-          <!-- Fundamento 3: Contoterapia Humanista -->
+          <!-- Fundamento 3: Caminho de Interioridade e Maturidade Feminina -->
           <div class="sobre-badge">
             <div class="sobre-badge-icon">
               <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1284,22 +1280,18 @@ app.get('/', (c) => {
                 <!-- Pelo / textura no pescoco -->
                 <path d="M6 20 Q5 22 6 24 Q8 26 11 26 Q13 25 14 24" stroke="#C9956A" stroke-width="1.1" fill="none" stroke-linecap="round" opacity="0.6"/>
                 <!-- Lua crescente atras = noite / instinto selvagem -->
-                <path d="M23 5 Q28 9 28 16 Q28 22 23 26 Q27 22 27 16 Q27 9 23 5 Z" fill="#E0B899" opacity="0.25" stroke="#E0B899" stroke-width="0.8" opacity="0.4"/>
+                <path d="M23 5 Q28 9 28 16 Q28 22 23 26 Q27 22 27 16 Q27 9 23 5 Z" fill="#E0B899" opacity="0.25" stroke="#E0B899" stroke-width="0.8"/>
                 <!-- Estrelas ao redor -->
                 <circle cx="25" cy="7" r="0.8" fill="#E0B899" opacity="0.7"/>
                 <circle cx="27" cy="13" r="0.6" fill="#E0B899" opacity="0.5"/>
                 <circle cx="26" cy="19" r="0.7" fill="#E0B899" opacity="0.6"/>
                 <circle cx="22" cy="4" r="0.5" fill="#C9956A" opacity="0.6"/>
-                <!-- Pontinhos de pelo no queixo -->
-                <line x1="10" y1="24" x2="9" y2="26" stroke="#C9956A" stroke-width="0.8" stroke-linecap="round" opacity="0.5"/>
-                <line x1="12" y1="25" x2="12" y2="27" stroke="#C9956A" stroke-width="0.8" stroke-linecap="round" opacity="0.45"/>
-                <line x1="14" y1="24" x2="15" y2="26" stroke="#C9956A" stroke-width="0.8" stroke-linecap="round" opacity="0.4"/>
               </svg>
             </div>
             <div>
               <div class="sobre-badge-subtitle">3&#186; Fundamento</div>
-              <div class="sobre-badge-title">Abordagem Centrada na Pessoa · Carl Rogers</div>
-              <div class="sobre-badge-text">Segurança emocional e responsabilidade pessoal — espaço para que cada mulher construa direção consciente e autonomia interna.</div>
+              <div class="sobre-badge-title">Caminho de Interioridade e Maturidade Feminina</div>
+              <div class="sobre-badge-text">11 anos conduzindo grupos de aprofundamento espiritual e desenvolvimento pessoal voltados à autonomia e direção consciente.</div>
             </div>
           </div>
 
