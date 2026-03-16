@@ -2126,7 +2126,7 @@ app.get('/', (c) => {
       <div style="background:linear-gradient(135deg,rgba(150,30,30,0.08),rgba(242,232,223,0.98));border:2px solid rgba(150,30,30,0.35);border-radius:20px;padding:40px 36px;position:relative;overflow:hidden;text-align:center">
         <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--bordô),var(--rose-gold))"></div>
         <div style="font-size:0.72rem;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:var(--bordô);margin-bottom:12px">À VISTA</div>
-        <div style="font-family:'Playfair Display',serif;font-size:3rem;font-weight:900;color:var(--bordô);line-height:1;margin-bottom:4px">R$ 1.680</div>
+        <div style="font-family:'Playfair Display',serif;font-size:3rem;font-weight:900;color:var(--bordô);line-height:1;margin-bottom:4px">R$ 358,90</div>
         <div style="font-size:0.82rem;color:#6A5045;margin-bottom:24px">Condição especial para pagamento à vista</div>
         <ul style="list-style:none;padding:0;margin:0 0 20px;text-align:left;display:flex;flex-direction:column;gap:10px">
           <li style="display:flex;align-items:center;gap:10px;color:#3A2820;font-size:0.88rem">
@@ -2160,7 +2160,7 @@ app.get('/', (c) => {
       <div style="background:linear-gradient(135deg,rgba(176,120,72,0.08),rgba(242,232,223,0.98));border:2px solid rgba(176,120,72,0.35);border-radius:20px;padding:40px 36px;position:relative;overflow:hidden;text-align:center">
         <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--rose-gold),var(--ouro-claro))"></div>
         <div style="font-size:0.72rem;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:var(--rose-gold);margin-bottom:12px">A PRAZO</div>
-        <div style="font-family:'Playfair Display',serif;font-size:3rem;font-weight:900;color:var(--rose-gold);line-height:1;margin-bottom:4px">R$ 1.800</div>
+        <div style="font-family:'Playfair Display',serif;font-size:3rem;font-weight:900;color:var(--rose-gold);line-height:1;margin-bottom:4px">R$ 388,80</div>
         <div style="font-size:0.82rem;color:#6A5045;margin-bottom:28px">Em até <strong>10x</strong> sem juros</div>
         <ul style="list-style:none;padding:0;margin:0 0 24px;text-align:left;display:flex;flex-direction:column;gap:10px">
           <li style="display:flex;align-items:center;gap:10px;color:#3A2820;font-size:0.88rem">
@@ -2241,7 +2241,7 @@ app.get('/', (c) => {
           <i class="fab fa-whatsapp" style="margin-right:8px"></i>Tirar Dúvidas no WhatsApp
         </a>
       </div>
-      <p class="cta-obs">Grupo fechado de 6 a 10 mulheres · À vista R$ 1.680,00 · A prazo R$ 1.800,00 em 10x sem juros · Plano flexível disponível.</p>
+      <p class="cta-obs">Grupo fechado de 6 a 10 mulheres · À vista R$ 358,90 · A prazo R$ 388,80 em 10x sem juros · Plano flexível disponível.</p>
     </div>
   </div>
 </section>
@@ -2544,7 +2544,7 @@ function generateFAQ(): string {
     { q: 'Qual é o horário? Há flexibilidade?', a: 'Toda <strong>quarta-feira, 19h30–21h</strong> (1h30 de duração). Horário fixo. Flexibilidade limitada.' },
     { q: 'Posso faltar alguns encontros?', a: 'Sim, mas recomendamos <strong>80%+ de presença</strong>. A jornada é em espiral crescente. Cada encontro aprofunda. Faltas frequentes prejudicam a experiência.' },
     { q: 'Preciso ter lido "Mulheres que Correm com os Lobos"?', a: '<strong>Não.</strong> Vou ler os trechos com você e guiar toda a jornada. O livro é inspiração, não pré-requisito.' },
-    { q: 'Qual é o investimento? Há plano de pagamento?', a: '<strong>À vista: R$ 1.680,00</strong> + Bônus Sessão individual após encerramento da jornada (50 min).<br><strong>A prazo: R$ 1.800,00</strong> em até 10x sem juros. Plano flexível disponível.' },
+    { q: 'Qual é o investimento? Há plano de pagamento?', a: '<strong>À vista: R$ 358,90</strong> + Bônus Sessão individual após encerramento da jornada (50 min).<br><strong>A prazo: R$ 388,80</strong> em até 10x sem juros. Plano flexível disponível.' },
     { q: 'Como é o formato – presencial ou online?', a: 'Formato <strong>online</strong> na plataforma <strong>Zoom</strong>. Tecnologia testada e suporte disponível para todas as participantes.' },
     { q: 'Há certificado ao final?', a: 'Sim. Você recebe <strong>Certificado de Conclusão — Carga horária total: 18 horas — Rito de Reconstrução Feminina 40+</strong>, além de acesso a grupo de suporte contínuo (opcional).' },
     { q: 'Preciso ter vivência prévia em terapia?', a: '<strong>Não.</strong> Essa jornada é desenhada para mulheres em qualquer estágio. Se você tem trauma intenso ativo, podemos conversar individualmente.' },
