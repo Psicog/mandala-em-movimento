@@ -1164,7 +1164,6 @@ app.get('/', (c) => {
   <div class="hero-particles" id="particles"></div>
 
   <div class="hero-content fade-in">
-    <div class="hero-badge">✦ Próxima turma começa: Quarta 01/04 ✦</div>
     <h1 class="hero-title">
       Jornada <span>Mandala</span><br>em Movimento
     </h1>
@@ -1172,9 +1171,6 @@ app.get('/', (c) => {
     <div class="hero-btns">
       <a href="https://forms.gle/5YFSvrEpk55tvBcH8" target="_blank" class="btn btn-primary" style="font-size:1rem;padding:16px 38px">
         <i class="fas fa-star" style="margin-right:8px"></i>INSCREVER-SE NA JORNADA
-      </a>
-      <a href="#datas" class="btn btn-secondary" style="font-size:1rem;padding:16px 30px">
-        <i class="fas fa-star" style="margin-right:8px"></i>Inscrever para Vivência Gratuita – 25/03
       </a>
       <a href="#sobre" class="btn btn-outline" style="font-size:0.9rem;padding:14px 24px">
         Saber Mais <i class="fas fa-arrow-down" style="margin-left:8px"></i>
@@ -1971,26 +1967,10 @@ app.get('/', (c) => {
 <section id="datas">
   <div class="container">
     <h2 class="section-headline fade-in">Datas &amp; Cronograma</h2>
-    <p class="section-subline fade-in">6 dias entre a Vivência e o início da Jornada para você refletir</p>
-    <div class="datas-grid fade-in">
-      <!-- Bloco Vivência -->
-      <div class="datas-card datas-card-vivencia">
-        <div class="datas-card-title"><svg width="28" height="28" viewBox="0 0 28 28" style="vertical-align:middle;margin-right:8px" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="14" cy="14" r="13" stroke="#B07848" stroke-width="1.5" fill="rgba(176,120,72,0.1)"/><path d="M14 6 Q14 10 10 12 Q7 13.5 7 17 Q7 21 14 22 Q21 21 21 17 Q21 13.5 18 12 Q14 10 14 6Z" stroke="#B07848" stroke-width="1.3" fill="rgba(176,120,72,0.15)"/><circle cx="14" cy="17" r="2.5" fill="#B07848" opacity="0.8"/><path d="M14 6 Q16 9 14 11 Q12 9 14 6Z" fill="#C9956A" opacity="0.9"/></svg>Vivência Gratuita</div>
-        <div class="datas-item"><span class="datas-item-icon">📅</span><span class="datas-item-text"><strong>Quarta, 25 de Março de 2026</strong></span></div>
-        <div class="datas-item"><span class="datas-item-icon">🕖</span><span class="datas-item-text">19h30</span></div>
-        <div class="datas-item"><span class="datas-item-icon">⏱️</span><span class="datas-item-text">90 minutos</span></div>
-        <div class="datas-item"><span class="datas-item-icon">👥</span><span class="datas-item-text"><strong>Número limitado de participantes</strong></span></div>
-        <div class="datas-desc">
-          Uma vivência introdutória utilizando o conto <strong>Barba-Azul</strong> como portal simbólico para reconhecer a intuição ignorada e os pequenos autoabandono cotidianos.<br><br>
-          A vivência é uma experiência inicial. A jornada aprofunda essa travessia ao longo de <strong>12 semanas estruturadas.</strong>
-        </div>
-        <div class="datas-conto">✦ Barba-Azul – Autoengano e silenciamento crônico</div>
-        <a href="#cta-final" class="btn btn-secondary" style="width:100%;text-align:center;display:block">
-          <i class="fas fa-key" style="margin-right:8px"></i>Abrir a Porta Proibida – Entrar
-        </a>
-      </div>
-      <!-- Bloco Jornada -->
-      <div class="datas-card datas-card-jornada">
+    <p class="section-subline fade-in">12 encontros de reconstrução — de Abril a Julho de 2026</p>
+    <div class="datas-grid fade-in" style="grid-template-columns:1fr">
+      <!-- Bloco Jornada (único) -->
+      <div class="datas-card datas-card-jornada" style="max-width:680px;margin:0 auto;width:100%">
         <div class="datas-card-title" style="display:flex;align-items:center;gap:12px;justify-content:center">
           <svg width="48" height="48" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0">
             <!-- Círculo externo -->
@@ -2040,10 +2020,10 @@ app.get('/', (c) => {
           </svg>
           Jornada Completa
         </div>
-        <div class="datas-item"><span class="datas-item-icon">📅</span><span class="datas-item-text">Começa: <strong>Quarta, 01/04/2026</strong></span></div>
-        <div class="datas-item"><span class="datas-item-icon">📅</span><span class="datas-item-text">Finaliza: <strong>Quarta, 17/06/2026</strong></span></div>
-        <div class="datas-item"><span class="datas-item-icon">🕖</span><span class="datas-item-text"><strong>19h30–21h</strong> · toda quarta-feira</span></div>
-        <div class="datas-item"><span class="datas-item-icon">⏱️</span><span class="datas-item-text">12 encontros semanais</span></div>
+        <div class="datas-item"><span class="datas-item-icon">📅</span><span class="datas-item-text">Começa: <strong>Terça-feira, 29/04/2026</strong></span></div>
+        <div class="datas-item"><span class="datas-item-icon">📅</span><span class="datas-item-text">Finaliza: <strong>Terça-feira, 01/07/2026</strong></span></div>
+        <div class="datas-item"><span class="datas-item-icon">🕖</span><span class="datas-item-text"><strong>19h30–21h</strong> · terças-feiras (e 2 encontros presenciais/manhã)</span></div>
+        <div class="datas-item"><span class="datas-item-icon">⏱️</span><span class="datas-item-text">12 encontros ao longo de 10 semanas</span></div>
         <div class="datas-item"><span class="datas-item-icon">👥</span><span class="datas-item-text"><strong>Número limitado de participantes</strong></span></div>
         <div class="datas-desc">4 ciclos · 12 contos · Rito de Reconstrução Feminina 40+</div>
         <a href="https://forms.gle/5YFSvrEpk55tvBcH8" target="_blank" class="btn btn-primary" style="width:100%;text-align:center;display:block">
@@ -2055,31 +2035,25 @@ app.get('/', (c) => {
     <div class="timeline-visual fade-in">
       <div class="tl-vis-item">
         <div class="tl-vis-dot" style="background:var(--vermelho)"></div>
-        <div class="tl-vis-date">25/03</div>
-        <div class="tl-vis-label">Vivência</div>
-      </div>
-      <div class="tl-vis-line"></div>
-      <div class="tl-vis-item">
-        <div class="tl-vis-dot"></div>
-        <div class="tl-vis-date">01/04</div>
+        <div class="tl-vis-date">29/04</div>
         <div class="tl-vis-label">Início</div>
       </div>
       <div class="tl-vis-line"></div>
       <div class="tl-vis-item">
         <div class="tl-vis-dot" style="background:var(--verde)"></div>
-        <div class="tl-vis-date">08/04</div>
-        <div class="tl-vis-label">Semana 2</div>
+        <div class="tl-vis-date">30/05</div>
+        <div class="tl-vis-label">Encontro 9h</div>
       </div>
       <div class="tl-vis-line"></div>
       <div class="tl-vis-item">
-        <div class="tl-vis-dot" style="background:var(--prata)"></div>
-        <div class="tl-vis-date">...</div>
-        <div class="tl-vis-label">12 semanas</div>
+        <div class="tl-vis-dot" style="background:var(--azul)"></div>
+        <div class="tl-vis-date">27/06</div>
+        <div class="tl-vis-label">Encontro 9h</div>
       </div>
       <div class="tl-vis-line"></div>
       <div class="tl-vis-item">
         <div class="tl-vis-dot" style="background:var(--ouro);width:22px;height:22px;margin-top:-3px"></div>
-        <div class="tl-vis-date">17/06</div>
+        <div class="tl-vis-date">01/07</div>
         <div class="tl-vis-label">✨ Integração</div>
       </div>
     </div>
@@ -2143,12 +2117,12 @@ app.get('/', (c) => {
       <div style="background:linear-gradient(135deg,rgba(150,30,30,0.08),rgba(242,232,223,0.98));border:2px solid rgba(150,30,30,0.35);border-radius:20px;padding:40px 36px;position:relative;overflow:hidden;text-align:center">
         <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--bordô),var(--rose-gold))"></div>
         <div style="font-size:0.72rem;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:var(--bordô);margin-bottom:12px">À VISTA</div>
-        <div style="font-family:'Playfair Display',serif;font-size:3rem;font-weight:900;color:var(--bordô);line-height:1;margin-bottom:4px">R$ 358,90</div>
+        <div style="font-family:'Playfair Display',serif;font-size:3rem;font-weight:900;color:var(--bordô);line-height:1;margin-bottom:4px">R$ 97,00</div>
         <div style="font-size:0.82rem;color:#6A5045;margin-bottom:24px">Condição especial para pagamento à vista</div>
         <ul style="list-style:none;padding:0;margin:0 0 20px;text-align:left;display:flex;flex-direction:column;gap:10px">
           <li style="display:flex;align-items:center;gap:10px;color:#3A2820;font-size:0.88rem">
             <i class="fas fa-check-circle" style="color:var(--bordô);flex-shrink:0"></i>
-            12 encontros semanais (1h30 cada)
+            12 encontros ao longo de 10 semanas (1h30 cada)
           </li>
           <li style="display:flex;align-items:center;gap:10px;color:#3A2820;font-size:0.88rem">
             <i class="fas fa-check-circle" style="color:var(--bordô);flex-shrink:0"></i>
@@ -2160,14 +2134,25 @@ app.get('/', (c) => {
           </li>
           <li style="display:flex;align-items:center;gap:10px;color:#3A2820;font-size:0.88rem">
             <i class="fas fa-check-circle" style="color:var(--bordô);flex-shrink:0"></i>
+            Material com conteúdo de cada conto
+          </li>
+          <li style="display:flex;align-items:center;gap:10px;color:#3A2820;font-size:0.88rem">
+            <i class="fas fa-check-circle" style="color:var(--bordô);flex-shrink:0"></i>
+            Áudios preparatórios antes de cada encontro
+          </li>
+          <li style="display:flex;align-items:center;gap:10px;color:#3A2820;font-size:0.88rem">
+            <i class="fas fa-check-circle" style="color:var(--bordô);flex-shrink:0"></i>
+            Disponibilização dos links dos encontros gravados
+          </li>
+          <li style="display:flex;align-items:center;gap:10px;color:#3A2820;font-size:0.88rem">
+            <i class="fas fa-check-circle" style="color:var(--bordô);flex-shrink:0"></i>
             Certificação ao final
           </li>
+          <li style="display:flex;align-items:center;gap:10px;color:#3A2820;font-size:0.88rem">
+            <i class="fas fa-check-circle" style="color:var(--bordô);flex-shrink:0"></i>
+            Participação na comunidade com materiais e trocas de experiências
+          </li>
         </ul>
-        <div style="background:rgba(150,30,30,0.06);border:1px solid rgba(150,30,30,0.25);border-radius:10px;padding:14px 18px;margin-bottom:24px;font-size:0.88rem;color:#3A2820;line-height:1.6;text-align:left">
-          <div style="font-size:0.7rem;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--bordô);margin-bottom:8px">✦ Bônus Especial</div>
-          <i class="fas fa-star" style="color:var(--rose-gold);margin-right:6px"></i>
-          Sessão individual de integração pós-jornada (50 minutos)
-        </div>
         <a href="https://forms.gle/5YFSvrEpk55tvBcH8" target="_blank" class="btn btn-secondary" style="width:100%;text-align:center;display:block">
           Quero este plano
         </a>
@@ -2177,12 +2162,12 @@ app.get('/', (c) => {
       <div style="background:linear-gradient(135deg,rgba(176,120,72,0.08),rgba(242,232,223,0.98));border:2px solid rgba(176,120,72,0.35);border-radius:20px;padding:40px 36px;position:relative;overflow:hidden;text-align:center">
         <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--rose-gold),var(--ouro-claro))"></div>
         <div style="font-size:0.72rem;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:var(--rose-gold);margin-bottom:12px">A PRAZO</div>
-        <div style="font-family:'Playfair Display',serif;font-size:3rem;font-weight:900;color:var(--rose-gold);line-height:1;margin-bottom:4px">R$ 388,80</div>
-        <div style="font-size:0.82rem;color:#6A5045;margin-bottom:28px">Em até <strong>10x</strong> sem juros</div>
+        <div style="font-family:'Playfair Display',serif;font-size:3rem;font-weight:900;color:var(--rose-gold);line-height:1;margin-bottom:4px">R$ 120,00</div>
+        <div style="font-size:0.82rem;color:#6A5045;margin-bottom:28px">Em até <strong>10x</strong> de R$ 12,00</div>
         <ul style="list-style:none;padding:0;margin:0 0 24px;text-align:left;display:flex;flex-direction:column;gap:10px">
           <li style="display:flex;align-items:center;gap:10px;color:#3A2820;font-size:0.88rem">
             <i class="fas fa-check-circle" style="color:var(--rose-gold);flex-shrink:0"></i>
-            12 encontros semanais (1h30 cada)
+            12 encontros ao longo de 10 semanas (1h30 cada)
           </li>
           <li style="display:flex;align-items:center;gap:10px;color:#3A2820;font-size:0.88rem">
             <i class="fas fa-check-circle" style="color:var(--rose-gold);flex-shrink:0"></i>
@@ -2194,7 +2179,7 @@ app.get('/', (c) => {
           </li>
           <li style="display:flex;align-items:center;gap:10px;color:#3A2820;font-size:0.88rem">
             <i class="fas fa-check-circle" style="color:var(--rose-gold);flex-shrink:0"></i>
-            Certificação ao final
+            Participação na comunidade com materiais e trocas de experiências
           </li>
         </ul>
         <a href="https://forms.gle/5YFSvrEpk55tvBcH8" target="_blank" class="btn btn-primary" style="width:100%;text-align:center;display:block">
@@ -2240,25 +2225,22 @@ app.get('/', (c) => {
   <div class="container">
     <div class="cta-final-content fade-in">
       <h2 class="cta-title">Está pronta para se reconstruir?</h2>
-      <p class="cta-sub">A Vivência começa Quarta 25/03 · A Jornada começa Quarta 01/04</p>
+      <p class="cta-sub">A Jornada começa Terça 29/04 · Vagas limitadas</p>
       <div class="cta-info">
-        <div class="cta-info-item"><i class="fas fa-calendar"></i> Encontros toda quarta, 19h30–21h</div>
+        <div class="cta-info-item"><i class="fas fa-calendar"></i> Encontros às terças, 19h30–21h (e 2 encontros matutinos)</div>
         <div class="cta-info-item"><i class="fas fa-users"></i> Número limitado de participantes</div>
-        <div class="cta-info-item"><i class="fas fa-heart"></i> 12 semanas de reconstrução da autonomia</div>
-        <div class="cta-info-item"><i class="fas fa-clock"></i> Vagas limitadas</div>
+        <div class="cta-info-item"><i class="fas fa-heart"></i> 12 encontros de reconstrução da autonomia</div>
+        <div class="cta-info-item"><i class="fas fa-clock"></i> De 29/04 a 01/07/2026</div>
       </div>
       <div class="cta-btns">
         <a href="https://forms.gle/5YFSvrEpk55tvBcH8" target="_blank" class="btn btn-primary" style="font-size:1.05rem;padding:18px 42px">
           <i class="fas fa-star" style="margin-right:8px"></i>INSCREVER-SE NA JORNADA
         </a>
-        <a href="https://forms.gle/WUkarZdTAAPwGFjg7" target="_blank" class="btn btn-secondary" style="font-size:1rem;padding:16px 32px">
-          <i class="fas fa-star" style="margin-right:8px"></i>Inscrever para Vivência Gratuita – 25/03
-        </a>
         <a href="https://wa.me/message/WO4OBZ4EECG2D1" target="_blank" class="btn btn-whatsapp" style="font-size:0.95rem;padding:16px 28px">
           <i class="fab fa-whatsapp" style="margin-right:8px"></i>Tirar Dúvidas no WhatsApp
         </a>
       </div>
-      <p class="cta-obs">Grupo fechado de 6 a 10 mulheres · À vista R$ 358,90 · A prazo R$ 388,80 em 10x sem juros · Plano flexível disponível.</p>
+      <p class="cta-obs">Grupo fechado de 6 a 10 mulheres · À vista R$ 97,00 · A prazo R$ 120,00 em 10x de R$ 12,00.</p>
     </div>
   </div>
 </section>
@@ -2286,7 +2268,7 @@ app.get('/', (c) => {
           Jornada terapêutica para mulheres 40+.<br>
           Rito de Reconstrução Feminina 40+.<br>
           Conteterapeuta (Método CIP) · Facilitadora de Focalização.<br>
-          Encontros toda quarta-feira, 19h30–21h.
+          Encontros às terças-feiras, 19h30–21h.
         </p>
         <div class="footer-social" style="margin-top:16px">
           <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
@@ -2298,10 +2280,10 @@ app.get('/', (c) => {
       <div class="footer-col">
         <div class="footer-col-title">Datas</div>
         <ul>
-          <li>Vivência: Qua 25/03</li>
-          <li>Jornada: Qua 01/04</li>
-          <li>Finaliza: Qua 17/06</li>
+          <li>Início: Ter 29/04</li>
+          <li>Finaliza: Ter 01/07</li>
           <li>Horário: 19h30–21h</li>
+          <li>12 encontros · 10 semanas</li>
         </ul>
       </div>
       <div class="footer-col">
@@ -2398,7 +2380,7 @@ app.get('/', (c) => {
       </svg>
     </div>
     <h3 class="popup-title">Fique por dentro!</h3>
-    <p class="popup-text">Deixe seu e-mail para receber informações sobre a Vivência Gratuita e a Jornada Mandala em Movimento.</p>
+    <p class="popup-text">Deixe seu e-mail para receber informações sobre a Jornada Mandala em Movimento.</p>
     <div class="popup-form">
       <a href="https://forms.gle/3prmVDmPdUqcHDrn6" target="_blank" class="btn btn-primary" style="text-align:center;padding:16px" onclick="closePopup()">
         <i class="fas fa-envelope" style="margin-right:8px"></i>Quero receber!
@@ -2501,18 +2483,18 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 // Helper: Timeline dos 12 contos
 function generateTimeline(): string {
   const contos = [
-    { n: '01', name: 'VASALISA, A SABIDA', desc: 'Recuperar a chama intuitiva', tema: 'Você ainda confia na sua intuição?', data: 'Qua 01/04', ciclo: 1, icon: '🪆', special: '' },
-    { n: '02', name: 'O PATINHO FEIO', desc: 'Reconhecer deslocamento identitário', tema: 'Onde você nunca se sentiu pertencer?', data: 'Qua 08/04', ciclo: 1, icon: '🦢', special: '' },
-    { n: '03', name: 'MANAWEE', desc: 'Diferenciar-se e nomear o feminino próprio', tema: 'Você sabe quem você realmente é?', data: 'Qua 15/04', ciclo: 1, icon: '🐕', special: '' },
-    { n: '04', name: 'MULHER-ESQUELETO', desc: 'Medo da intimidade', tema: 'O que faz você recuar quando alguém se aproxima?', data: 'Qua 22/04', ciclo: 2, icon: '🦴', special: '' },
-    { n: '05', name: 'BARBA-AZUL', desc: 'Autoengano e silenciamento crônico', tema: 'O que você sabe, mas finge não saber?', data: 'Qua 29/04', ciclo: 2, icon: '🗝️', special: '' },
-    { n: '06', name: 'A DONZELA SEM MÃOS', desc: 'Reconstrução após perda de autonomia', tema: 'O que foi tomado de você sem sua permissão?', data: 'Qua 06/05', ciclo: 2, icon: '🌙', special: '' },
-    { n: '07', name: 'PELE DE FOCA', desc: 'Recuperar identidade', tema: 'Onde você perdeu contato consigo mesma?', data: 'Qua 13/05', ciclo: 3, icon: '🦭', special: '' },
-    { n: '08', name: 'LA LLORONA', desc: 'Atravessar lutos', tema: 'O que você ainda precisa chorar?', data: 'Qua 20/05', ciclo: 3, icon: '💧', special: '' },
-    { n: '09', name: 'URSO DA MEIA-LUA', desc: 'Raiva madura e limites', tema: 'Sua raiva te protege ou te aprisiona?', data: 'Qua 27/05', ciclo: 3, icon: '🐻', special: '' },
-    { n: '10', name: 'DEUSAS SUJAS', desc: 'Instinto criativo integrado', tema: 'Qual parte selvagem você aprendeu a esconder?', data: 'Qua 03/06', ciclo: 4, icon: '🔥', special: '' },
-    { n: '11', name: 'CABELOS DE OURO', desc: 'Discernimento e maturidade', tema: 'O que suas cicatrizes ensinaram sobre você?', data: 'Qua 10/06', ciclo: 4, icon: '✨', special: '' },
-    { n: '12', name: 'LA LOBA', desc: 'Reconstrução final da identidade', tema: 'Quem sou agora?', data: 'Qua 17/06', ciclo: 4, icon: '🐺', special: 'Ritual de Fechamento' },
+    { n: '01', name: 'VASALISA, A SABIDA', desc: 'Recuperar a chama intuitiva', tema: 'Você ainda confia na sua intuição?', data: 'Ter 29/04 · 19h30', ciclo: 1, icon: '🪆', special: '' },
+    { n: '02', name: 'O PATINHO FEIO', desc: 'Reconhecer deslocamento identitário', tema: 'Onde você nunca se sentiu pertencer?', data: 'Ter 06/05 · 19h30', ciclo: 1, icon: '🦢', special: '' },
+    { n: '03', name: 'MANAWEE', desc: 'Diferenciar-se e nomear o feminino próprio', tema: 'Você sabe quem você realmente é?', data: 'Ter 13/05 · 19h30', ciclo: 1, icon: '🐕', special: '' },
+    { n: '04', name: 'MULHER-ESQUELETO', desc: 'Medo da intimidade', tema: 'O que faz você recuar quando alguém se aproxima?', data: 'Ter 20/05 · 19h30', ciclo: 2, icon: '🦴', special: '' },
+    { n: '05', name: 'BARBA-AZUL', desc: 'Autoengano e silenciamento crônico', tema: 'O que você sabe, mas finge não saber?', data: 'Ter 27/05 · 19h30', ciclo: 2, icon: '🗝️', special: '' },
+    { n: '06', name: 'A DONZELA SEM MÃOS', desc: 'Reconstrução após perda de autonomia', tema: 'O que foi tomado de você sem sua permissão?', data: 'Sáb 30/05 · 9h', ciclo: 2, icon: '🌙', special: '' },
+    { n: '07', name: 'PELE DE FOCA', desc: 'Recuperar identidade', tema: 'Onde você perdeu contato consigo mesma?', data: 'Ter 03/06 · 19h30', ciclo: 3, icon: '🦭', special: '' },
+    { n: '08', name: 'LA LLORONA', desc: 'Atravessar lutos', tema: 'O que você ainda precisa chorar?', data: 'Ter 10/06 · 19h30', ciclo: 3, icon: '💧', special: '' },
+    { n: '09', name: 'URSO DA MEIA-LUA', desc: 'Raiva madura e limites', tema: 'Sua raiva te protege ou te aprisiona?', data: 'Ter 17/06 · 19h30', ciclo: 3, icon: '🐻', special: '' },
+    { n: '10', name: 'DEUSAS SUJAS', desc: 'Instinto criativo integrado', tema: 'Qual parte selvagem você aprendeu a esconder?', data: 'Ter 24/06 · 19h30', ciclo: 4, icon: '🔥', special: '' },
+    { n: '11', name: 'CABELOS DE OURO', desc: 'Discernimento e maturidade', tema: 'O que suas cicatrizes ensinaram sobre você?', data: 'Sex 27/06 · 9h', ciclo: 4, icon: '✨', special: '' },
+    { n: '12', name: 'LA LOBA', desc: 'Reconstrução final da identidade', tema: 'Quem sou agora?', data: 'Ter 01/07 · 19h30', ciclo: 4, icon: '🐺', special: 'Ritual de Fechamento' },
   ]
   const cicloColors: Record<number, string> = { 1: 'var(--vermelho)', 2: 'var(--verde)', 3: 'var(--prata)', 4: 'var(--ouro)' }
   return contos.map((c, i) => `
@@ -2558,7 +2540,7 @@ function generateContosGrid(): string {
 function generateFAQ(): string {
   const items = [
     { q: 'Qual é a faixa etária? Posso participar?', a: 'Sim! A jornada é para <strong>mulheres a partir de 40 anos</strong>. Temos especial atenção para 50+, 60+ e 70+. A selvagem interior não envelhece.' },
-    { q: 'Qual é o horário? Há flexibilidade?', a: 'Toda <strong>quarta-feira, 19h30–21h</strong> (1h30 de duração). Horário fixo. Flexibilidade limitada.' },
+    { q: 'Qual é o horário? Há flexibilidade?', a: 'Às <strong>terças-feiras, 19h30–21h</strong> (1h30 de duração), com 2 encontros especiais às 9h (30/05 e 27/06). Horário fixo. Flexibilidade limitada.' },
     { q: 'Posso faltar alguns encontros?', a: 'Sim, mas recomendamos <strong>80%+ de presença</strong>. A jornada é em espiral crescente. Cada encontro aprofunda. Faltas frequentes prejudicam a experiência.' },
     { q: 'Preciso ter lido "Mulheres que Correm com os Lobos"?', a: '<strong>Não.</strong> Vou ler os trechos com você e guiar toda a jornada. O livro é inspiração, não pré-requisito.' },
     { q: 'Qual é o investimento? Há plano de pagamento?', a: '<strong>À vista: R$ 358,90</strong> + Bônus Sessão individual após encerramento da jornada (50 min).<br><strong>A prazo: R$ 388,80</strong> em até 10x sem juros. Plano flexível disponível.' },
