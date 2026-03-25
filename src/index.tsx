@@ -580,37 +580,7 @@ app.get('/', (c) => {
     .footer-links a:hover { color: var(--rose-gold); }
     .footer-heart { color: rgba(255,255,255,0.3); font-size: 0.75rem; margin-top: 8px; text-align: center; }
 
-    /* ===== POPUP ===== */
-    .popup-overlay {
-      position: fixed; inset: 0; background: rgba(0,0,0,0.8); z-index: 10000;
-      display: flex; align-items: center; justify-content: center; padding: 20px;
-      opacity: 0; pointer-events: none; transition: opacity 0.4s;
-    }
-    .popup-overlay.show { opacity: 1; pointer-events: all; }
-    .popup-box {
-      background: linear-gradient(135deg, #F2E8DF, #EDE0D5);
-      border: 2px solid rgba(201,149,106,0.5); border-radius: 20px;
-      padding: 36px 40px 36px; max-width: 460px; width: 100%;
-      position: relative; box-sizing: border-box;
-      transform: scale(0.9); transition: transform 0.4s;
-      overflow: hidden;
-    }
-    .popup-overlay.show .popup-box { transform: scale(1); }
-    .popup-close { position: absolute; top: 14px; right: 18px; background: none; border: none; color: var(--cinza); font-size: 1.5rem; cursor: pointer; transition: color 0.2s; z-index: 2; }
-    .popup-close:hover { color: var(--ouro); }
-    .popup-inner { display: table; width: 100%; }
-    .popup-mandala-wrap { display: block; text-align: center; margin: 0 0 12px 0; line-height: 0; }
-    .popup-mandala-wrap svg { animation: rotateSlow 40s linear infinite; }
-    .popup-title { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--bordô); margin-bottom: 8px; text-align: center; display: block; }
-    .popup-text { color: #6A5045; font-size: 0.9rem; line-height: 1.6; margin-bottom: 24px; text-align: center; display: block; }
-    .popup-form { display: flex; flex-direction: column; gap: 12px; width: 100%; }
-    .popup-form input {
-      padding: 12px 16px; border-radius: 8px; border: 1px solid rgba(176,120,72,0.3);
-      background: rgba(255,255,255,0.7); color: #3A2820; font-size: 0.9rem;
-      outline: none; transition: border-color 0.2s; width: 100%; box-sizing: border-box;
-    }
-    .popup-form input:focus { border-color: var(--rose-gold); }
-    .popup-form input::placeholder { color: rgba(90,60,40,0.4); }
+
 
     /* ===== PROGRESS BAR ===== */
     #progress-bar { position: fixed; top: 0; left: 0; height: 3px; background: linear-gradient(90deg, var(--bordô), var(--rose-gold), var(--ouro-claro)); z-index: 9999; width: 0%; transition: width 0.1s; }
@@ -2324,69 +2294,7 @@ app.get('/', (c) => {
   <a href="https://forms.gle/5YFSvrEpk55tvBcH8" target="_blank" class="btn btn-primary" style="padding:12px 20px;font-size:0.78rem">Inscrever-se</a>
 </div>
 
-<!-- POPUP -->
-<div class="popup-overlay" id="popup">
-  <div class="popup-box">
-    <button class="popup-close" onclick="closePopup()">✕</button>
-    <div class="popup-mandala-wrap">
-      <svg width="90" height="90" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <radialGradient id="popupMgCenter" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stop-color="#C9956A" stop-opacity="0.4"/>
-            <stop offset="50%" stop-color="#7B2D3E" stop-opacity="0.2"/>
-            <stop offset="100%" stop-color="#2C1A1E" stop-opacity="0"/>
-          </radialGradient>
-        </defs>
-        <circle cx="250" cy="250" r="245" fill="url(#popupMgCenter)"/>
-        <circle cx="250" cy="250" r="240" stroke="#C9956A" stroke-width="1.2" fill="none" opacity="0.7"/>
-        <circle cx="250" cy="250" r="210" stroke="#7B2D3E" stroke-width="1.8" fill="none" opacity="0.8"/>
-        <circle cx="250" cy="250" r="175" stroke="#C9956A" stroke-width="1" fill="none" opacity="0.6"/>
-        <circle cx="250" cy="250" r="145" stroke="#E0B899" stroke-width="1.4" fill="none" opacity="0.7"/>
-        <circle cx="250" cy="250" r="110" stroke="#7B2D3E" stroke-width="1.2" fill="none" opacity="0.6"/>
-        <circle cx="250" cy="250" r="75"  stroke="#C9956A" stroke-width="1.8" fill="none" opacity="0.8"/>
-        <circle cx="250" cy="250" r="42"  stroke="#E0B899" stroke-width="1.2" fill="none" opacity="0.7"/>
-        <circle cx="250" cy="250" r="16"  fill="#C9956A" opacity="0.85"/>
-        <circle cx="250" cy="250" r="10"  fill="#7B2D3E" opacity="0.95"/>
-        <circle cx="250" cy="250" r="5"   fill="#E0B899" opacity="1"/>
-        <g stroke="#C9956A" stroke-width="0.8" opacity="0.45">
-          <line x1="250" y1="10"  x2="250" y2="490"/>
-          <line x1="10"  y1="250" x2="490" y2="250"/>
-          <line x1="73"  y1="73"  x2="427" y2="427"/>
-          <line x1="427" y1="73"  x2="73"  y2="427"/>
-          <line x1="10"  y1="160" x2="490" y2="340"/>
-          <line x1="10"  y1="340" x2="490" y2="160"/>
-          <line x1="160" y1="10"  x2="340" y2="490"/>
-          <line x1="340" y1="10"  x2="160" y2="490"/>
-          <line x1="36"  y1="113" x2="464" y2="387"/>
-          <line x1="36"  y1="387" x2="464" y2="113"/>
-          <line x1="113" y1="36"  x2="387" y2="464"/>
-          <line x1="387" y1="36"  x2="113" y2="464"/>
-        </g>
-        <g opacity="0.35" fill="#C9956A">
-          <ellipse cx="250" cy="105" rx="8" ry="18" transform="rotate(0 250 250)"/>
-          <ellipse cx="250" cy="105" rx="8" ry="18" transform="rotate(30 250 250)"/>
-          <ellipse cx="250" cy="105" rx="8" ry="18" transform="rotate(60 250 250)"/>
-          <ellipse cx="250" cy="105" rx="8" ry="18" transform="rotate(90 250 250)"/>
-          <ellipse cx="250" cy="105" rx="8" ry="18" transform="rotate(120 250 250)"/>
-          <ellipse cx="250" cy="105" rx="8" ry="18" transform="rotate(150 250 250)"/>
-          <ellipse cx="250" cy="105" rx="8" ry="18" transform="rotate(180 250 250)"/>
-          <ellipse cx="250" cy="105" rx="8" ry="18" transform="rotate(210 250 250)"/>
-          <ellipse cx="250" cy="105" rx="8" ry="18" transform="rotate(240 250 250)"/>
-          <ellipse cx="250" cy="105" rx="8" ry="18" transform="rotate(270 250 250)"/>
-          <ellipse cx="250" cy="105" rx="8" ry="18" transform="rotate(300 250 250)"/>
-          <ellipse cx="250" cy="105" rx="8" ry="18" transform="rotate(330 250 250)"/>
-        </g>
-        <text x="250" y="258" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#C9956A" opacity="0.9">✦ 12 CONTOS ✦</text>
-      </svg>
-    </div>
-    <h3 class="popup-title">Fique por dentro!</h3>
-    <p class="popup-text">Deixe seu e-mail para receber informações sobre a Jornada Mandala em Movimento.</p>
-    <div class="popup-form">
-      <a href="https://forms.gle/3prmVDmPdUqcHDrn6" target="_blank" class="btn btn-primary" style="text-align:center;padding:16px" onclick="closePopup()">
-        <i class="fas fa-envelope" style="margin-right:8px"></i>Quero receber!
-      </a>
-      <p style="font-size:0.78rem;color:#8A7070;margin-top:4px">Você será direcionada ao formulário de inscrição.</p>
-    </div>
+
 
 <script>
 // ===== PROGRESS BAR =====
@@ -2452,10 +2360,7 @@ document.querySelectorAll('.faq-question').forEach(q => {
   });
 });
 
-// ===== POPUP =====
-setTimeout(() => { document.getElementById('popup').classList.add('show'); }, 35000);
-function closePopup() { document.getElementById('popup').classList.remove('show'); }
-document.getElementById('popup').addEventListener('click', (e) => { if(e.target === document.getElementById('popup')) closePopup(); });
+
 
 // ===== PARTICLES =====
 (function createParticles() {
